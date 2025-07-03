@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sase1/branimirBrankica/static/css/main.4f08e846.css",
+    "main.js": "/sase1/branimirBrankica/static/js/main.3a2d75f0.js",
+    "static/js/453.4a4d5864.chunk.js": "/sase1/branimirBrankica/static/js/453.4a4d5864.chunk.js",
+    "index.html": "/sase1/branimirBrankica/index.html",
+    "main.4f08e846.css.map": "/sase1/branimirBrankica/static/css/main.4f08e846.css.map",
+    "main.3a2d75f0.js.map": "/sase1/branimirBrankica/static/js/main.3a2d75f0.js.map",
+    "453.4a4d5864.chunk.js.map": "/sase1/branimirBrankica/static/js/453.4a4d5864.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f08e846.css",
+    "static/js/main.3a2d75f0.js"
+  ]
+}
