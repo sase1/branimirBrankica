@@ -1,0 +1,5 @@
+.logos{
+    & img{
+        height: 30px;
+    }
+}

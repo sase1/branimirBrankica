@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CarouselReviews.css";
 
@@ -42,43 +42,49 @@ export default function CarouselCards() {
     }, []);
 
     return (
-        <div className="col-md-8 offset-md-2 py-5">
-            <div className="text-center mb-4">
-                <img
-                    src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
-                    alt="logo" style={{height: '80px'}} className="mb-4"/>
-            </div>
+        <div className="row">
 
-            <div
-                id="testimonialCarousel"
-                ref={carouselRef}
-                className="carousel slide"
-                data-bs-ride="carousel"
-            >
-                <div className="carousel-inner">
-                    {testimonials.map(({ text, author }, index) => (
-                        <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
-                            <div className="d-flex flex-column align-items-center text-white text-center">
-                                <h3 className="testimonial-text">{text}</h3>
-                                <p className="testimonial-author">{author}</p>
-                            </div>
-                        </div>
-                    ))}
-
+            <div className="col-lg-8 offset-lg-2 py-5">
+                <div className="text-center mb-4">
+                    <img
+                        src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                        alt="logo" style={{height: '80px'}} className="mb-4"/>
                 </div>
 
-                <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+                <div
+                    id="testimonialCarousel"
+                    ref={carouselRef}
+                    className="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div className="carousel-inner">
+                        {testimonials.map(({text, author}, index) => (
+                            <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
+                                <div className="d-flex flex-column align-items-center text-white text-center">
+                                    <h3 className="testimonial-text w-75">{text}</h3>
+                                    <p className="testimonial-author">{author}</p>
+                                </div>
+                            </div>
+                        ))}
 
-                {/* Slide count */}
-                <div className="text-center mt-3 text-white">
-                    {currentIndex + 1} / {testimonials.length}
+                    </div>
+
+                    <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                    {/* Slide count */}
+                    <div className="text-center mt-3 text-white">
+                        {currentIndex + 1} / {testimonials.length}
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 }

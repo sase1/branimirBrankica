@@ -1,0 +1,8 @@
+.logosRow{
+    background-image: url("../../public/images/logo.png");
+    height: 150px;
+    background-repeat: repeat-x;
+    background-size: 300px;
+    background-position: center;
+    margin-bottom: 50px;
+}

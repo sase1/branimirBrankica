@@ -7,6 +7,9 @@ import Counter from "./components/Counter";
 import HeaderMovingLines from "./components/HeaderMovingLines";
 import CarouselCards from "./components/CarouselCards";
 import CarouselReviews from "./components/CarouselReviews";
+import LogosRow from "./components/LogosRow";
+import FolowUs from "./components/FollowUs";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -20,12 +23,12 @@ function App() {
             </div>
             <div className="container-fluid yearsDancing">
                 <div className="row">
-                    <div className="col-md-6 offset-md-1">
+                    <div className="col-lg-6 offset-lg-1">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-lg-4">
                         <div className="d-flex justify-content-center align-items-center ps-5 text-white"
                              style={{minHeight: '60vh'}}>
                             <div className="textContent">
@@ -45,7 +48,7 @@ function App() {
                 <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'}/>
 
                 <div className="row danceStyles">
-                    <div className="col-md-10 offset-md-1 text-white">
+                    <div className="col-lg-10 offset-lg-1 text-white">
                         <div className="d-flex align-items-start justify-content-between">
                             <h2>Стилови на танц</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -58,7 +61,7 @@ function App() {
                 <CarouselCards/>
                 <HeaderMovingLines text={'Откриј го личниот максимум'}/>
                 <div className="row">
-                    <div className="col-md-6 offset-md-3 text-center text-white">
+                    <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
                             src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
                             alt="logo" style={{height: '80px'}} className="mb-4"/>
@@ -69,7 +72,7 @@ function App() {
                             Повеќе </Link>
                     </div>
 
-                    <div className="col-md-12">
+                    <div className="col-lg-12">
                         <div className="image-grid">
                             <div className="item item1"><img
                                 src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
@@ -112,10 +115,13 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <HeaderMovingLines text={'Мислења на нашите членови'}/>
-                    <CarouselReviews />
 
                 </div>
+                <HeaderMovingLines text={'Мислења на нашите членови'}/>
+                <CarouselReviews/>
+                <LogosRow/>
+                <FolowUs/>
+                <Footer />
             </div>
             {/*<Routes>*/}
             {/*    <Route path="/eden" element={<Eden/>}/>*/}

@@ -1,0 +1,51 @@
+.instagram-images {
+    & .item {
+        height: 300px;
+        background-image: url("https://thumbs.dreamstime.com/b/breakdance-dancer-stands-pedestal-symbolizing-their-hard-won-achievements-recognition-breakdance-dancer-stands-269325521.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    & .insta {
+        position: absolute;
+        background-color: white;
+        left: 50%;
+        top: 50%;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        transform: translate(-50%);
+
+        &:hover{
+            background-color: orange;
+        }
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    text-align: center;
+    padding: 20px;
+    pointer-events: none;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
