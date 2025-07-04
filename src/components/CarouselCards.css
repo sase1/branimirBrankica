@@ -1,0 +1,22 @@
+.cardsContent{
+    position: relative;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    & h3{
+        font-size: 2.2rem;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(220, 0, 0, 1);
+        transform: translateY(-9px);
+    }
+
+    &:hover h3 {
+        opacity: 1;
+    }
+}

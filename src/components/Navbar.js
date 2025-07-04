@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src="images/logo.png" alt="Site Logo"/>
+                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Site Logo"/>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span className="navbar-toggler-icon"></span>
