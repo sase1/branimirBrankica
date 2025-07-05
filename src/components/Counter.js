@@ -5,19 +5,19 @@ export default function Counter() {
     return (
         <div className="col-lg-10 offset-lg-1 counter">
             <div className="row">
-                <div className="col-lg-3 text-center">
+                <div className="col-lg-3 col-6 text-center">
                     <h2 className="text-warning"> <CountUp end={50} duration={5} start={0} enableScrollSpy scrollSpyDelay={600} />+</h2>
                     <p className="text-white">Златни Медали</p>
                 </div>
-                <div className="col-lg-3 text-center">
+                <div className="col-lg-3 col-6 text-center">
                     <h2 className="text-warning"> <CountUp end={20} duration={5} start={0} enableScrollSpy scrollSpyDelay={600} />+</h2>
                     <p className="text-white">Години Искуство</p>
                 </div>
-                <div className="col-lg-3 text-center">
+                <div className="col-lg-3 col-6 text-center">
                     <h2 className="text-warning"> <CountUp end={75} duration={5} start={0} enableScrollSpy scrollSpyDelay={600} />+</h2>
                     <p className="text-white">Членови</p>
                 </div>
-                <div className="col-lg-3 text-center">
+                <div className="col-lg-3 col-6 text-center">
                     <h2 className="text-warning"> <CountUp end={15} duration={5} start={0} enableScrollSpy scrollSpyDelay={600} />+</h2>
                     <p className="text-white">Различни Вештини</p>
                 </div>

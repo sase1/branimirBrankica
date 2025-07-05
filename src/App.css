@@ -49,6 +49,9 @@ body {
 .danceStyles{
     & p{
         width: 35%;
+        @media (max-width: 991px) {
+            width: auto;
+        }
     }
 }
 
@@ -109,3 +112,19 @@ body {
 .item6 { grid-area: item6; }
 .item7 { grid-area: item7; }
 .item8 { grid-area: item8; }
+
+
+@media (max-width: 991px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "item1 item1"
+            "item2 item2"
+            "item3 item3"
+            "item4 item4"
+            "item5 item5"
+            "item6 item6"
+            "item7 item7"
+            "item8 item8";
+    }
+}

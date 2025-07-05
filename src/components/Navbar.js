@@ -3,16 +3,16 @@ import './Navbar.css';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-xl navbar-dark">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Site Logo"/>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
-                    <ul className="navbar-nav ms-auto py-2">
+                    <ul className="navbar-nav ms-auto py-2 pe-4">
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Танц</Link>
                         </li>

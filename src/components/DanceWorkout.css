@@ -1,5 +1,8 @@
 .danceWorkout{
     margin-top: 130px!important;
+    @media (max-width: 991px) {
+        margin-top: 70px!important;
+    }
 }
 
 .dance,
@@ -19,11 +22,27 @@
         top: -100px;
         left: 50%;
         transform: translateX(-50%);
+        @media (max-width: 991px) {
+            font-size: 6rem;
+            top: -65px;
+            left: 30%;;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 4rem;
+            top: -50px;
+        }
     }
 
     &:hover{
         transform: scale(1.1);
         z-index: 2;
+
+    }
+
+    @media (max-width: 991px) {
+        background-size: cover;
+        height: 510px;
     }
 }
 
@@ -33,5 +52,21 @@
     & h1{
         bottom: -70px;
         top: auto;
+        @media (max-width: 991px) {
+            bottom: auto;
+            top: -70px;
+            left: 55%;
+        }
+        @media (max-width: 576px) {
+            bottom: 0;
+            top: -50px;
+        }
+
+    }
+    @media (max-width: 991px) {
+        margin-top: 90px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 80px;
     }
 }

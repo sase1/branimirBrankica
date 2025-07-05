@@ -8,4 +8,19 @@
 
  #testimonialCarousel h3{
      font-size: 2.3rem;
+     @media (max-width: 991px) {
+         font-size: 1.5rem;
+     }
+ }
+
+
+ @media (max-width: 991px) {
+     .carousel-control-next{
+         right: 0!important;
+     }
+
+     .carousel-control-prev{
+         left: 0!important;
+     }
+
  }

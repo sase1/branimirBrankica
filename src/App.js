@@ -28,9 +28,8 @@ function App() {
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="d-flex justify-content-center align-items-center ps-5 text-white"
-                             style={{minHeight: '60vh'}}>
+                    <div className="col-lg-4 align-content-center pt-5 pt-lg-0">
+                        <div className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                             <div className="textContent">
                                 <img
                                     src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
@@ -48,8 +47,8 @@ function App() {
                 <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'}/>
 
                 <div className="row danceStyles">
-                    <div className="col-lg-10 offset-lg-1 text-white">
-                        <div className="d-flex align-items-start justify-content-between">
+                    <div className="col-lg-12 col-xl-10 offset-xl-1 text-white">
+                        <div className="d-flex flex-column flex-lg-row text-center  align-items-center justify-content-between">
                             <h2>Стилови на танц</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>

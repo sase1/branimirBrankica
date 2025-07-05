@@ -3,14 +3,13 @@ import "./Footer.css"
 
 export default function Footer() {
     return (
-        <div className="row">
-            <div className="col-lg-8 offset-lg-2" style={{margin: "80px auto"}}>
+        <div className="row footer">
+            <div className="col-lg-8 offset-lg-2 my-5">
                 <div className="row">
-                    <div className="col-lg-4 align-items-center d-flex">
-                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Site Logo" style={{width: "100%"}}
-                             className="img-fluid"/>
+                    <div className="col-lg-4 align-items-center justify-content-center d-flex">
+                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Site Logo" className="img-fluid footerLogo"/>
                     </div>
-                    <div className="col-lg-4  text-white text-center">
+                    <div className="col-lg-4  text-white text-center my-4 my-lg-0">
                         <h4>Контакт:</h4>
                         <Link className="text-decoration-none d-block text-white" to="tel:+38971968582">+389 71 968
                             582</Link>
