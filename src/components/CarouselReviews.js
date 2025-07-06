@@ -22,7 +22,7 @@ const testimonials = [
 ];
 
 
-export default function CarouselCards() {
+export default function CarouselReviews() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const carouselRef = useRef(null);
 
@@ -78,7 +78,6 @@ export default function CarouselCards() {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
 
-                    {/* Slide count */}
                     <div className="text-center mt-3 text-white">
                         {currentIndex + 1} / {testimonials.length}
                     </div>

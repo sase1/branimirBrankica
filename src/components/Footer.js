@@ -42,7 +42,7 @@ export default function Footer() {
                                     <Link className="nav-link text-white" to="/">Вежбање</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/">За Нас</Link>
+                                    <Link className="nav-link text-white" to="/за-нас">За Нас</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link text-white"

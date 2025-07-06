@@ -23,6 +23,10 @@
     }
 }
 
+h2.title{
+    font-size: 3rem;
+}
+
 
 .overlay {
     position: absolute;
