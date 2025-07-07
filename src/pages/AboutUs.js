@@ -9,14 +9,18 @@ export default function AboutUs() {
     return (
         <>
             <div className="container aboutUs">
-                <PageHeader title="За Нас" />
+                <div className="row">
+                    <div className="col-lg-12">
+                        <PageHeader title="За Нас"/>
+                    </div>
+                </div>
                 <div className="row lifeStyle">
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                     </div>
-                    <div className="col-lg-5 align-content-center pt-5 pt-lg-0">
+                    <div className="col-lg-6 align-content-center pt-5 pt-lg-0">
                         <div
                             className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                             <div className="textContent">
@@ -24,34 +28,25 @@ export default function AboutUs() {
                                     src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
                                     alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
                                 <h2 className="title">20 години <br/> нов животен стил</h2>
-                                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua,
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                <p className="description">Го пренасочивме менталниот склоп за практикување физичка активност, ги срушивме
+                                возрасните бариери и заблуди, ја освестивме можноста за менување и поставивме тло за правилен пристап до здрав живот.</p>
 
-                                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua,
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                <p className="description">Заклучивме дека физичката и духовната активност се задолжителна одговорност. Докажавме
+                                дека способноста за себереализација постои кај секого, а достапност на вистинскиот избор постои тука.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-8 offset-lg-2 text-white text-center">
+                    <div className="col-lg-10 offset-lg-1 text-white text-center">
                         <img
                             src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
                             alt="logo" style={{height: '80px'}} className="mb-0 mb-md-4"/>
                         <h2 className="mb-4">Инструктори</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua,
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua,
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <p>Банимир Нешиќ и Бранкица Нешиќ, основачи на овос спортски клуб, се први и се уште единствени лиценцирани (сертифицирани)
+                        инструктори од FISAF (Federation of International Sports Aerobic and Fitness). FISAF интернационалните лиценци (сертификати) се
+                        наоѓаат на листата на најценетите лиценци во fitness-welness индустријата и се валидни насекаде низ светот.</p>
                     </div>
                 </div>
 
@@ -61,7 +56,7 @@ export default function AboutUs() {
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранкица Нешиќ</h3>
-                        <p>naslov naslov naslov naslov</p>
+                        <p>аеробик, пилатес,BYOGA, програма MEUNA</p>
                         <CustomLink to="/" text="Прочитајте повеќе"/>
                     </div>
                     <div className="col-lg-4 text-white text-center my-5 mt-md-5">
@@ -69,7 +64,7 @@ export default function AboutUs() {
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранимир Нешиќ</h3>
-                        <p>naslov naslov naslov naslov</p>
+                        <p>аеробик, Power Yoga, кружен тренинг, персонален тренер</p>
                         <CustomLink to="/" text="Прочитајте повеќе"/>
                     </div>
                     <div className="col-lg-4 text-white text-center">
@@ -77,7 +72,7 @@ export default function AboutUs() {
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Слободан Трајковски</h3>
-                        <p>naslov naslov naslov naslov</p>
+                        <p>MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA</p>
                         <CustomLink to="/" text="Прочитајте повеќе"/>
                     </div>
                 </div>
@@ -100,7 +95,7 @@ export default function AboutUs() {
                         <h2>Награди и сертификати </h2>
                     </div>
                     <div className="col-lg-6 offset-lg-2 mb-5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua,
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
@@ -109,53 +104,53 @@ export default function AboutUs() {
                             incididunt ut labore et dolore magna.</p>
                     </div>
 
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6 mt-4">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6 mt-4">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6 mt-4">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
-                    <div className="col-lg-3 col-md-6 mt-4">
+                    <div className="col-lg-3 col-md-6 text-center mt-4">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
-                        <h4>Име на награда</h4>
+                        <h4 className="mt-3">Име на награда</h4>
                     </div>
                 </div>
 

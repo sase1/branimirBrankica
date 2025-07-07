@@ -32,7 +32,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/">Галерија</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Контакт</Link>
+                            <Link className="nav-link" to="/контакт">Контакт</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="tel:+38971968582">+389 71 968 582</Link>

@@ -21,11 +21,13 @@
             background-color: orange;
         }
     }
+
+    & h2.title{
+        font-size: 3rem;
+    }
 }
 
-h2.title{
-    font-size: 3rem;
-}
+
 
 
 .overlay {

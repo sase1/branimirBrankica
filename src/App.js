@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MainLayout from "./components/MainLayout,js";
 
@@ -12,6 +13,7 @@ function App() {
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/за-нас" element={<AboutUs />} />
+                    <Route path="/контакт" element={<Contact />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />
