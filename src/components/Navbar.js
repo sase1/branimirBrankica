@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="mynavbar">
                     <ul className="navbar-nav ms-auto py-2 pe-4">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Танц</Link>
+                            <Link className="nav-link" to="/танц">Танц</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Вежбање</Link>

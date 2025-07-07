@@ -36,7 +36,7 @@ export default function Footer() {
                         <ul className="navbar-nav py-2 w-100 align-items-center">
                             <div className="d-flex flex-column flex-lg-row">
                                 <li className="nav-item ms-lg-0">
-                                    <Link className="nav-link text-white" to="/">Танц</Link>
+                                    <Link className="nav-link text-white" to="/танц">Танц</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/">Вежбање</Link>

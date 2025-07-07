@@ -8,6 +8,35 @@ import "./Home.css"
 import CustomLink from "../components/CustomLink";
 
 export default function Home() {
+
+    const danceCards = [
+        {
+            id: 1,
+            title: "Салса",
+            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg"
+        },
+        {
+            id: 2,
+            title: "Танго",
+            image: "https://cdn.britannica.com/68/92668-050-1BED9B3B/Burundians-dance-Bujumbura.jpg"
+        },
+        {
+            id: 3,
+            title: "Хип Хоп",
+            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg"
+        },
+        {
+            id: 4,
+            title: "Балет",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+        },
+        {
+            id: 5,
+            title: "Џез",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+        }
+    ];
+
     return (
         <>
             <div className="container-fluid">
@@ -52,7 +81,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <CarouselCards/>
+                <CarouselCards cards={danceCards} />
                 <HeaderMovingLines text={'Откриј го личниот максимум'}/>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center text-white">

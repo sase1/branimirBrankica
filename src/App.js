@@ -6,6 +6,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MainLayout from "./components/MainLayout,js";
+import Dance from "./pages/Dance";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
+                    <Route path="/танц" element={<Dance />} />
                     <Route path="/за-нас" element={<AboutUs />} />
                     <Route path="/контакт" element={<Contact />} />
                 </Route>

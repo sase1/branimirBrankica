@@ -9,16 +9,16 @@ const responsive = {
     mobile:  { breakpoint: { max: 576,  min: 0 },    items: 1 },
 };
 
-export default function CarouselCards() {
+export default function ({ cards = [] }) {
     return (
         <Carousel responsive={responsive} infinite autoPlay>
-            {[1, 2, 3, 4, 5].map((id) => (
+            {cards.map(({ id, title, image, link ="/" }) => (
                 <div key={id} className="mx-2 cardsContent">
-                    <Link to={"/"} className={"text-decoration-none text-white"}>
+                    <Link to={link} className={"text-decoration-none text-white"}>
                         <img
-                            src={`https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg`}
+                            src={image}
                             className="card-img-top" alt={`Card ${id}`}/>
-                        <h3 className="card-title">Име на танцот {id}</h3>
+                        <h3 className="card-title">{title}</h3>
                     </Link>
                 </div>
             ))}
