@@ -29,7 +29,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/">Новости</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Галерија</Link>
+                            <Link className="nav-link" to="/галерија">Галерија</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/контакт">Контакт</Link>

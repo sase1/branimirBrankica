@@ -25,7 +25,7 @@ export default function PageHeader({ title }) {
                                 {isLast ? (
                                     decodeURIComponent(part.replace(/-/g, " "))
                                 ) : (
-                                    <Link to={path} className="text-white text-decoration-none">
+                                    <Link to={path} className="text-white text-decoration-none text-capitalize">
                                         {decodeURIComponent(part.replace(/-/g, " "))}
                                     </Link>
                                 )}

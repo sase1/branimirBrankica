@@ -13,27 +13,32 @@ export default function Home() {
         {
             id: 1,
             title: "Салса",
-            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg"
+            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
+            link: "/танц/салса"
         },
         {
             id: 2,
             title: "Танго",
-            image: "https://cdn.britannica.com/68/92668-050-1BED9B3B/Burundians-dance-Bujumbura.jpg"
+            image: "https://cdn.britannica.com/68/92668-050-1BED9B3B/Burundians-dance-Bujumbura.jpg",
+            link: "/танго"
         },
         {
             id: 3,
             title: "Хип Хоп",
-            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg"
+            image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
+            link: "/хип-хоп"
         },
         {
             id: 4,
             title: "Балет",
-            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/балет"
         },
         {
             id: 5,
             title: "Џез",
-            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/џез"
         }
     ];
 

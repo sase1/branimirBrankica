@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MainLayout from "./components/MainLayout,js";
 import Dance from "./pages/Dance";
+import Gallery from "./pages/Gallery";
+import Salsa from "./pages/danceInnerPages/Salsa";
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                     <Route path="/танц" element={<Dance />} />
                     <Route path="/за-нас" element={<AboutUs />} />
                     <Route path="/контакт" element={<Contact />} />
+                    <Route path="/галерија" element={<Gallery />} />
+                    <Route path="/танц/салса" element={<Salsa />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />

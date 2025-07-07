@@ -6,7 +6,7 @@ export default function DanceWorkout() {
         <div className="col-lg-12 p-3 p-md-5  danceWorkout">
             <div className="row">
                 <div className="col-lg-6">
-                    <Link to="/">
+                    <Link to="/танц">
                         <div className="dance">
                             <h1 className="text-white">Танц</h1>
                         </div>
