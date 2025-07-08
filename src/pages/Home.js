@@ -82,7 +82,7 @@ export default function Home() {
                             <h2 className="title">Стилови на танц</h2>
                             <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
-                            <CustomLink to="/" text="Дознајте Повеќе" />
+                            <CustomLink to="/танц" text="Дознајте Повеќе" />
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ export default function Contact() {
                     <div className="col-lg-12">
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.1073047033053!2d21.4121346!3d41.9928328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415e33a78561d%3A0x3ce497e6cad8cc21!2sElementary%20School%20%22Kiro%20Gligorov%22!5e0!3m2!1sen!2smk!4v1654963745651!5m2!1sen!2smk"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439.58626658999566!2d21.363446809093972!3d42.007271277309464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135413003f4d8f97%3A0x27ad3c50b2843359!2sDSC%20Branimir%20%26%20Brankica!5e1!3m2!1sen!2smk!4v1751958911162!5m2!1sen!2smk"
                                 width="100%"
                                 height="650"
                                 allowFullScreen=""

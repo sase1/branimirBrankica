@@ -9,10 +9,12 @@ import MainLayout from "./components/MainLayout,js";
 import Dance from "./pages/Dance";
 import Gallery from "./pages/Gallery";
 import Salsa from "./pages/danceInnerPages/Salsa";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
     return (
         <Router>
+            <ScrollToTop /> {/* This must be inside Router */}
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
