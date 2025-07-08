@@ -45,7 +45,7 @@ export default function Footer() {
                                     <Link className="nav-link text-white" to="/за-нас">За Нас</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white"
+                                    <Link className="nav-link text-white" target="_blank"
                                           to="https://online.branimirbrankica.mk/login">Онлајн</Link>
                                 </li>
                                 <li className="nav-item">
