@@ -17,7 +17,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/танц">Танц</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Вежбање</Link>
+                            <Link className="nav-link" to="/вежбање">Вежбање</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/за-нас">За Нас</Link>

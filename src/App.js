@@ -10,6 +10,8 @@ import Dance from "./pages/Dance";
 import Gallery from "./pages/Gallery";
 import Salsa from "./pages/danceInnerPages/Salsa";
 import ScrollToTop from "./hooks/ScrollToTop";
+import Workout from "./pages/Workout";
+import Aerobic from "./pages/workoutInnerPages/Aerobic";
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
                     <Route path="/контакт" element={<Contact />} />
                     <Route path="/галерија" element={<Gallery />} />
                     <Route path="/танц/салса" element={<Salsa />} />
+                    <Route path="/вежбање" element={<Workout />} />
+                    <Route path="/вежбање/аеробик" element={<Aerobic />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />

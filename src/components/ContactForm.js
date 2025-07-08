@@ -1,12 +1,16 @@
 import {Link} from "react-router-dom";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm({ title, description1, description2 }) {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
+    const [statusMessage, setStatusMessage] = useState(null);
 
     const sendEmail = (e) => {
         e.preventDefault();
+        if (loading) return;
+        setLoading(true);
 
         const name = form.current.name.value.trim();
         const phone = form.current.phone.value.trim();
@@ -14,7 +18,9 @@ export default function ContactForm({ title, description1, description2 }) {
         const message = form.current.message.value.trim();
 
         if (!name || !phone || !email || !message) {
-            alert("Сите полиња се задолжителни.");
+            setStatusMessage({ type: "error", text: "Сите полиња се задолжителни." });
+            setLoading(false);
+            hideMessageAfterDelay();
             return;
         }
 
@@ -25,16 +31,23 @@ export default function ContactForm({ title, description1, description2 }) {
             '0ZU5yMG5XaAYPiiMC'
         ).then(
             (result) => {
-                console.log('Success:', result.text);
-                alert('Пораката е успешно испратена!');
+                setStatusMessage({ type: "success", text: "Пораката е успешно испратена!" });
                 form.current.reset();
+                setLoading(false);
+                hideMessageAfterDelay();
             },
             (error) => {
-                console.error('Error:', error.text);
-                alert('Настана грешка. Обидете се повторно.');
+                setStatusMessage({ type: "error", text: "Настана грешка. Обидете се повторно." });
+                setLoading(false);
+                hideMessageAfterDelay();
             }
         );
     };
+
+    const hideMessageAfterDelay = () => {
+        setTimeout(() => setStatusMessage(null), 5000);
+    };
+
     return (
         <div className="row form">
             <div className="col-lg-6">
@@ -82,9 +95,14 @@ export default function ContactForm({ title, description1, description2 }) {
                     </div>
                     <div className="row">
                         <div className="col mt-4 d-flex justify-content-center">
-                            <button type="submit" className="customLink text-white">Испратете порака</button>
+                            <button type="submit" className="customLink text-white" disabled={loading}>{loading ? "Се испраќа..." : "Испратете порака"}</button>
                         </div>
                     </div>
+                    {statusMessage && (
+                        <div className={`fade-message text-white text-center mt-3 bg-danger p-2 rounded ${statusMessage.type}`}>
+                            <h3>{statusMessage.text}</h3>
+                        </div>
+                    )}
                 </form>
             </div>
         </div>
