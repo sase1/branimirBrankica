@@ -15,25 +15,25 @@ export default function Workout() {
             id: 2,
             title: "Корективна Гимнастика",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/"
+            link: "/вежбање/корективна-гимнастика"
         },
         {
             id: 3,
             title: "Персонален Тренинг",
             image: "https://www.gymreapers.com/cdn/shop/articles/header-image-01_Cable-chest-workout---maximizing-your-muscle-growth.jpg?v=1721671171&width=1024",
-            link: "/"
+            link: "/вежбање/персонален-тренинг"
         },
         {
             id: 4,
             title: "Зумба",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/"
+            link: "/вежбање/зумба"
         },
         {
             id: 5,
             title: "Јога",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
-            link: "/"
+            link: "/вежбање/јога"
         }
     ];
 
