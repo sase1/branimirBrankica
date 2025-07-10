@@ -34,3 +34,24 @@
         }
     }
 }
+
+.footerNavbarLinks ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        bottom: -3px;
+        width: 0%;
+        height: 2px;
+        background-image: linear-gradient(90deg, #FB8B01, #76FFA9);
+        transition: width 0.4s ease;
+    }
+
+    &:hover::after {
+        width: 80%;
+    }
+}

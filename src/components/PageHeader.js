@@ -5,7 +5,7 @@ export default function PageHeader({ title }) {
     const location = useLocation();
     const pathParts = location.pathname.split("/").filter(Boolean);
     return (
-        <div className="page-header text-white text-center">
+        <div className="page-header text-white text-center customBorder position-relative">
             <h1 className="mb-4">{title}</h1>
             <nav aria-label="breadcrumb" className="d-flex align-items-center justify-content-center">
                 <ol className="breadcrumb">

@@ -3,7 +3,7 @@ import './Navbar.css';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks">
+        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks position-relative">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>

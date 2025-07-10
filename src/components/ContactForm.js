@@ -102,7 +102,7 @@ export default function ContactForm({ title, description1, description2 }) {
                         </div>
                     </div>
                     {statusMessage && (
-                        <div className={`fade-message text-white text-center mt-3 bg-danger p-2 rounded ${statusMessage.type}`}>
+                        <div className={`fade-message text-white text-center mt-3 p-2 rounded ${statusMessage.type}`} style={{background: "#2DA549"}}>
                             <h3>{statusMessage.text}</h3>
                         </div>
                     )}

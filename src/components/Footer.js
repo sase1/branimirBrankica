@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
 
             <div className="col-lg-10 offset-lg-1">
-                <nav className="navbar navbar-expand border-top">
+                <nav className="navbar navbar-expand border-top footerNavbarLinks">
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav py-2 w-100 align-items-center">
                             <div className="d-flex flex-column flex-lg-row">
