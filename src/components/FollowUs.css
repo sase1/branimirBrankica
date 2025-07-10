@@ -42,13 +42,15 @@
     & h2.title{
         font-size: 3rem;
     }
+
+    & .overlay{
+        font-size: 1rem;
+    }
 }
 
 
 
-.overlay{
-    font-size: 1rem;
-}
+
 
 
 /*.overlay {*/
