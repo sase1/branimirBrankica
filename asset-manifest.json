@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/branimirBrankica/static/css/main.2ce9cd2f.css",
-    "main.js": "/branimirBrankica/static/js/main.9af3d325.js",
+    "main.css": "/branimirBrankica/static/css/main.4381c00b.css",
+    "main.js": "/branimirBrankica/static/js/main.497e5359.js",
     "static/js/453.4a4d5864.chunk.js": "/branimirBrankica/static/js/453.4a4d5864.chunk.js",
+    "static/media/insta1.png": "/branimirBrankica/static/media/insta1.f46c96c5170fdb9f2361.png",
+    "static/media/insta3.png": "/branimirBrankica/static/media/insta3.86fa6393452136328461.png",
+    "static/media/insta5.png": "/branimirBrankica/static/media/insta5.aeeb2a193d94c23d0b2e.png",
+    "static/media/insta4.png": "/branimirBrankica/static/media/insta4.017b24707cb970d5248f.png",
+    "static/media/body-bg.png": "/branimirBrankica/static/media/body-bg.fc250e20ac6c004aed69.png",
+    "static/media/insta6.png": "/branimirBrankica/static/media/insta6.9148c4595b6dd36a1ba5.png",
+    "static/media/insta2.png": "/branimirBrankica/static/media/insta2.9c80992972e0aff85fb0.png",
     "static/media/revicons.eot": "/branimirBrankica/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/branimirBrankica/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/row-logo.png": "/branimirBrankica/static/media/row-logo.cb7e6eed6c49a46e5bda.png",
     "static/media/revicons.woff": "/branimirBrankica/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/branimirBrankica/index.html",
-    "main.2ce9cd2f.css.map": "/branimirBrankica/static/css/main.2ce9cd2f.css.map",
-    "main.9af3d325.js.map": "/branimirBrankica/static/js/main.9af3d325.js.map",
+    "main.4381c00b.css.map": "/branimirBrankica/static/css/main.4381c00b.css.map",
+    "main.497e5359.js.map": "/branimirBrankica/static/js/main.497e5359.js.map",
     "453.4a4d5864.chunk.js.map": "/branimirBrankica/static/js/453.4a4d5864.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ce9cd2f.css",
-    "static/js/main.9af3d325.js"
+    "static/css/main.4381c00b.css",
+    "static/js/main.497e5359.js"
   ]
 }
