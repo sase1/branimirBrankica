@@ -47,7 +47,7 @@ export default function CarouselReviews() {
             <div className="col-lg-8 offset-lg-2 py-5">
                 <div className="text-center mb-4">
                     <img
-                        src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                        src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                         alt="logo" style={{height: '80px'}} className="mb-4"/>
                 </div>
 
@@ -78,7 +78,7 @@ export default function CarouselReviews() {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
 
-                    <div className="text-center mt-3 text-white">
+                    <div className="text-center mt-3 arrows">
                         {currentIndex + 1} / {testimonials.length}
                     </div>
                 </div>

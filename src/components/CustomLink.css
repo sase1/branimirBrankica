@@ -1,7 +1,9 @@
 .customLink {
     position: relative;
     overflow: hidden;
-    border: 1px solid green;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #FB8B01 0%, #76FFA9 100%);
+    border-image-slice: 1;
     padding: 15px 45px;
     margin-top: 20px;
     background-color: transparent;
@@ -17,7 +19,7 @@
         left: 0;
         width: 0%;
         height: 100%;
-        background: linear-gradient(to right, #00c853, #b2ff59);
+        background: linear-gradient(90deg, #FB8B01 0%, #76FFA9 100%);
         z-index: -1;
         transition: width 0.5s ease;
     }

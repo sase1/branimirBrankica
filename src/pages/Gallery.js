@@ -84,7 +84,7 @@ export default function Gallery() {
             </div>
 
             {/* Pagination */}
-            <div className="d-flex justify-content-center align-items-center mt-4">
+            <div className="d-flex justify-content-center align-items-center mt-4 mb-5">
                 <button
                     className="btn btn-outline-light me-3"
                     onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
@@ -92,7 +92,7 @@ export default function Gallery() {
                 >
                     &larr;
                 </button>
-                <span>
+                <span className="numbers">
           {currentPage} / {totalPages}
         </span>
                 <button
@@ -117,7 +117,7 @@ export default function Gallery() {
                         src={allImages[lightboxIndex]}
                         alt="lightbox"
                         className="lightbox-image"
-                        onClick={(e) => e.stopPropagation()} // prevent close on image click
+                        onClick={(e) => e.stopPropagation()}
                     />
                     <div className="lightbox-controls">
                         <button

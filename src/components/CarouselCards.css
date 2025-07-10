@@ -12,11 +12,15 @@
     }
 
     &:hover {
-        box-shadow: 0 10px 20px rgba(220, 0, 0, 1);
+        box-shadow: 0 10px 10px #F89520;
         transform: translateY(-9px);
     }
 
     &:hover h3 {
         opacity: 1;
+    }
+
+    & img.arrow{
+        height: 25px;
     }
 }

@@ -62,7 +62,7 @@ export default function Home() {
                             className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                             <div className="textContent">
                                 <img
-                                    src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                                    src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                                     alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
                                 <h2 className="title">20 години <br/> танцуваме заедно</h2>
                                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -74,7 +74,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'}/>
+                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'} strokeColor="#6F9D80"/>
 
                 <div className="row danceStyles">
                     <div className="col-lg-12 col-xl-10 offset-xl-1 text-white">
@@ -89,11 +89,11 @@ export default function Home() {
                     </div>
                 </div>
                 <CarouselCards cards={danceCards}/>
-                <HeaderMovingLines text={'Откриј го личниот максимум'}/>
+                <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело'} strokeColor="#FB8B01"/>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
-                            src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                            src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" style={{height: '80px'}} className="mb-4"/>
                         <h2 className="title">Фитнес Програми</h2>
                         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,7 +109,9 @@ export default function Home() {
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Аеробик</div>
+                                    <div className="overlay">Аеробик <img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item2">
@@ -117,7 +119,9 @@ export default function Home() {
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Кружен Тренинг</div>
+                                    <div className="overlay">Кружен Тренинг<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item3">
@@ -125,7 +129,9 @@ export default function Home() {
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Персонален Тренинг</div>
+                                    <div className="overlay">Персонален Тренинг<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item4">
@@ -133,7 +139,9 @@ export default function Home() {
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Јога</div>
+                                    <div className="overlay">Јога<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item5">
@@ -141,7 +149,9 @@ export default function Home() {
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Корективна Гимнастика</div>
+                                    <div className="overlay">Корективна Гимнастика<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item6">
@@ -149,7 +159,9 @@ export default function Home() {
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt=""/>
-                                    <div className="overlay">Пилатес</div>
+                                    <div className="overlay">Пилатес<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item7">
@@ -157,7 +169,9 @@ export default function Home() {
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Меуна</div>
+                                    <div className="overlay">Меуна<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item8">
@@ -165,14 +179,16 @@ export default function Home() {
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nKyX2g7nTDxN0tk4J_i2xN5ZEFyt00vUlQ&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Team Building</div>
+                                    <div className="overlay">Team Building<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
                                 </Link>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <HeaderMovingLines text={'Мислења на нашите членови'}/>
+                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80"/>
                 <CarouselReviews/>
             </div>
         </>

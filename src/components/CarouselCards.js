@@ -18,7 +18,7 @@ export default function ({ cards = [] }) {
                         <img
                             src={image}
                             className="card-img-top" alt={`Card ${id}`}/>
-                        <h3 className="card-title">{title}</h3>
+                        <h3 className="card-title d-flex align-items-center">{title}  <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow" /></h3>
                     </Link>
                 </div>
             ))}

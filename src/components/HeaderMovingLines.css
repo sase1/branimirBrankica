@@ -17,7 +17,7 @@
     padding-left: 100%;
     animation: marquee 15s linear infinite;
     font-size: 9rem;
-    color: #ffc107;
+    font-weight: 900;
 
     @media (max-width: 991px) {
         font-size: 6rem;

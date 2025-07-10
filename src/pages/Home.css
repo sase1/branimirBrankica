@@ -42,6 +42,12 @@
     object-fit: cover;
 }
 
+.item img.logo-image{
+    height: auto;
+    width: auto;
+    margin-left: 13px;
+}
+
 
 .overlay {
     position: absolute;

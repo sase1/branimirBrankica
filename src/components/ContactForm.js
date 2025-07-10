@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
+import "./ContactForm.css"
 
 export default function ContactForm({ title, description1, description2 }) {
     const form = useRef();
@@ -54,8 +55,7 @@ export default function ContactForm({ title, description1, description2 }) {
                 <div
                     className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                     <div className="textContent mb-md-5">
-                        <img
-                            src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
                         <h2 className="title">{title} </h2>
                         <p className="description m-0">
@@ -95,7 +95,10 @@ export default function ContactForm({ title, description1, description2 }) {
                     </div>
                     <div className="row">
                         <div className="col mt-4 d-flex justify-content-center">
-                            <button type="submit" className="customLink text-white" disabled={loading}>{loading ? "Се испраќа..." : "Испратете порака"}</button>
+                            <button type="submit" className="customLink text-white d-flex align-items-center"
+                                    disabled={loading}>{loading ? "Се испраќа..." : "Испратете порака"} <img
+                                src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} alt="instagram-logo"
+                                className="h-75 ms-3"/></button>
                         </div>
                     </div>
                     {statusMessage && (

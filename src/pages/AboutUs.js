@@ -15,17 +15,17 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="row lifeStyle">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 align-content-center">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                     </div>
-                    <div className="col-lg-6 align-content-center pt-5 pt-lg-0">
+                    <div className="col-lg-6 pt-5 pt-lg-0">
                         <div
                             className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                             <div className="textContent">
                                 <img
-                                    src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                                    src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                                     alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
                                 <h2 className="title">20 години <br/> нов животен стил</h2>
                                 <p className="description">Го пренасочивме менталниот склоп за практикување физичка активност, ги срушивме
@@ -41,7 +41,7 @@ export default function AboutUs() {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-white text-center">
                         <img
-                            src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                            src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" style={{height: '80px'}} className="mb-0 mb-md-4"/>
                         <h2 className="mb-4">Инструктори</h2>
                         <p>Банимир Нешиќ и Бранкица Нешиќ, основачи на овос спортски клуб, се први и се уште единствени лиценцирани (сертифицирани)
@@ -156,7 +156,7 @@ export default function AboutUs() {
 
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Мислења на нашите членови'}/>
+                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80"/>
                 <CarouselReviews/>
             </div>
         </>

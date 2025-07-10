@@ -1,8 +1,9 @@
 .logosRow{
-    background-image: url("../../public/images/logo.png");
-    height: 150px;
-    background-repeat: repeat-x;
-    background-size: 300px;
-    background-position: center;
-    margin-bottom: 50px;
+    background-image: url("../../public/images/row-logo.png");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin-bottom: 90px;
+    margin-top: 30px;
 }

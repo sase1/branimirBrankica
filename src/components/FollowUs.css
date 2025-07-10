@@ -1,10 +1,27 @@
 .instagram-images {
     & .item {
         height: 300px;
-        background-image: url("https://thumbs.dreamstime.com/b/breakdance-dancer-stands-pedestal-symbolizing-their-hard-won-achievements-recognition-breakdance-dancer-stands-269325521.jpg");
+        background-image: url("../../public/images/instagramRow/insta6.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        cursor: pointer;
+    }
+
+    & .item2{
+        background-image: url("../../public/images/instagramRow/insta5.png");
+    }
+    & .item3{
+        background-image: url("../../public/images/instagramRow/insta4.png");
+    }
+    & .item4{
+        background-image: url("../../public/images/instagramRow/insta3.png");
+    }
+    & .item5{
+        background-image: url("../../public/images/instagramRow/insta2.png");
+    }
+    & .item6{
+        background-image: url("../../public/images/instagramRow/insta1.png");
     }
 
     & .insta {
@@ -18,7 +35,7 @@
         transform: translate(-50%);
 
         &:hover{
-            background-color: orange;
+            /*background-color: rgba(248, 149, 32, 1);*/
         }
     }
 
@@ -29,29 +46,33 @@
 
 
 
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
-    text-align: center;
-    padding: 20px;
-    pointer-events: none;
+.overlay{
+    font-size: 1rem;
 }
 
-.item:hover .overlay {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+
+/*.overlay {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: 100%;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    color: #fff;*/
+/*    font-size: 1.6rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    opacity: 0;*/
+/*    transform: translateY(20px);*/
+/*    transition: all 0.4s ease;*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*    pointer-events: none;*/
+/*}*/
+
+/*.item:hover .overlay {*/
+/*    opacity: 1;*/
+/*    transform: translateY(0);*/
+/*    pointer-events: auto;*/
+/*}*/

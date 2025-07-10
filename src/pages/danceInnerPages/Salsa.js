@@ -30,22 +30,20 @@ export default function Salsa() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без Правила / Танц без правила'}/>
+                <HeaderMovingLines text={'Танц без Правила / Танц без правила'} strokeColor="#6F9D80"/>
             </div>
             <div className="container noRulesDance">
                 <div className="row content">
-                    <div className="col-lg-5 text-white align-content-center text-center text-lg-start mb-4">
-                        <img
-                            src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
-                            alt="logo" style={{height: '80px'}}/>
+                    <div className="col-lg-5 text-white text-center text-lg-start mb-4">
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                             alt="logo" style={{height: '80px'}}/>
                         <h2 className="my-4">Танц без правила</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.</p>
+                        <p>Оригиналното име на кубанската салса е „Casino“ и ден-денес така ја нарекуваат во Куба. Кубанската салса уште се нарекува и „танц без правила“
+                            бидејќи секое движење е дозволено.
+                            Порториканската салса се појавува по сласлата „Casino“ со цел да го поедностави „несредениот танц“ со вметнување основни чекори позајмени од мамбото и
+                            од румбата за да може да танцуваат и пошироките маси.</p>
                     </div>
-                    <div className="col-lg-6 offset-lg-1">
+                    <div className="col-lg-6 offset-lg-1 align-content-center">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
@@ -54,28 +52,27 @@ export default function Salsa() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со правила'}/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со правила'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
                 <div className="row content flex-column-reverse flex-lg-row">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 align-content-center">
                         <img
                             src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
                             alt="dance" className="img-fluid"/>
                     </div>
 
-                    <div className="col-lg-5 offset-lg-1 text-white align-content-center text-center text-lg-end mb-4">
-                        <img
-                            src="https://png.pngtree.com/png-clipart/20210311/original/pngtree-letter-b-logo-png-image_6059146.jpg"
+                    <div className="col-lg-5 offset-lg-1 text-white  text-center text-lg-end mb-4">
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" style={{height: '80px'}}/>
                         <h2 className="my-4">Танц со правила</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged.</p>
+                        <p>Подоцна од овој „танц со правила“ доаѓа влијание во родното место Куба и се создава групниот кубански танц RUEDA DE CASINO.
+                            Покрај овие танци, во нашиот клуб се изучуваат и другите карипски танци, како бачата и меренге (со доминиканско потекло).</p>
+                        <p>
+                            А во поново време се актуализира и се популаризира и кизомбата, која, пак, има анголско потекло и е дериват на анголската Semba и Zouk, како и compass музиката од француските карипски острови.
+                            Сите овие танци имате можност да ги изучувате во нашиот клуб во групи поделени во нивоа според стекнатото знаење.</p>
                     </div>
                 </div>
             </div>

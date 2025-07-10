@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="col-lg-8 offset-lg-2 my-5">
                 <div className="row">
                     <div className="col-lg-4 align-items-center justify-content-center d-flex">
-                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Site Logo" className="img-fluid footerLogo"/>
+                        <img src={`${process.env.PUBLIC_URL}/images/footer-logo.png`} alt="Site Logo" className="img-fluid footerLogo"/>
                     </div>
                     <div className="col-lg-4  text-white text-center my-4 my-lg-0">
                         <h4>Контакт:</h4>
@@ -61,24 +61,24 @@ export default function Footer() {
 
                             <div className="d-flex ms-auto logos">
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/">
+                                    <Link className="nav-link text-white" target="_blank" to="https://www.facebook.com/sportbranimirbrankica/">
                                         <img
-                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+                                            src={`${process.env.PUBLIC_URL}/images/fb-logo.png`}
                                             alt="fb-logo"/>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/">
+                                    <Link className="nav-link text-white" to="https://www.instagram.com/branimir_i_brankica/?hl=en" target="_blank">
                                         <img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                                            src={`${process.env.PUBLIC_URL}/images/insta-logo.png`}
                                             alt="instagram-logo"/>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/">
+                                    <Link className="nav-link text-white" to="https://www.youtube.com/@BrankicaNesik/featured" target="_blank">
                                         <img
-                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfPimrl1lwgrW3OHOuuyReVPqtc_Hd7mp4A&s"
-                                            alt="twitter-logo"/>
+                                            src={`${process.env.PUBLIC_URL}/images/yt-logo.png`}
+                                            alt="youtube-logo"/>
                                     </Link>
                                 </li>
                             </div>

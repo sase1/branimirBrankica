@@ -11,13 +11,14 @@
         & tr td {
             padding: 30px 30px 80px 30px;
             font-size: 1.3rem;
+            font-weight: 700;
 
             &:not(:first-child):nth-child(even) {
-                color: green;
+                color: rgba(45, 165, 73, 1);
             }
 
             &:not(:first-child):nth-child(odd) {
-                color: orange;
+                color: rgba(248, 149, 32, 1);
             }
 
             & span {
@@ -25,6 +26,7 @@
                 color: white;
                 margin-top: 5px;
                 font-size: 1.1rem;
+                font-weight: 400;
             }
 
         }

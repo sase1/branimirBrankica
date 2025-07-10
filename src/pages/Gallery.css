@@ -28,6 +28,10 @@
     height: 400px;
 }
 
+span.numbers{
+    color: #F89520;
+}
+
 @media (max-width: 991px) {
     .masonry-grid {
         column-count: 3;
