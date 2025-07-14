@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/branimirBrankica/static/css/main.78c4a265.css",
-    "main.js": "/branimirBrankica/static/js/main.c18e3c8a.js",
+    "main.css": "/branimirBrankica/static/css/main.99c3d734.css",
+    "main.js": "/branimirBrankica/static/js/main.3b5ec375.js",
     "static/js/453.4a4d5864.chunk.js": "/branimirBrankica/static/js/453.4a4d5864.chunk.js",
     "static/media/insta1.png": "/branimirBrankica/static/media/insta1.f46c96c5170fdb9f2361.png",
     "static/media/insta3.png": "/branimirBrankica/static/media/insta3.86fa6393452136328461.png",
@@ -15,12 +15,12 @@
     "static/media/row-logo.png": "/branimirBrankica/static/media/row-logo.cb7e6eed6c49a46e5bda.png",
     "static/media/revicons.woff": "/branimirBrankica/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/branimirBrankica/index.html",
-    "main.78c4a265.css.map": "/branimirBrankica/static/css/main.78c4a265.css.map",
-    "main.c18e3c8a.js.map": "/branimirBrankica/static/js/main.c18e3c8a.js.map",
+    "main.99c3d734.css.map": "/branimirBrankica/static/css/main.99c3d734.css.map",
+    "main.3b5ec375.js.map": "/branimirBrankica/static/js/main.3b5ec375.js.map",
     "453.4a4d5864.chunk.js.map": "/branimirBrankica/static/js/453.4a4d5864.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78c4a265.css",
-    "static/js/main.c18e3c8a.js"
+    "static/css/main.99c3d734.css",
+    "static/js/main.3b5ec375.js"
   ]
 }
