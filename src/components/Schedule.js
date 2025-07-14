@@ -10,7 +10,7 @@ export default function Schedule() {
                 <div className="col-lg-12 text-center text-white my-5 p-0">
                     <img
                         src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                        alt="logo" style={{height: '80px'}} className="mb-4"/>
+                        alt="logo" className="mb-4"/>
                     <h2 className="mb-5 mt-2">Распоред на часови</h2>
                     <div className="table-responsive">
                     <table className="table-bordered text-start w-100">

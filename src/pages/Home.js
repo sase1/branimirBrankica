@@ -63,7 +63,7 @@ export default function Home() {
                             <div className="textContent">
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                                    alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
+                                    alt="logo" className="mb-0 mb-md-2"/>
                                 <h2 className="title">20 години <br/> танцуваме заедно</h2>
                                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod tempor
@@ -94,7 +94,7 @@ export default function Home() {
                     <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                            alt="logo" style={{height: '80px'}} className="mb-4"/>
+                            alt="logo" className="mb-4"/>
                         <h2 className="title">Фитнес Програми</h2>
                         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor

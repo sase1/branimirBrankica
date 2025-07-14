@@ -36,7 +36,7 @@ export default function Salsa() {
                 <div className="row content">
                     <div className="col-lg-5 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                             alt="logo" style={{height: '80px'}}/>
+                             alt="logo"/>
                         <h2 className="my-4">Танц без правила</h2>
                         <p>Оригиналното име на кубанската салса е „Casino“ и ден-денес така ја нарекуваат во Куба. Кубанската салса уште се нарекува и „танц без правила“
                             бидејќи секое движење е дозволено.
@@ -66,7 +66,7 @@ export default function Salsa() {
 
                     <div className="col-lg-5 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                            alt="logo" style={{height: '80px'}}/>
+                            alt="logo"/>
                         <h2 className="my-4">Танц со правила</h2>
                         <p>Подоцна од овој „танц со правила“ доаѓа влијание во родното место Куба и се создава групниот кубански танц RUEDA DE CASINO.
                             Покрај овие танци, во нашиот клуб се изучуваат и другите карипски танци, како бачата и меренге (со доминиканско потекло).</p>

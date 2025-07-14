@@ -56,7 +56,7 @@ export default function ContactForm({ title, description1, description2 }) {
                     className="d-flex justify-content-center align-items-center ps-1 ps-lg-5 text-white text-center text-lg-start">
                     <div className="textContent mb-md-5">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                            alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
+                            alt="logo" className="mb-0 mb-md-2"/>
                         <h2 className="title">{title} </h2>
                         <p className="description m-0">
                             {description1}

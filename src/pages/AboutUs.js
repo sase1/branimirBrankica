@@ -26,7 +26,7 @@ export default function AboutUs() {
                             <div className="textContent">
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                                    alt="logo" style={{height: '80px'}} className="mb-0 mb-md-2"/>
+                                    alt="logo" className="mb-0 mb-md-2"/>
                                 <h2 className="title">20 години <br/> нов животен стил</h2>
                                 <p className="description">Го пренасочивме менталниот склоп за практикување физичка активност, ги срушивме
                                 возрасните бариери и заблуди, ја освестивме можноста за менување и поставивме тло за правилен пристап до здрав живот.</p>
@@ -42,7 +42,7 @@ export default function AboutUs() {
                     <div className="col-lg-10 offset-lg-1 text-white text-center">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                            alt="logo" style={{height: '80px'}} className="mb-0 mb-md-4"/>
+                            alt="logo" className="mb-0 mb-md-4"/>
                         <h2 className="mb-4">Инструктори</h2>
                         <p>Банимир Нешиќ и Бранкица Нешиќ, основачи на овос спортски клуб, се први и се уште единствени лиценцирани (сертифицирани)
                         инструктори од FISAF (Federation of International Sports Aerobic and Fitness). FISAF интернационалните лиценци (сертификати) се

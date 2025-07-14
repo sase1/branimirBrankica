@@ -48,7 +48,7 @@ export default function CarouselReviews() {
                 <div className="text-center mb-4">
                     <img
                         src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                        alt="logo" style={{height: '80px'}} className="mb-4"/>
+                        alt="logo" className="mb-4"/>
                 </div>
 
                 <div
