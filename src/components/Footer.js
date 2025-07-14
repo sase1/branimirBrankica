@@ -59,7 +59,7 @@ export default function Footer() {
                                 </li>
                             </div>
 
-                            <div className="d-flex ms-auto logos">
+                            <div className="d-flex ms-auto">
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" target="_blank" to="https://www.facebook.com/sportbranimirbrankica/">
                                         <img
