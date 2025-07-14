@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/branimirBrankica/static/css/main.78c4a265.css",
-    "main.js": "/branimirBrankica/static/js/main.d5c17e91.js",
+    "main.js": "/branimirBrankica/static/js/main.c18e3c8a.js",
     "static/js/453.4a4d5864.chunk.js": "/branimirBrankica/static/js/453.4a4d5864.chunk.js",
     "static/media/insta1.png": "/branimirBrankica/static/media/insta1.f46c96c5170fdb9f2361.png",
     "static/media/insta3.png": "/branimirBrankica/static/media/insta3.86fa6393452136328461.png",
@@ -16,11 +16,11 @@
     "static/media/revicons.woff": "/branimirBrankica/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/branimirBrankica/index.html",
     "main.78c4a265.css.map": "/branimirBrankica/static/css/main.78c4a265.css.map",
-    "main.d5c17e91.js.map": "/branimirBrankica/static/js/main.d5c17e91.js.map",
+    "main.c18e3c8a.js.map": "/branimirBrankica/static/js/main.c18e3c8a.js.map",
     "453.4a4d5864.chunk.js.map": "/branimirBrankica/static/js/453.4a4d5864.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78c4a265.css",
-    "static/js/main.d5c17e91.js"
+    "static/js/main.c18e3c8a.js"
   ]
 }
