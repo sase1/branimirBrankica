@@ -33,10 +33,6 @@
         height: 90px;
         border-radius: 50%;
         transform: translate(-50%);
-
-        &:hover{
-            background-color: rgba(248, 149, 32, 1);
-        }
     }
 
     & h2.title{

@@ -47,7 +47,7 @@ export default function CarouselReviews() {
             <div className="col-lg-8 offset-lg-2 py-5">
                 <div className="text-center mb-4">
                     <img
-                        src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        src={`${process.env.PUBLIC_URL}/images/rounded-logo.png`}
                         alt="logo" className="mb-4"/>
                 </div>
 
