@@ -4,8 +4,30 @@ import {Link} from "react-router-dom";
 import CustomLink from "../components/CustomLink";
 import HeaderMovingLines from "../components/HeaderMovingLines";
 import PageHeader from "../components/PageHeader";
+import {useState} from "react";
 
 export default function AboutUs() {
+
+    const [openModal, setOpenModal] = useState(null);
+
+    const closeModal = () => setOpenModal(null);
+
+    const modalContent = {
+        bran: {
+            title: "Бранкица Нешиќ",
+            description: "Аеробик, пилатес,BYOGA, програма MEUNA",
+        },
+        brani: {
+            title: "Бранимир Нешиќ",
+            description: "Аеробик, Power Yoga, кружен тренинг, персонален тренер",
+        },
+        slobo: {
+            title: "Слободан Трајковски",
+            description: "MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA",
+        },
+    };
+
+
     return (
         <>
             <div className="container aboutUs">
@@ -57,7 +79,10 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранкица Нешиќ</h3>
                         <p>аеробик, пилатес,BYOGA, програма MEUNA</p>
-                        <CustomLink to="/" text="Прочитајте повеќе"/>
+                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                            e.preventDefault();
+                            setOpenModal("bran");
+                        }}/>
                     </div>
                     <div className="col-lg-4 text-white text-center my-5 mt-md-5">
                         <img
@@ -65,7 +90,10 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранимир Нешиќ</h3>
                         <p>аеробик, Power Yoga, кружен тренинг, персонален тренер</p>
-                        <CustomLink to="/" text="Прочитајте повеќе"/>
+                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                            e.preventDefault();
+                            setOpenModal("brani");
+                        }}/>
                     </div>
                     <div className="col-lg-4 text-white text-center">
                         <img
@@ -73,9 +101,27 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Слободан Трајковски</h3>
                         <p>MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA</p>
-                        <CustomLink to="/" text="Прочитајте повеќе"/>
+                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                            e.preventDefault();
+                            setOpenModal("slobo");
+                        }}/>
                     </div>
                 </div>
+
+                {openModal && (
+                    <div className="modalBackdrop" onClick={closeModal}>
+                        <div
+                            className="modalContent"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button className="modalCloseBtn" onClick={closeModal}>
+                                &times;
+                            </button>
+                            <h2>{modalContent[openModal].title}</h2>
+                            <p>{modalContent[openModal].description}</p>
+                        </div>
+                    </div>
+                )}
 
                 <div className="row video">
                     <div className="col-lg-12">

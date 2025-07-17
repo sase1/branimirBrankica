@@ -12,7 +12,7 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
-                    <ul className="navbar-nav ms-auto py-2 pe-4 cst">
+                    <ul className="navbar-nav justify-content-center w-auto m-auto py-2 pe-4 cst">
                         <li className="nav-item">
                             <Link className="nav-link" to="/танц">Танц</Link>
                         </li>
@@ -23,7 +23,8 @@ export default function Navbar() {
                             <Link className="nav-link" to="/за-нас">За Нас</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" target="_blank" to="https://online.branimirbrankica.mk/login">Онлајн</Link>
+                            <Link className="nav-link" target="_blank"
+                                  to="https://online.branimirbrankica.mk/login">Онлајн</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Новости</Link>
@@ -34,10 +35,12 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/контакт">Контакт</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="tel:+38971968582">+389 71 968 582</Link>
-                        </li>
+
                     </ul>
+                    <div className="mobile pe-4">
+                        <Link className="nav-link" to="tel:+38971968582"> <img className="icon me-1" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
+                            71 968 582</Link>
+                    </div>
                 </div>
             </div>
         </nav>

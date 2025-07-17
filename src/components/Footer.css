@@ -29,7 +29,7 @@
     }
 }
 
-.footerNavbarLinks ul li a {
+ .footerNavbarLinks li a {
     position: relative;
     color: white;
     text-decoration: none;
@@ -53,5 +53,10 @@
 .aboveFooter{
     & a:hover{
         color: rgba(248, 149, 32, 1)!important;
+    }
+
+    & img.icon{
+        width: 23px;
+        vertical-align: middle;
     }
 }

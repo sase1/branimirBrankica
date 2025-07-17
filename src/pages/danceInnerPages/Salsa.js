@@ -30,7 +30,7 @@ export default function Salsa() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без Правила / Танц без правила'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Танц без Правила / Танц без правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container noRulesDance">
                 <div className="row content">
@@ -52,7 +52,7 @@ export default function Salsa() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со правила'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
