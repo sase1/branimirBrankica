@@ -12,7 +12,7 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
-                    <ul className="navbar-nav ms-auto py-2 pe-4">
+                    <ul className="navbar-nav ms-auto py-2 pe-4 cst">
                         <li className="nav-item">
                             <Link className="nav-link" to="/танц">Танц</Link>
                         </li>

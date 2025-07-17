@@ -6,6 +6,7 @@ import DanceWorkout from "../components/DanceWorkout";
 import Counter from "../components/Counter";
 import "./Home.css"
 import CustomLink from "../components/CustomLink";
+import HomeCarouselItems from "../components/HomeCarouselItems";
 
 export default function Home() {
 
@@ -79,12 +80,12 @@ export default function Home() {
                 <div className="row danceStyles">
                     <div className="col-lg-12 col-xl-10 offset-xl-1 text-white">
                         <div
-                            className="d-flex flex-column flex-lg-row text-center  align-items-center justify-content-between">
+                            className="d-flex flex-column flex-lg-row text-center align-items-lg-start  align-items-center justify-content-between">
                             <h2 className="title">Стилови на танц</h2>
                             <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
-                            <CustomLink to="/танц" text="Дознајте Повеќе"/>
+                            <CustomLink to="/танц" text="Дознајте Повеќе" className="mt-md-0"/>
                         </div>
                     </div>
                 </div>
@@ -102,7 +103,7 @@ export default function Home() {
                         <CustomLink to="/вежбање" text="Дознајте Повеќе"/>
                     </div>
 
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 d-none d-lg-block">
                         <div className="image-grid">
                             <div className="item item1">
                                 <Link to="/вежбање/аеробик">
@@ -186,6 +187,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    <div className="col-10 offset-1 d-block d-lg-none">
+                        <HomeCarouselItems/>
+                    </div>
+
 
                 </div>
                 <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80"/>
