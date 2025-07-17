@@ -185,6 +185,46 @@ export default function Home() {
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
+                            <div className="item item9">
+                                <Link to="/вежбање/аеробик">
+                                    <img
+                                        src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Аеробик <img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item10">
+                                <Link to="/вежбање/аеробик">
+                                    <img
+                                        src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Аеробик <img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item11">
+                                <Link to="/вежбање/аеробик">
+                                    <img
+                                        src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Аеробик <img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item12">
+                                <Link to="/вежбање/аеробик">
+                                    <img
+                                        src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Аеробик <img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="col-10 offset-1 d-block d-lg-none">

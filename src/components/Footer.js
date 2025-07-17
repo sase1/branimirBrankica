@@ -4,7 +4,7 @@ import "./Footer.css"
 export default function Footer() {
     return (
         <div className="row footer">
-            <div className="col-lg-8 offset-lg-2 my-5">
+            <div className="col-lg-8 offset-lg-2 my-5 aboveFooter">
                 <div className="row">
                     <div className="col-lg-4 align-items-center justify-content-center d-flex">
                         <img src={`${process.env.PUBLIC_URL}/images/footer-logo.png`} alt="Site Logo" className="img-fluid footerLogo"/>
