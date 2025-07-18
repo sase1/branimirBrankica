@@ -22,9 +22,11 @@
 .image-grid {
     margin-top: 70px;
     display: grid;
-    gap: 10px;
+    gap: 5px;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 300px;
+    background: linear-gradient(90deg, #FB8B01, #76FFA9);
+    padding: 5px;
     grid-template-areas:
         "item1 item1 item2 item2 item3 item3"
         "item1 item1 item4 item5 item3 item3"
@@ -36,6 +38,7 @@
 .item {
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .item img {

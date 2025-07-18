@@ -22,8 +22,9 @@ export default function Navbar() {
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span className="navbar-toggler-icon"></span>
+                    <span></span>
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
                     <ul className="navbar-nav justify-content-center py-2 pe-4 cst">

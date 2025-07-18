@@ -83,7 +83,6 @@ export default function Gallery() {
                 ))}
             </div>
 
-            {/* Pagination */}
             <div className="d-flex justify-content-center align-items-center mt-4 mb-5">
                 <button
                     className="btn btn-outline-light me-3"
@@ -104,7 +103,6 @@ export default function Gallery() {
                 </button>
             </div>
 
-            {/* Lightbox */}
             {lightboxIndex !== null && (
                 <div
                     className="lightbox-overlay"

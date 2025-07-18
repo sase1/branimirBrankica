@@ -29,7 +29,7 @@ ul li {
     left: 50%;
     transform: translateX(-50%);
     height: 3px;
-    width: 95%;
+    width: 96%;
     background: linear-gradient(135deg, #F89520, #2DA549);
 }
 
@@ -59,7 +59,6 @@ ul li {
 }
 
 
-/* Fullscreen mobile nav when open */
 @media (max-width: 1200px) {
     #mynavbar ul {
         width: inherit;
@@ -140,3 +139,58 @@ ul li {
     }
 }
 
+
+.navbar-toggler:focus{
+    outline: 0;
+}
+
+.navbar-toggler {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    border: none!important;
+    background: transparent;
+    outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after,
+.navbar-toggler span {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler::before {
+    top: 0;
+}
+
+.navbar-toggler span {
+    top: 10px;
+}
+
+.navbar-toggler::after {
+    top: 20px;
+}
+
+.navbar-toggler:not(.collapsed)::before {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.navbar-toggler:not(.collapsed)::after {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+.navbar-toggler:not(.collapsed) span {
+    opacity: 0;
+}
