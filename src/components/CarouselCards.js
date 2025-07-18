@@ -13,7 +13,7 @@ export default function ({ cards = [] }) {
     return (
         <Carousel responsive={responsive} infinite autoPlay>
             {cards.map(({ id, title, image, link ="/" }) => (
-                <div key={id} className="mx-2 cardsContent">
+                <div key={id} className="mx-2 cardsContent mb-5">
                     <Link to={link} className={"text-decoration-none text-white"}>
                         <img
                             src={image}

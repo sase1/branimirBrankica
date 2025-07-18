@@ -8,6 +8,11 @@
     }
 }
 
+.content{
+    margin-top: 150px!important;
+    margin-bottom: 100px!important;
+}
+
 .imageContent{
     background-position: center;
     background-repeat: no-repeat;

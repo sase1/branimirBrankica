@@ -48,13 +48,11 @@ export default function Workout() {
             </div>
             <CarouselCards cards={danceCards}/>
             <div className="container my-5">
-                <div className="row">
                     <ContactForm title="Персонални часови"
                                  description1="Заинтересирани сте за часови со персонален инструктор?"
                                  description2="Сакате целосно индивидуално внимание или приватност?&nbsp; Јавете
                                  ни се или напишете ни порака и ќе ви одговориме во најбрз можен рок."/>
                 </div>
-            </div>
         </>
     );
 }

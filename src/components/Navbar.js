@@ -1,9 +1,23 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import './Navbar.css';
+import {useEffect} from "react";
 
 export default function Navbar() {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        const collapseEl = document.getElementById("mynavbar");
+        const toggler = document.querySelector(".navbar-toggler");
+
+        if (collapseEl?.classList.contains("show")) {
+            collapseEl.classList.remove("show");
+            toggler?.setAttribute("aria-expanded", "false");
+        }
+    }, [location]);
+
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks position-relative">
+        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
@@ -12,7 +26,7 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
-                    <ul className="navbar-nav justify-content-center w-auto m-auto py-2 pe-4 cst">
+                    <ul className="navbar-nav justify-content-center py-2 pe-4 cst">
                         <li className="nav-item">
                             <Link className="nav-link" to="/танц">Танц</Link>
                         </li>
