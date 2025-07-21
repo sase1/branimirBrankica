@@ -80,3 +80,9 @@
     transform: translateY(0);
     pointer-events: auto;
 }
+
+.white-insta-logo{
+    width: 30px!important;
+    height: 30px!important;
+    margin-right: 6px;
+}
