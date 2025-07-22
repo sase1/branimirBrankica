@@ -7,7 +7,6 @@ export default function CorrectionalGymnastic() {
     return (
         <>
             <PageHeader title="Корективна Гимнастика"/>
-
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
@@ -20,9 +19,11 @@ export default function CorrectionalGymnastic() {
                             на телото.</p>
                     </div>
                 </div>
-
+            </div>
+            <div className="container-fluid">
                 <HeaderMovingLines text={'Корективна гимнастика /'} strokeColor="#FB8B01"/>
-
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -42,7 +43,6 @@ export default function CorrectionalGymnastic() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-
             </div>
             <Schedule/>
         </>

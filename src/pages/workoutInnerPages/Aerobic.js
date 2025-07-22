@@ -19,7 +19,11 @@ export default function Aerobic() {
                             придобивки.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Kick Box Aerobic /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Kick Box Aerobic / Kick Box Aerobic /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -40,7 +44,11 @@ export default function Aerobic() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Ultimate Bag Workout /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Ultimate Bag Workout / Ultimate Bag Workout /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -61,7 +69,11 @@ export default function Aerobic() {
                             Овој формат е идеален за оние што сакаат моќен тренинг со јасна цел и резултат.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Step Aerobic /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Step Aerobic / Step Aerobic /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -82,7 +94,11 @@ export default function Aerobic() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Total Body Workout /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Total Body Workout / Total Body Workout /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -103,7 +119,12 @@ export default function Aerobic() {
                             целосен фитнес ефект. Погоден е и за почетници и за поискусни вежбачи.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Low Impact Aerobic /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Low Impact Aerobic / Low Impact Aerobic /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
+
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}

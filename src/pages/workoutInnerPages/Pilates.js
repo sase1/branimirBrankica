@@ -18,7 +18,11 @@ export default function Pilates() {
                             урамнотежено тело со подобрена координација и издржливост.</p>
                     </div>
                 </div>
+            </div>
+            <div className="container-fluid">
                 <HeaderMovingLines text={'Cardiobarre Пилатес /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -40,7 +44,11 @@ export default function Pilates() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Мат Пилатес /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Мат Пилатес / Мат Пилатес /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -62,7 +70,11 @@ export default function Pilates() {
                             подобрување на држењето и враќање на балансот во телото.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Fitball Пилатес /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Fitball Пилатес / Fitball Пилатес /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -84,7 +96,11 @@ export default function Pilates() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Bosu Пилатес /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Bosu Пилатес / Bosu Пилатес /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img

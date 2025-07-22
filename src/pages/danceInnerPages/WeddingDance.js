@@ -20,7 +20,7 @@ export default function WeddingDance() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Свадбен танц /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Свадбен танц / Свадбен танц /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">

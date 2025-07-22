@@ -18,7 +18,11 @@ export default function Zumba() {
                             и духот.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Зумба Toning /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Зумба Toning / Зумба Toning /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -38,7 +42,11 @@ export default function Zumba() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Зумба Fitness /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Зумба Fitness / Зумба Fitness /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -59,7 +67,11 @@ export default function Zumba() {
                             расположението.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Зумба Step /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Зумба Step / Зумба Step /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}

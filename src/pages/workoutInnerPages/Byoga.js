@@ -18,7 +18,11 @@ export default function Byoga() {
                             здравје, свесност и лична рамнотежа.</p>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Hatha Yoga /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Hatha Yoga / Hatha Yoga /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -38,7 +42,11 @@ export default function Byoga() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Ashtanga Yoga /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Ashtanga Yoga / Ashtanga Yoga /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -58,7 +66,11 @@ export default function Byoga() {
                             преку редовна, активна јога рутина.</p>
                     </div>
                 </div>
+            </div>
+            <div className="container-fluid">
                 <HeaderMovingLines text={'Vinyasa Flow Yoga /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -77,7 +89,11 @@ export default function Byoga() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Power Yoga /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Power Yoga / Power Yoga /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
