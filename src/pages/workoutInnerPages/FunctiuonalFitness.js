@@ -19,7 +19,11 @@ export default function FunctiuonalFitness() {
                             подготвено за живот.</p>
                     </div>
                 </div>
+            </div>
+            <div className="container-fluid" >
                 <HeaderMovingLines text={'CrossFit / CrossFit /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
@@ -39,7 +43,11 @@ export default function FunctiuonalFitness() {
                             alt="dance" className="img-fluid"/>
                     </div>
                 </div>
+            </div>
+            <div className="container-fluid">
                 <HeaderMovingLines text={'BodySculpt / BodySculpt /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-5 align-content-center text-md-center">
                         <img
@@ -59,7 +67,11 @@ export default function FunctiuonalFitness() {
                             сакаат видливи резултати, но со контролирано темпо и акцент на прецизност.</p>
                     </div>
                 </div>
+            </div>
+            <div className="container-fluid">
                 <HeaderMovingLines text={'Кружен тренинг / Кружен тренинг /'} strokeColor="#FB8B01"/>
+            </div>
+            <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}

@@ -13,15 +13,15 @@ export default function Home() {
     const danceCards = [
         {
             id: 1,
-            title: "Салса",
+            title: "Латино Танци",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
-            link: "/танц/салса"
+            link: "/танц/латино-танци"
         },
         {
             id: 2,
-            title: "Танго",
+            title: "Свадбен танц",
             image: "https://cdn.britannica.com/68/92668-050-1BED9B3B/Burundians-dance-Bujumbura.jpg",
-            link: "/танц/танго"
+            link: "/танц/свадбен-танц"
         },
         {
             id: 3,
@@ -31,15 +31,9 @@ export default function Home() {
         },
         {
             id: 4,
-            title: "Балет",
+            title: "Друштвени танци",
             image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
-            link: "/танц/балет"
-        },
-        {
-            id: 5,
-            title: "Џез",
-            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
-            link: "/танц/џез"
+            link: "/танц/друштвени-танци"
         }
     ];
 
@@ -100,13 +94,13 @@ export default function Home() {
                         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
-                        <CustomLink to="/вежбање" text="Дознајте Повеќе"/>
+                        <CustomLink to="/фит-универзум" text="Дознајте Повеќе"/>
                     </div>
 
                     <div className="col-lg-12 d-none d-lg-block">
                         <div className="image-grid">
                             <div className="item item1">
-                                <Link to="/вежбање/аеробик">
+                                <Link to="/фит-универзум/аеробик">
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
@@ -116,37 +110,37 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item2">
-                                <Link to="/вежбање/кружен-тренинг">
+                                <Link to="/фит-универзум/зумба">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Кружен Тренинг<img
+                                    <div className="overlay">Зумба<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item3">
-                                <Link to="/вежбање/персонален-тренинг">
+                                <Link to="/фит-универзум/б-јога">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Персонален Тренинг<img
+                                    <div className="overlay">БЈога<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item4">
-                                <Link to="/вежбање/јога">
+                                <Link to="/фит-универзум/функционален-фитнес">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Јога<img
+                                    <div className="overlay">Функционален Фитнес<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item5">
-                                <Link to="/вежбање/корективна-гимнастика">
+                                <Link to="/фит-универзум/корективна-гимнастика">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s"
                                         alt="workouit-image"/>
@@ -156,7 +150,7 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item6">
-                                <Link to="/вежбање/пилатес">
+                                <Link to="/фит-универзум/пилатес">
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt=""/>
@@ -166,11 +160,11 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item7">
-                                <Link to="/вежбање/меуна">
+                                <Link to="/фит-универзум/функционален-фитнес">
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Меуна<img
+                                    <div className="overlay">CrossFit<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
