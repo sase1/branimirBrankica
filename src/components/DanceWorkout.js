@@ -40,7 +40,7 @@ export default function DanceWorkout() {
                     </Link>
                 </div>
                 <div className="col-lg-6">
-                    <Link to="/вежбање">
+                    <Link to="/фит-универзум">
                         <div className="workout" style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
                             <h1 className="text-white">Вежбање</h1>
                         </div>

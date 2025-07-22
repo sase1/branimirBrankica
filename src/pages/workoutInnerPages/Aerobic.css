@@ -5,12 +5,12 @@
 
     & p{
         font-size: 1.2rem;
+        font-weight: 300;
     }
 }
 
 .content{
-    margin-top: 150px!important;
-    margin-bottom: 100px!important;
+    margin-bottom: 50px!important;
 }
 
 .imageContent{

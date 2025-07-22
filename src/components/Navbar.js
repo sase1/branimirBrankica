@@ -22,7 +22,8 @@ export default function Navbar() {
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
                 </Link>
-                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar">
                     <span className="navbar-toggler-icon"></span>
                     <span></span>
                 </button>
@@ -32,7 +33,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/танц">Танц</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/вежбање">Вежбање</Link>
+                            <Link className="nav-link" to="/фит-универзум">ФитУниверзум</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/за-нас">За Нас</Link>
@@ -53,7 +54,8 @@ export default function Navbar() {
 
                     </ul>
                     <div className="mobile pe-4">
-                        <Link className="nav-link" to="tel:+38971968582"> <img className="icon me-1" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
+                        <Link className="nav-link" to="tel:+38971968582"> <img className="icon me-1" alt="logo"
+                                                                               src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
                             71 968 582</Link>
                     </div>
                 </div>

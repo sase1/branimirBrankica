@@ -9,31 +9,37 @@ export default function Workout() {
             id: 1,
             title: "Аеробик",
             image: "https://explosivewhey.com/cdn/shop/articles/best-workout-routine-for-gym-beginners-135325.png?v=1738755379&width=2048",
-            link: "/вежбање/аеробик"
+            link: "/фит-универзум/аеробик"
         },
         {
             id: 2,
             title: "Корективна Гимнастика",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/вежбање/корективна-гимнастика"
+            link: "/фит-универзум/корективна-гимнастика"
         },
         {
             id: 3,
-            title: "Персонален Тренинг",
+            title: "Пилатес",
             image: "https://www.gymreapers.com/cdn/shop/articles/header-image-01_Cable-chest-workout---maximizing-your-muscle-growth.jpg?v=1721671171&width=1024",
-            link: "/вежбање/персонален-тренинг"
+            link: "/фит-универзум/пилатес"
         },
         {
             id: 4,
             title: "Зумба",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/вежбање/зумба"
+            link: "/фит-универзум/зумба"
         },
         {
             id: 5,
-            title: "Јога",
+            title: "BYoga",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
-            link: "/вежбање/јога"
+            link: "/фит-универзум/б-јога"
+        },
+        {
+            id: 6,
+            title: "Функционален Фитнес",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/функционален-фитнес"
         }
     ];
 

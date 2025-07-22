@@ -7,15 +7,15 @@ export default function Dance() {
     const danceCards = [
         {
             id: 1,
-            title: "Салса",
+            title: "Латино Танци",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
-            link: "/танц/салса"
+            link: "/танц/латино-танци"
         },
         {
             id: 2,
-            title: "Танго",
+            title: "Свадбен танц",
             image: "https://cdn.britannica.com/68/92668-050-1BED9B3B/Burundians-dance-Bujumbura.jpg",
-            link: "/танц/танго"
+            link: "/танц/свадбен-танц"
         },
         {
             id: 3,
@@ -25,15 +25,9 @@ export default function Dance() {
         },
         {
             id: 4,
-            title: "Балет",
+            title: "Друштвени танци",
             image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
-            link: "/танц/балет"
-        },
-        {
-            id: 5,
-            title: "Џез",
-            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
-            link: "/танц/џез"
+            link: "/танц/друштвени-танци"
         }
     ];
 
