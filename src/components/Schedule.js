@@ -1,6 +1,7 @@
 import React from "react";
 import "./Schedule.css"
 import ContactForm from "./ContactForm";
+import  EditableTable from "./EditableTable";
 
 export default function Schedule() {
     return (
@@ -56,6 +57,7 @@ export default function Schedule() {
 
                         </tbody>
                     </table>
+                        {/*<EditableTable sheetName="Brance" />*/}
                 </div>
             </div>
         </div>

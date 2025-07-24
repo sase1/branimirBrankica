@@ -1,35 +1,42 @@
 import "./HomeCaroselItems.css"
+import {Link} from "react-router-dom";
 
 const carouselItems = [
     {
         img: "https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg",
-        link: "https://example.com/page1",
-        alt: "First slide"
+        link: "/фит-универзум/функционален-фитнес?scrollToTitleRound=true",
+        alt: "First slide",
+        text: "Кружен тренинг"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s",
         link: "https://example.com/page2",
-        alt: "Second slide"
+        alt: "Second slide",
+        text: "Аеробик"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s",
-        link: "https://example.com/page3",
-        alt: "Third slide"
+        link: "/фит-универзум/функционален-фитнес?scrollToTitle=true",
+        alt: "Third slide",
+        text: "CrossFit"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s",
         link: "https://example.com/page3",
-        alt: "Third slide"
+        alt: "Third slide",
+        text: "Lorem"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s",
         link: "https://example.com/page3",
-        alt: "Third slide"
+        alt: "Third slide",
+        text: "Ipsum"
     },
     {
         img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
         link: "https://example.com/page3",
-        alt: "Third slide"
+        alt: "Third slide",
+        text: "Lorem Ipsum"
     }
 ];
 
@@ -55,20 +62,20 @@ export default function HomeCarouselItems() {
             </div>
 
             <div className="carousel-inner mobile-slides">
-                {carouselItems.map(({ img, link, alt }, idx) => (
+                {carouselItems.map(({ img, link, alt, text }, idx) => (
                     <div
                         key={idx}
                         className={`carousel-item ${idx === 0 ? "active" : ""}`}
                     >
-                        <a href={link} target="_blank" rel="noopener noreferrer">
+                        <Link to={link} rel="noopener noreferrer">
                             <img
                                 src={img}
                                 className="d-block w-100"
                                 alt={alt}
                                 style={{ cursor: "pointer" }}
                             />
-                            <h3>Text</h3>
-                        </a>
+                            <h3>{text}</h3>
+                        </Link>
                     </div>
                 ))}
             </div>

@@ -2,8 +2,48 @@ import PageHeader from "../../components/PageHeader";
 import Schedule from "../../components/Schedule";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
+import {useEffect, useRef} from "react";
+import {useLocation, useNavigate} from "react-router-dom";
 
 export default function FunctiuonalFitness() {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const titleRef = useRef(null);
+    const titleRoundRef = useRef(null);
+
+
+    // useEffect(() => {
+    //     const params = new URLSearchParams(location.search);
+    //     const shouldScroll = params.get("scrollToTitle");
+    //
+    //     if (shouldScroll && titleRef.current) {
+    //         titleRef.current.scrollIntoView({ behavior: "smooth" });
+    //
+    //         const cleanURL = location.pathname;
+    //         navigate(cleanURL, { replace: true });
+    //     }
+    // }, [location.search, location.pathname, navigate]);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const scrollToTitle = params.get("scrollToTitle");
+        const scrollToTitleRound = params.get("scrollToTitleRound");
+
+        if (scrollToTitle && titleRef.current) {
+            titleRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+
+        if (scrollToTitleRound && titleRoundRef.current) {
+            titleRoundRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+
+        if (scrollToTitle || scrollToTitleRound) {
+            const cleanURL = location.pathname;
+            navigate(cleanURL, { replace: true });
+        }
+    }, [location.search, location.pathname, navigate]);
+
     return (
         <>
             <PageHeader title="Функционален Фитнес"/>
@@ -20,7 +60,7 @@ export default function FunctiuonalFitness() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid" >
+            <div className="container-fluid" ref={titleRef}>
                 <HeaderMovingLines text={'CrossFit / CrossFit /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
@@ -28,7 +68,7 @@ export default function FunctiuonalFitness() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">CrossFit</h2>
+                        <h2 className="my-4" >CrossFit</h2>
                         <p>CrossFit е високоинтензивен функционален тренинг кој комбинира елементи од тежинско кревање,
                             кардио, гимнастика и вежби со телесна тежина. Секој тренинг е различен и се изведува во
                             кратки, интензивни интервали (WOD – Workout of the Day).
@@ -68,7 +108,7 @@ export default function FunctiuonalFitness() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid" ref={titleRoundRef}>
                 <HeaderMovingLines text={'Кружен тренинг / Кружен тренинг /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">

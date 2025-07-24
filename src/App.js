@@ -24,7 +24,7 @@ import SocialDances from "./pages/danceInnerPages/SocialDances";
 function App() {
     return (
         <Router>
-            <ScrollToTop /> {/* This must be inside Router */}
+            <ScrollToTop />
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />

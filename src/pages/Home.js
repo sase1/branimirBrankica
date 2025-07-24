@@ -160,7 +160,7 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item7">
-                                <Link to="/фит-универзум/функционален-фитнес">
+                                <Link to="/фит-универзум/функционален-фитнес?scrollToTitle=true">
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
@@ -170,11 +170,11 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item8">
-                                <Link to="/вежбање/team-building">
+                                <Link to="/фит-универзум/функционален-фитнес?scrollToTitleRound=true">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nKyX2g7nTDxN0tk4J_i2xN5ZEFyt00vUlQ&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Team Building<img
+                                    <div className="overlay">Кружен Тренинг<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
@@ -221,7 +221,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-10 offset-1 d-block d-lg-none">
+                    <div className="col-12 d-block d-lg-none mb-5">
                         <HomeCarouselItems/>
                     </div>
 
