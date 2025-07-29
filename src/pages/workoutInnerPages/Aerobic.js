@@ -71,7 +71,7 @@ export default function Aerobic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Step Aerobic / Step Aerobic /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Step Aerobic / Step Aerobic / Step Aerobic /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">

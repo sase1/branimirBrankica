@@ -9,7 +9,7 @@ const responsive = {
     mobile: {breakpoint: {max: 576, min: 0}, items: 1},
 };
 
-export default function ({cards = []}) {
+export default function CarouselCards ({cards = []}) {
     return (
         <Carousel responsive={responsive} infinite autoPlay>
             {cards.map(({id, title, image, link = "/"}) => (
@@ -19,7 +19,7 @@ export default function ({cards = []}) {
                             src={image}
                             className="card-img-top" alt={`Card ${id}`}/>
                         <h3 className="card-title d-flex align-items-center">{title}
-                            <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow" alt="card-image"/>
                         </h3>
                     </Link>
                 </div>

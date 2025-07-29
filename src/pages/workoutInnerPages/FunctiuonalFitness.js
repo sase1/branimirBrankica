@@ -61,7 +61,7 @@ export default function FunctiuonalFitness() {
                 </div>
             </div>
             <div className="container-fluid" ref={titleRef}>
-                <HeaderMovingLines text={'CrossFit / CrossFit /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'CrossFit / CrossFit / CrossFit /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -85,7 +85,7 @@ export default function FunctiuonalFitness() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'BodySculpt / BodySculpt /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'BodySculpt / BodySculpt / BodySculpt /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">

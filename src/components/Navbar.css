@@ -194,3 +194,55 @@ ul li {
 .navbar-toggler:not(.collapsed) span {
     opacity: 0;
 }
+
+.mega-dropdown:hover .mega-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    background-color: #111111!important;
+    padding: 4rem 3rem!important;
+    z-index: 9999;
+
+    @media screen and (max-width: 768px){
+        padding: 1rem!important;
+    }
+}
+
+/*.mega-dropdown.open .mega-menu {*/
+/*    display: block;*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+
+.mega-menu .row {
+    display: flex;
+    gap: 2rem;
+}
+
+.mega-menu .dropdown-item {
+    display: block;
+    color: white;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 400;
+    @media screen and (max-width: 768px){
+        font-size: 1.2rem!important;
+    }
+
+    &::after{
+        content: none!important;
+    }
+}
+
+.mega-menu .dropdown-item:hover {
+    color: #FFA500;
+    background: transparent;
+}

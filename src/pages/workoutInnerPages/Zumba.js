@@ -69,7 +69,7 @@ export default function Zumba() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Step / Зумба Step /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Зумба Step / Зумба Step / Зумба Step /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">

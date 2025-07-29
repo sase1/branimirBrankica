@@ -21,7 +21,7 @@ export default function CorrectionalGymnastic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Корективна гимнастика /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Корективна гимнастика / Корективна гимнастика /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">

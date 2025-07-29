@@ -20,7 +20,7 @@ export default function Pilates() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Cardiobarre Пилатес /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Cardiobarre Пилатес / Cardiobarre Пилатес /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
