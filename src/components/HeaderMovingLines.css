@@ -11,7 +11,7 @@
 
 .marquee-content {
     display: flex;
-    animation: marquee 11s linear infinite;
+    animation: marquee 22s linear infinite;
     width: max-content;
 }
 

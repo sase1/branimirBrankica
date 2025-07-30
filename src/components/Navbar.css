@@ -203,9 +203,9 @@ ul li {
 
 .mega-menu {
     position: absolute;
-    left: 0;
+    left: 2%;
     top: 72px;
-    width: 100%;
+    width: 96%;
     background-color: #111111!important;
     padding: 4rem 3rem!important;
     z-index: 9999;

@@ -20,10 +20,39 @@ export default function DanceWorkout() {
     const [danceIndex, setDanceIndex] = useState(0);
     const [workoutIndex, setWorkoutIndex] = useState(0);
 
+    const [danceFade, setDanceFade] = useState(true);
+    const [workoutFade, setWorkoutFade] = useState(true);
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setDanceFade(false);
+    //         setWorkoutFade(false);
+    //
+    //         setTimeout(() => {
+    //             setDanceIndex(prev => (prev + 1) % danceImages.length);
+    //             setWorkoutIndex(prev => (prev + 1) % workoutImages.length);
+    //             setDanceFade(true);
+    //             setWorkoutFade(true);
+    //         }, 300); // quick hide before image change
+    //     }, 4000);
+    //
+    //     return () => clearInterval(interval);
+    // }, []);
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setDanceIndex(prev => (prev + 1) % danceImages.length);
-            setWorkoutIndex(prev => (prev + 1) % workoutImages.length);
+            setDanceFade(false);
+            setWorkoutFade(false);
+
+            setTimeout(() => {
+                setDanceIndex(prev => (prev + 1) % danceImages.length);
+                setDanceFade(true);
+            }, 400);
+
+            setTimeout(() => {
+                setWorkoutIndex(prev => (prev + 1) % workoutImages.length);
+                setWorkoutFade(true);
+            }, 600);
         }, 4000);
 
         return () => clearInterval(interval);
@@ -34,14 +63,16 @@ export default function DanceWorkout() {
             <div className="row">
                 <div className="col-lg-6">
                     <Link to="/танц">
-                        <div className="dance"  style={{ backgroundImage: `url(${danceImages[danceIndex]})` }}>
+                        <div   className={`dance ${danceFade ? 'fade-in' : 'fade-out'}`}
+                               style={{ backgroundImage: `url(${danceImages[danceIndex]})` }}>
                             <h1 className="text-white">Танц</h1>
                         </div>
                     </Link>
                 </div>
                 <div className="col-lg-6">
                     <Link to="/фит-универзум">
-                        <div className="workout" style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
+                        <div  className={`workout ${workoutFade ? 'fade-in' : 'fade-out'}`}
+                              style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
                             <h1 className="text-white">Вежбање</h1>
                         </div>
                     </Link>

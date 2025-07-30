@@ -1,7 +1,7 @@
 import PageHeader from "../../components/PageHeader";
-import Schedule from "../../components/Schedule";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
+import ContactForm from "../../components/ContactForm";
 
 export default function Zumba() {
     return (
@@ -19,32 +19,9 @@ export default function Zumba() {
                     </div>
                 </div>
             </div>
+
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Toning / Зумба Toning /'} strokeColor="#FB8B01"/>
-            </div>
-            <div className="container">
-                <div className="row content">
-                    <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
-                             alt="logo"/>
-                        <h2 className="my-4">Зумба Toning</h2>
-                        <p>Зумба Toning е комбинација од забавните зумба движења и тренинг со лесни тегови (toning
-                            sticks), со цел оформување и зајакнување на мускулите. Додека го следите ритамот на латино
-                            музиката, истовремено работите на мускулен тонус, стабилност и координација.
-                        </p>
-                        <p> Тренингот е насочен кон јадрото, рацете и долниот дел од телото.
-                            Погоден е за оние што сакаат да танцуваат, а во исто време да изградат посилно и пооформено
-                            тело.</p>
-                    </div>
-                    <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
-                        <img
-                            src={`${process.env.PUBLIC_URL}/images/workout/brankica.png`}
-                            alt="dance" className="img-fluid"/>
-                    </div>
-                </div>
-            </div>
-            <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Fitness / Зумба Fitness /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Зумба Fitness / Зумба Fitness /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -68,8 +45,34 @@ export default function Zumba() {
                     </div>
                 </div>
             </div>
+
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Step / Зумба Step / Зумба Step /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Зумба Toning / Зумба Toning /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container">
+                <div className="row content">
+                    <div className="col-lg-6 text-white text-center text-lg-start mb-4">
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                             alt="logo"/>
+                        <h2 className="my-4">Зумба Toning</h2>
+                        <p>Зумба Toning е комбинација од забавните зумба движења и тренинг со лесни тегови (toning
+                            sticks), со цел оформување и зајакнување на мускулите. Додека го следите ритамот на латино
+                            музиката, истовремено работите на мускулен тонус, стабилност и координација.
+                        </p>
+                        <p> Тренингот е насочен кон јадрото, рацете и долниот дел од телото.
+                            Погоден е за оние што сакаат да танцуваат, а во исто време да изградат посилно и пооформено
+                            тело.</p>
+                    </div>
+                    <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/workout/brankica.png`}
+                            alt="dance" className="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Зумба Step / Зумба Step /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -93,7 +96,17 @@ export default function Zumba() {
                     </div>
                 </div>
             </div>
-            <Schedule/>
+
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
+            </div>
+
+            <div className="container">
+                <ContactForm title="Персонални тренинзи"
+                             description1="Заинтересирани сте за часови со персонален инструктор?"
+                             description2="Сакате целосно индивидуално внимание или приватност?&nbsp; Јавете
+                                 ни се или напишете ни порака и ќе ви одговориме во најбрз можен рок."/>
+            </div>
         </>
     )
 }

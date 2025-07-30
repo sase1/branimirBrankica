@@ -40,6 +40,24 @@ export default function Workout() {
             title: "Функционален Фитнес",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
             link: "/фит-универзум/функционален-фитнес"
+        },
+        {
+            id: 7,
+            title: "Pain Relief",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/функционален-фитнес"
+        },
+        {
+            id: 8,
+            title: "Персонални Тренинзи",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/функционален-фитнес"
+        },
+        {
+            id: 9,
+            title: "Reformer",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/функционален-фитнес"
         }
     ];
 
