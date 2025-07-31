@@ -240,9 +240,13 @@ ul li {
     &::after{
         content: none!important;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #FFA500;
+        background: transparent;
+    }
 }
 
-.mega-menu .dropdown-item:hover {
-    color: #FFA500;
-    background: transparent;
-}
+

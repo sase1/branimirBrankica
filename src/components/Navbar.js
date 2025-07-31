@@ -49,37 +49,32 @@ export default function Navbar() {
                                 <div className="row">
                                     <div className="col">
                                         <Link to="/фит-универзум/пилатес" className="dropdown-item">Пилатес</Link>
-                                        <Link to="/фит-универзум/reformer" className="dropdown-item">Reformer</Link>
-                                        <Link to="/фит-универзум/step-aerobic" className="dropdown-item">Step
-                                            Aerobic</Link>
+                                        <Link to="/фит-универзум/реформер" className="dropdown-item">Reformer</Link>
+                                        <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален фитнес</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/kickbox" className="dropdown-item">Kickbox
-                                            Aerobic</Link>
-                                        <Link to="/фит-универзум/total-body" className="dropdown-item">Total Body
-                                            Workout</Link>
+                                        <Link to="/фит-универзум/б-јога" className="dropdown-item">Б Јога
+                                        </Link>
+                                        <Link to="/фит-универзум/зумба" className="dropdown-item">Зумба</Link>
                                         <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
                                             Relief</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/zumba" className="dropdown-item">Zumba</Link>
-                                        <Link to="/фит-универзум/bfitteen" className="dropdown-item">BFiTeen</Link>
-                                        <Link to="/фит-универзум/корективна" className="dropdown-item">Корективна
+                                        <Link to="/фит-универзум/аеробик" className="dropdown-item">Аеробик</Link>
+                                        <Link to="/фит-универзум/bfit-teen" className="dropdown-item">B-Fit Teen</Link>
+                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика" className="dropdown-item">Превентивно Корективна
                                             гимнастика</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/ultimate-bag" className="dropdown-item">Ultimate
-                                            Bag
-                                            Workout</Link>
+                                        <Link to="/фит-универзум/ген-фит" className="dropdown-item">Ген Фит
+                                            </Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
-                                        <Link to="/фит-универзум/меуна" className="dropdown-item">Meuna</Link>
+                                        {/*<Link to="/фит-универзум/меуна" className="dropdown-item">Mеуна</Link>*/}
                                     </div>
-                                    <div className="col">
-                                        <Link to="/фит-универзум/yoga" className="dropdown-item">Yoga - BYoga</Link>
-                                        <Link to="/фит-универзум/персонални" className="dropdown-item">Персонални
-                                            тренинзи</Link>
-                                    </div>
+                                    {/*<div className="col">*/}
+
+                                    {/*</div>*/}
                                 </div>
                             </div>
                             {/*)}*/}
