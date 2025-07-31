@@ -12,7 +12,7 @@ import LatinoDances from "./pages/danceInnerPages/LatinoDances";
 import ScrollToTop from "./hooks/ScrollToTop";
 import Workout from "./pages/Workout";
 import Aerobic from "./pages/workoutInnerPages/Aerobic";
-import CorrectionalGymnastic from "./pages/workoutInnerPages/CorrectionalGymnastic";
+import GenFit from "./pages/workoutInnerPages/GenFit";
 import Pilates from "./pages/workoutInnerPages/Pilates";
 import Zumba from "./pages/workoutInnerPages/Zumba";
 import Byoga from "./pages/workoutInnerPages/Byoga";
@@ -20,6 +20,11 @@ import FunctiuonalFitness from "./pages/workoutInnerPages/FunctiuonalFitness";
 import HipHop from "./pages/danceInnerPages/HipHop";
 import WeddingDance from "./pages/danceInnerPages/WeddingDance";
 import SocialDances from "./pages/danceInnerPages/SocialDances";
+import Reformer from "./pages/workoutInnerPages/Reformer";
+import CorrectionalGymnastic from "./pages/workoutInnerPages/CorrectionalGymnastic";
+import PainRelief from "./pages/workoutInnerPages/PainRelief";
+import PersonalTraining from "./pages/workoutInnerPages/PersonalTraining";
+import BFitTeen from "./pages/workoutInnerPages/BFitTeen";
 
 function App() {
     return (
@@ -38,11 +43,16 @@ function App() {
                     <Route path="/танц/друштвени-танци" element={<SocialDances />} />
                     <Route path="/фит-универзум" element={<Workout />} />
                     <Route path="/фит-универзум/аеробик" element={<Aerobic />} />
-                    <Route path="/фит-универзум/корективна-гимнастика" element={<CorrectionalGymnastic />} />
+                    <Route path="/фит-универзум/ген-фит" element={<GenFit />} />
+                    <Route path="/фит-универзум/превентивно-корективна-гимнастика" element={<CorrectionalGymnastic />} />
+                    <Route path="/фит-универзум/pain-relief" element={<PainRelief />} />
+                    <Route path="/фит-универзум/персонални-тренинзи" element={<PersonalTraining />} />
+                    <Route path="/фит-универзум/bfit-teen" element={<BFitTeen />} />
                     <Route path="/фит-универзум/пилатес" element={<Pilates />} />
                     <Route path="/фит-универзум/зумба" element={<Zumba />} />
                     <Route path="/фит-универзум/б-јога" element={<Byoga />} />
                     <Route path="/фит-универзум/функционален-фитнес" element={<FunctiuonalFitness />} />
+                    <Route path="/фит-универзум/реформер" element={<Reformer />} />
 
                 </Route>
 

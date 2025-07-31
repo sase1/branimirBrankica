@@ -13,9 +13,9 @@ export default function Workout() {
         },
         {
             id: 2,
-            title: "Корективна Гимнастика",
+            title: "Gen Fit",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/фит-универзум/корективна-гимнастика"
+            link: "/фит-универзум/ген-фит"
         },
         {
             id: 3,
@@ -45,19 +45,31 @@ export default function Workout() {
             id: 7,
             title: "Pain Relief",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
-            link: "/фит-универзум/функционален-фитнес"
+            link: "/фит-универзум/pain-relief"
         },
         {
             id: 8,
             title: "Персонални Тренинзи",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
-            link: "/фит-универзум/функционален-фитнес"
+            link: "/фит-универзум/персонални-тренинзи"
         },
         {
             id: 9,
             title: "Reformer",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
-            link: "/фит-универзум/функционален-фитнес"
+            link: "/фит-универзум/реформер"
+        },
+        {
+            id: 10,
+            title: "Превентивно Корективна Гимнастика",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/превентивно-корективна-гимнастика"
+        },
+        {
+            id: 11,
+            title: "B-Feet Teen",
+            image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
+            link: "/фит-универзум/bfit-teen"
         }
     ];
 

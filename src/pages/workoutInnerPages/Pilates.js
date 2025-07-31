@@ -2,6 +2,7 @@ import PageHeader from "../../components/PageHeader";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import CustomLink from "../../components/CustomLink";
 
 export default function Pilates() {
     return (
@@ -149,6 +150,7 @@ export default function Pilates() {
                             подобрување на флексибилноста и држењето. Комбинацијата на овие уреди овозможува целосен,
                             прецизен и персонализиран пилатес тренинг за секое тело.
                         </p>
+                        <CustomLink to="/фит-универзум/реформер" text="Дознајте Повеќе"/>
                     </div>
                 </div>
             </div>
