@@ -1,17 +1,17 @@
-import Schedule from "../../components/Schedule";
 import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
+import ContactForm from "../../components/ContactForm";
 
 export default function SocialDances() {
     return (
         <>
-            <PageHeader title="Друштвени танци"/>
+            <PageHeader title="Social Dances"/>
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што се друштвени танци?</h1>
-                        <p className="my-5">Друштвените танци се танци што се танцуваат во пар, со фокус на забава,
+                        <h1>Што се Social Dances?</h1>
+                        <p className="my-5">Social Dances се танци што се танцуваат во пар, со фокус на забава,
                             поврзување и уживање во музиката, а не на натпревар. Тие се дел од секојдневниот живот во
                             многу култури – се танцуваат на забави, фестивали и вечерни излегувања.
                             Од салсата со својата експлозивна енергија, до сензуалната кизомба, друштвените танци нудат
@@ -22,7 +22,7 @@ export default function SocialDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -50,7 +50,7 @@ export default function SocialDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -76,7 +76,7 @@ export default function SocialDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -104,7 +104,7 @@ export default function SocialDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -130,7 +130,7 @@ export default function SocialDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -157,7 +157,43 @@ export default function SocialDances() {
                 </div>
             </div>
 
-            <Schedule/>
+
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
+            </div>
+            <div className="container rulesDance">
+                <div className="row content">
+                    <div className="col-lg-6 text-white text-center text-lg-start mb-4">
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                             alt="logo"/>
+                        <h2 className="my-4">Rueda de Casino</h2>
+                        <p>Rueda de Casino е групна форма на салса танц, потекната од Куба, каде повеќе танчарски парови
+                            танцуваат во круг под водство на водач кој ги најавува фигурите. Партнерите постојано се
+                            менуваат, а движењата се синхронизирани, забавни и полни со изненадувања.
+                        </p>
+                        <p>
+                            Оваа форма на танц создава чувство на заедништво, ритам и постојана интеракција – идеална за
+                            сите што сакаат да танцуваат, да се насмеат и да бидат дел од вистинска кубанска атмосфера.
+                        </p>
+                    </div>
+                    <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/workout/brankica.png`}
+                            alt="dance" className="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container-fluid">
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
+            </div>
+
+            <div className="container">
+                <ContactForm title="Персонални тренинзи"
+                             description1="Заинтересирани сте за часови со персонален инструктор?"
+                             description2="Сакате целосно индивидуално внимание или приватност?&nbsp; Јавете
+                                 ни се или напишете ни порака и ќе ви одговориме во најбрз можен рок."/>
+            </div>
         </>
     )
 }

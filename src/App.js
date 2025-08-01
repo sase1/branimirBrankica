@@ -17,7 +17,7 @@ import Pilates from "./pages/workoutInnerPages/Pilates";
 import Zumba from "./pages/workoutInnerPages/Zumba";
 import Byoga from "./pages/workoutInnerPages/Byoga";
 import FunctiuonalFitness from "./pages/workoutInnerPages/FunctiuonalFitness";
-import HipHop from "./pages/danceInnerPages/HipHop";
+import SoloAndGroups from "./pages/danceInnerPages/SoloAndGroups";
 import WeddingDance from "./pages/danceInnerPages/WeddingDance";
 import SocialDances from "./pages/danceInnerPages/SocialDances";
 import Reformer from "./pages/workoutInnerPages/Reformer";
@@ -25,6 +25,8 @@ import CorrectionalGymnastic from "./pages/workoutInnerPages/CorrectionalGymnast
 import PainRelief from "./pages/workoutInnerPages/PainRelief";
 import PersonalTraining from "./pages/workoutInnerPages/PersonalTraining";
 import BFitTeen from "./pages/workoutInnerPages/BFitTeen";
+import SportDoubleDance from "./pages/danceInnerPages/SportDoubleDance";
+import StreetDance from "./pages/danceInnerPages/StreetDance";
 
 function App() {
     return (
@@ -38,7 +40,9 @@ function App() {
                     <Route path="/контакт" element={<Contact />} />
                     <Route path="/галерија" element={<Gallery />} />
                     <Route path="/танц/латино-танци" element={<LatinoDances />} />
-                    <Route path="/танц/хип-хоп" element={<HipHop />} />
+                    <Route path="/танц/соло-и-групи" element={<SoloAndGroups />} />
+                    <Route path="/танц/спортски-танцови-двојки" element={<SportDoubleDance />} />
+                    <Route path="/танц/уличен-танц" element={<StreetDance />} />
                     <Route path="/танц/свадбен-танц" element={<WeddingDance />} />
                     <Route path="/танц/друштвени-танци" element={<SocialDances />} />
                     <Route path="/фит-универзум" element={<Workout />} />
