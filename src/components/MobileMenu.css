@@ -1,0 +1,126 @@
+/* Show only on mobile */
+@media screen and (min-width: 576px) {
+    .hamburger,
+    .menu-overlay {
+        display: none !important;
+    }
+}
+
+/* Hamburger button */
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    z-index: 9999;
+    /*position: absolute;*/
+    top: 20px;
+    left: 20px;
+}
+
+/* Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+/* Panel base */
+.menu-panel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+    transition: transform 0.3s ease;
+
+    & a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    & button{
+        background: transparent;
+        color: white;
+        border: none;
+        padding: 0;
+    }
+
+    & ul{
+        list-style: none inside none;
+        /*margin: 0;*/
+        padding: 0;
+
+        & li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #282828;
+            padding-bottom: 10px;
+            margin-left: 0;
+        }
+    }
+}
+
+/* Main panel */
+.main-panel {
+    left: 0;
+    transform: translateX(0);
+}
+.main-panel.slide-left {
+    transform: translateX(-100%);
+}
+
+/* Submenu panel */
+.sub-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.sub-panel.slide-in {
+    transform: translateX(0);
+}
+
+
+/* Buttons */
+.close-btn,
+.back-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-item-with-arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title {
+    flex: 1;
+    text-align: left;
+    text-decoration: none;
+    color: #000; /* adjust */
+}
+
+.submenu-arrow {
+    background: none;
+    /*border: none;*/
+    font-size: 2rem!important;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    color: #000; /* adjust */
+}
+

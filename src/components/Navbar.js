@@ -20,7 +20,7 @@ export default function Navbar() {
     }, [location]);
 
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative">
+        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative d-none d-sm-block">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
@@ -50,7 +50,8 @@ export default function Navbar() {
                                     <div className="col">
                                         <Link to="/фит-универзум/пилатес" className="dropdown-item">Пилатес</Link>
                                         <Link to="/фит-универзум/реформер" className="dropdown-item">Reformer</Link>
-                                        <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален фитнес</Link>
+                                        <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
+                                            фитнес</Link>
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/б-јога" className="dropdown-item">Б Јога
@@ -62,12 +63,13 @@ export default function Navbar() {
                                     <div className="col">
                                         <Link to="/фит-универзум/аеробик" className="dropdown-item">Аеробик</Link>
                                         <Link to="/фит-универзум/bfit-teen" className="dropdown-item">B-Fit Teen</Link>
-                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика" className="dropdown-item">Превентивно Корективна
+                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика"
+                                              className="dropdown-item">Превентивно Корективна
                                             гимнастика</Link>
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/ген-фит" className="dropdown-item">Ген Фит
-                                            </Link>
+                                        </Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
                                         {/*<Link to="/фит-универзум/меуна" className="dropdown-item">Mеуна</Link>*/}
@@ -92,6 +94,9 @@ export default function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/галерија">Галерија</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/продукти">Продукти</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/контакт">Контакт</Link>
