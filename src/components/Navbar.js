@@ -20,7 +20,8 @@ export default function Navbar() {
     }, [location]);
 
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative d-none d-sm-block">
+        <nav
+            className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative d-none d-sm-block">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
@@ -104,8 +105,8 @@ export default function Navbar() {
 
                     </ul>
                     <div className="mobile pe-4">
-                        <Link className="nav-link" to="tel:+38971968582"> <img className="icon me-1" alt="logo"
-                                                                               src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
+                        <Link className="nav-link" to="tel:+38971968582">
+                            <img className="icon me-1" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
                             71 968 582</Link>
                     </div>
                 </div>

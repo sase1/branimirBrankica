@@ -7,7 +7,7 @@ export default function Products() {
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е GenFit?</h1>
+                        <h1>Продукти</h1>
                         <p className="my-5">Proin iaculis eros at dapibus vehicula. Etiam quis semper augue, nec dictum
                             dui. Duis vitae vulputate tortor. Vestibulum at elit sed nisi convallis aliquam a non nulla.
                             Aenean at eros vitae velit volutpat hendrerit. Pellentesque bibendum ornare magna ac

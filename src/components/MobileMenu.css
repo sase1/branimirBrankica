@@ -1,4 +1,3 @@
-/* Show only on mobile */
 @media screen and (min-width: 576px) {
     .hamburger,
     .menu-overlay {
@@ -6,7 +5,6 @@
     }
 }
 
-/* Hamburger button */
 .hamburger {
     font-size: 2rem;
     background: none;
@@ -18,7 +16,6 @@
     left: 20px;
 }
 
-/* Overlay */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -30,7 +27,6 @@
     overflow: hidden;
 }
 
-/* Panel base */
 .menu-panel {
     position: absolute;
     top: 0;
@@ -67,7 +63,6 @@
     }
 }
 
-/* Main panel */
 .main-panel {
     left: 0;
     transform: translateX(0);
@@ -76,7 +71,6 @@
     transform: translateX(-100%);
 }
 
-/* Submenu panel */
 .sub-panel {
     position: absolute;
     top: 0;
@@ -92,7 +86,6 @@
 }
 
 
-/* Buttons */
 .close-btn,
 .back-btn {
     background: none;
@@ -117,10 +110,9 @@
 
 .submenu-arrow {
     background: none;
-    /*border: none;*/
     font-size: 2rem!important;
     cursor: pointer;
     padding: 0 0.5rem;
-    color: #000; /* adjust */
+    color: #000;
 }
 

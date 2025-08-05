@@ -43,7 +43,6 @@ export default function MobileMenu() {
 
     return (
         <>
-            {/* Hamburger button */}
             <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                  className="d-block d-sm-none float-start p-3"/>
             <button className="hamburger float-end mt-4 pe-3" onClick={() => setMenuOpen(true)}>
@@ -51,7 +50,6 @@ export default function MobileMenu() {
             </button>
             <span className="clearfix"></span>
 
-            {/* Overlay + Menu */}
             {menuOpen && (
                 <div className="menu-overlay">
                     {/* Main Menu */}
@@ -109,7 +107,6 @@ export default function MobileMenu() {
                         </div>
                     </div>
 
-                    {/* Submenu */}
                     {submenuTitle && (
                         <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`} key={submenuTitle}>
                             <button className="back-btn" onClick={() => setSubmenuTitle(null)}>← &nbsp; ФитУниверзум</button>
