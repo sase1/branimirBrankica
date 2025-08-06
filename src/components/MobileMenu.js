@@ -52,8 +52,10 @@ export default function MobileMenu() {
 
     return (
         <>
-            <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
-                 className="d-block d-sm-none float-start p-3"/>
+            <Link to="/">
+                <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
+                     className="d-block d-sm-none float-start p-3"/>
+            </Link>
             <button className="hamburger float-end mt-4 pe-3" onClick={() => setMenuOpen(true)}>
                 ☰
             </button>
@@ -62,8 +64,10 @@ export default function MobileMenu() {
             {menuOpen && (
                 <div className="menu-overlay">
                     <div className={`menu-panel main-panel ${submenuTitle ? "slide-left" : ""}`}>
+                        <Link to="/" onClick={() => setMenuOpen(false)}>
                         <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                              className="d-block d-sm-none float-start w-50"/>
+                        </Link>
                         <button className="close-btn float-end mt-3 fw-bold" onClick={() => setMenuOpen(false)}>✕
                         </button>
                         <span className="clearfix"></span>
