@@ -7,9 +7,18 @@ export default function MobileMenu() {
     const [submenuTitle, setSubmenuTitle] = useState(null);
 
     const menuItems = [
-        {title: "Танц", link: "/"},
+        {title: "Танц", link: "/танц",
+            children: [
+                {title: "Латино-американски Танци", link: "/танц/латино-танци"},
+                {title: "Свадбен танц", link: "/танц/свадбен-танц"},
+                {title: "Solo & Групи", link: "/танц/соло-и-групи"},
+                {title: "Social Dances", link: "/танц/друштвени-танци"},
+                {title: "Спортски Танцови Двојки", link: "/танц/спортски-танцови-двојки"},
+                {title: "Street Dance", link: "/танц/уличен-танц"},
+            ],
+        },
         {
-            title: "ФитУниверзум",
+            title: "ФитУниверзум", link: "/фит-универзум",
             children: [
                 {title: "Пилатес", link: "/фит-универзум/пилатес"},
                 {title: "Reformer", link: "/фит-универзум/реформер"},
@@ -52,7 +61,6 @@ export default function MobileMenu() {
 
             {menuOpen && (
                 <div className="menu-overlay">
-                    {/* Main Menu */}
                     <div className={`menu-panel main-panel ${submenuTitle ? "slide-left" : ""}`}>
                         <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                              className="d-block d-sm-none float-start w-50"/>
@@ -61,11 +69,11 @@ export default function MobileMenu() {
                         <span className="clearfix"></span>
                         <ul className="mt-5 p-2">
                             {menuItems.map((item, index) => (
-                                <li key={index} className="menu-item-with-arrow">
+                                <li key={index} className="menu-item-with-arrow mt-3">
                                     {item.children ? (
                                         <>
                                             <Link
-                                                to={item.link || "/фит-универзум"}
+                                                to={item.link}
                                                 className="menu-title"
                                                 onClick={() => {
                                                     setMenuOpen(false);
@@ -76,7 +84,7 @@ export default function MobileMenu() {
                                             </Link>
 
                                             <button
-                                                className="submenu-arrow fw-bold"
+                                                className="submenu-arrow fw-bold w-25 text-end"
                                                 onClick={(e) => {
                                                     e.stopPropagation();
                                                     openSubmenu(item.title);
@@ -100,21 +108,21 @@ export default function MobileMenu() {
                             ))}
 
                         </ul>
-                        <div className="mobile">
+                        <div className="mobile mt-5">
                             <Link className="nav-link ms-2" to="tel:+38971968582">
-                                <img className="icon me-3" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/>
+                                <img className="icon-phone me-3" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/>
                                 +389 71 968 582</Link>
                         </div>
                     </div>
 
                     {submenuTitle && (
                         <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`} key={submenuTitle}>
-                            <button className="back-btn" onClick={() => setSubmenuTitle(null)}>← &nbsp; ФитУниверзум</button>
-                            <ul>
+                            <button className="back-btn mb-5" onClick={() => setSubmenuTitle(null)}>← &nbsp; {submenuTitle}</button>
+                            <ul className="py-3">
                                 {menuItems
                                     .find((item) => item.title === submenuTitle)
                                     ?.children.map((child, i) => (
-                                        <li key={i}>
+                                        <li className="my-3" key={i}>
                                             <Link to={child.link} onClick={() => {
                                                 setMenuOpen(false);
                                                 setSubmenuTitle(null);

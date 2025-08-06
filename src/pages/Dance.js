@@ -7,7 +7,7 @@ export default function Dance() {
     const danceCards = [
         {
             id: 1,
-            title: "Латино Танци",
+            title: "Латино-американски Танци",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
             link: "/танц/латино-танци"
         },
@@ -19,15 +19,27 @@ export default function Dance() {
         },
         {
             id: 3,
-            title: "Хип Хоп",
+            title: "Solo & Групи",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
-            link: "/танц/хип-хоп"
+            link: "/танц/соло-и-групи"
         },
         {
             id: 4,
-            title: "Друштвени танци",
+            title: "Social Dances",
             image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
             link: "/танц/друштвени-танци"
+        },
+        {
+            id: 5,
+            title: "Спортски Танцови Двојки",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/спортски-танцови-двојки"
+        },
+        {
+            id: 6,
+            title: "Street Dance",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/уличен-танц"
         }
     ];
 

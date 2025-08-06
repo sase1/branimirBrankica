@@ -33,8 +33,34 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="mynavbar">
                     <ul className="navbar-nav justify-content-center py-2 pe-4 cst">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/танц">Танц</Link>
+                        <li className={`nav-item mega-dropdown`}>
+                            {/*<Link className="nav-link" to="/танц">Танц</Link>*/}
+                            <span className="nav-link dropdown-toggle text-white" role="button"
+                            >Танц</span>
+
+                            <div className="dropdown-menu mega-menu">
+                                <div className="row">
+                                    <div className="col">
+                                        <Link to="/танц/латино-танци" className="dropdown-item">Латино-американски Танци</Link>
+                                        <Link to="/танц/свадбен-танц" className="dropdown-item">Свадбен танц</Link>
+                                    </div>
+                                    <div className="col">
+                                        <Link to="/танц/соло-и-групи" className="dropdown-item">Solo & Групи
+                                        </Link>
+                                        <Link to="/танц/друштвени-танци" className="dropdown-item">Social Dances</Link>
+                                    </div>
+                                    <div className="col">
+                                        <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски Танцови Двојки</Link>
+                                        <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>
+                                    </div>
+                                    {/*<div className="col">*/}
+                                    {/*    */}
+                                    {/*</div>*/}
+                                    {/*<div className="col">*/}
+
+                                    {/*</div>*/}
+                                </div>
+                            </div>
                         </li>
 
                         <li className={`nav-item mega-dropdown`}>
@@ -73,7 +99,6 @@ export default function Navbar() {
                                         </Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
-                                        {/*<Link to="/фит-универзум/меуна" className="dropdown-item">Mеуна</Link>*/}
                                     </div>
                                     {/*<div className="col">*/}
 
