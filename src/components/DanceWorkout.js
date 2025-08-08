@@ -63,17 +63,21 @@ export default function DanceWorkout() {
             <div className="row">
                 <div className="col-lg-6">
                     <Link to="/танц">
-                        <div   className={`dance ${danceFade ? 'fade-in' : 'fade-out'}`}
-                               style={{ backgroundImage: `url(${danceImages[danceIndex]})` }}>
-                            <h1 className="text-white">Танц</h1>
+                        <div className="image-wrapper">
+                            <div className={`dance ${danceFade ? 'fade-in' : 'fade-out'}`}
+                                 style={{ backgroundImage: `url(${danceImages[danceIndex]})` }}>
+                                <h1 className="text-white">Танц</h1>
+                            </div>
                         </div>
                     </Link>
                 </div>
                 <div className="col-lg-6">
                     <Link to="/фит-универзум">
-                        <div  className={`workout ${workoutFade ? 'fade-in' : 'fade-out'}`}
-                              style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
-                            <h1 className="text-white">Вежбање</h1>
+                        <div className="image-wrapper">
+                            <div className={`workout ${workoutFade ? 'fade-in' : 'fade-out'}`}
+                                 style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
+                                <h1 className="text-white">Вежбање</h1>
+                            </div>
                         </div>
                     </Link>
                 </div>
