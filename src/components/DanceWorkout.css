@@ -7,7 +7,7 @@
         z-index: 1;
 
         &:hover {
-            transform: scale(1.07);
+            transform: scale(1.08);
             z-index: 3;
         }
     }

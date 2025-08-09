@@ -20,9 +20,6 @@
     font-size: 9rem;
     font-weight: 900;
     margin-right: 5rem;
-    /*background: #6F9D80;*/
-    /*background-clip: text;*/
-    /*-webkit-background-clip: text;*/
 
     @media (max-width: 991px) {
         font-size: 6rem;

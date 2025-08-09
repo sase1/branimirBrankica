@@ -1,6 +1,6 @@
 import "./HeaderMovingLines.css"
 
-export default function HeaderMovingLines({text, strokeColor }) {
+export default function HeaderMovingLines({text, strokeColor, color }) {
     return (
         <div className="row text-center movingHeader">
             <div className="col-lg-12">
@@ -10,6 +10,8 @@ export default function HeaderMovingLines({text, strokeColor }) {
                             style={{
                                 WebkitTextStroke: `1px ${strokeColor}`,
                                 color: "transparent",
+                                // background: color,
+                                // WebkitBackgroundClip: 'text',
                             }}
                         >
                             {text}
@@ -18,6 +20,8 @@ export default function HeaderMovingLines({text, strokeColor }) {
                             style={{
                                 WebkitTextStroke: `1px ${strokeColor}`,
                                 color: "transparent",
+                                // background: color,
+                                // WebkitBackgroundClip: 'text',
                             }}
                         >
                             {text}

@@ -34,9 +34,10 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="mynavbar">
                     <ul className="navbar-nav justify-content-center py-2 pe-4 cst">
                         <li className={`nav-item mega-dropdown`}>
-                            {/*<Link className="nav-link" to="/танц">Танц</Link>*/}
-                            <span className="nav-link dropdown-toggle text-white" role="button"
-                            >Танц</span>
+                            <Link className="nav-link" to="/танц">Танц
+                                <span className="dropdown-toggle text-white ms-2" role="button">
+                                      </span>
+                            </Link>
 
                             <div className="dropdown-menu mega-menu">
                                 <div className="row">
@@ -53,12 +54,7 @@ export default function Navbar() {
                                         <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски Танцови Двојки</Link>
                                         <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>
                                     </div>
-                                    {/*<div className="col">*/}
-                                    {/*    */}
-                                    {/*</div>*/}
-                                    {/*<div className="col">*/}
 
-                                    {/*</div>*/}
                                 </div>
                             </div>
                         </li>
@@ -100,9 +96,6 @@ export default function Navbar() {
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
                                     </div>
-                                    {/*<div className="col">*/}
-
-                                    {/*</div>*/}
                                 </div>
                             </div>
                             {/*)}*/}
