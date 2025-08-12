@@ -1,6 +1,5 @@
 import CarouselReviews from "../components/CarouselReviews";
 import "./AboutUs.css"
-import {Link} from "react-router-dom";
 import CustomLink from "../components/CustomLink";
 import HeaderMovingLines from "../components/HeaderMovingLines";
 import PageHeader from "../components/PageHeader";
@@ -13,15 +12,15 @@ export default function AboutUs() {
     const closeModal = () => setOpenModal(null);
 
     const modalContent = {
-        bran: {
+        brankica: {
             title: "Бранкица Нешиќ",
             description: "Аеробик, пилатес,BYOGA, програма MEUNA",
         },
-        brani: {
+        branimir: {
             title: "Бранимир Нешиќ",
             description: "Аеробик, Power Yoga, кружен тренинг, персонален тренер",
         },
-        slobo: {
+        slobodan: {
             title: "Слободан Трајковски",
             description: "MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA",
         },
@@ -81,7 +80,7 @@ export default function AboutUs() {
                         <p>аеробик, пилатес,BYOGA, програма MEUNA</p>
                         <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
                             e.preventDefault();
-                            setOpenModal("bran");
+                            setOpenModal("brankica");
                         }}/>
                     </div>
                     <div className="col-lg-4 text-white text-center my-5 mt-md-5">
@@ -92,7 +91,7 @@ export default function AboutUs() {
                         <p>аеробик, Power Yoga, кружен тренинг, персонален тренер</p>
                         <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
                             e.preventDefault();
-                            setOpenModal("brani");
+                            setOpenModal("branimir");
                         }}/>
                     </div>
                     <div className="col-lg-4 text-white text-center">
@@ -103,7 +102,7 @@ export default function AboutUs() {
                         <p>MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA</p>
                         <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
                             e.preventDefault();
-                            setOpenModal("slobo");
+                            setOpenModal("slobodan");
                         }}/>
                     </div>
                 </div>
