@@ -2,6 +2,11 @@
     position: relative;
     margin-top: 50px;
     transition: all 0.5s ease;
+
+    @media screen and (max-width: 500px){
+        transform: none;
+    }
+
     & h3{
         font-size: 2.2rem;
         position: absolute;
@@ -28,6 +33,9 @@
         opacity: 0;
         transition: opacity 0.5s ease;
         z-index: 1;
+        @media screen and (max-width: 500px){
+            opacity: 1;
+        }
     }
 
     &:hover {
@@ -46,4 +54,5 @@
     & img.arrow{
         height: 25px;
     }
+
 }
