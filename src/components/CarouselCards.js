@@ -19,7 +19,7 @@ export default function CarouselCards ({cards = []}) {
                             src={image}
                             className="card-img-top" alt={`Card ${id}`}/>
                         <h3 className="card-title d-flex align-items-center">{title}
-                            <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow" alt="card-image"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow d-none d-md-block" alt="card-image"/>
                         </h3>
                     </Link>
                 </div>

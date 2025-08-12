@@ -6,7 +6,6 @@ import DanceWorkout from "../components/DanceWorkout";
 import Counter from "../components/Counter";
 import "./Home.css"
 import CustomLink from "../components/CustomLink";
-import HomeCarouselItems from "../components/HomeCarouselItems";
 
 export default function Home() {
 
@@ -54,6 +53,77 @@ export default function Home() {
             link: "/танц/стандардни-танци"
         }
     ];
+
+
+    const fitUniverseCards = [
+        {
+            id: 1,
+            title: "Ааеробик",
+            image: "https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg",
+            link: "/фит-универзум/аеробик"
+        },
+        {
+            id: 2,
+            title: "Gen Fit",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s",
+            link: "/фит-универзум/ген-фит"
+        },
+        {
+            id: 3,
+            title: "Пилатес",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s",
+            link: "/фит-универзум/пилатес"
+        },
+        {
+            id: 4,
+            title: "Зумба",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s",
+            link: "/фит-универзум/зумба"
+        },
+        {
+            id: 5,
+            title: "Б Јога",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s",
+            link: "/фит-универзум/б-јога"
+        },
+        {
+            id: 6,
+            title: "Функционален Фитнес",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/функционален-фитнес"
+        },
+        {
+            id: 7,
+            title: "Pain Relief",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/pain-relief"
+        },
+        {
+            id: 8,
+            title: "Персонални Тренинзи",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/персонални-тренинзи"
+        },
+        {
+            id: 9,
+            title: "Reformer",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/реформер"
+        },
+        {
+            id: 10,
+            title: "Превентивно Корективна Гимнастика",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/превентивно-корективна-гимнастика"
+        },
+        {
+            id: 11,
+            title: "B-Feet Teen",
+            image: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+            link: "/фит-универзум/bfit-teen"
+        }
+    ];
+
 
     return (
         <>
@@ -241,7 +311,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="col-12 d-block d-lg-none mb-5">
-                        <HomeCarouselItems/>
+                        <CarouselCards cards={fitUniverseCards}/>
                     </div>
 
 

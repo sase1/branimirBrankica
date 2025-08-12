@@ -1,4 +1,4 @@
-.logosRow{
+.logosRow {
     background-image: url("../../public/images/row-logo.png");
     height: 100px;
     background-repeat: no-repeat;
@@ -6,4 +6,11 @@
     background-position: left;
     margin-bottom: 120px;
     margin-top: 140px;
+
+    @media screen and (max-width: 500px) {
+        margin-top: 25px;
+        background-repeat: repeat-x;
+        height: 50px;
+        background-position: top;
+    }
 }

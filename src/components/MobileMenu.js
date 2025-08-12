@@ -33,12 +33,12 @@ export default function MobileMenu() {
                 {title: "Функционален фитнес", link: "/фит-универзум/функционален-фитнес"}
             ],
         },
-        {title: "За Нас", link: "/"},
+        {title: "За Нас", link: "/за-нас"},
         {title: "Онлајн", link: "https://online.branimirbrankica.mk/login", "target": "_blank"},
         {title: "Новости", link: "/"},
-        {title: "Галерија", link: "/"},
-        {title: "Продукти", link: "/"},
-        {title: "Контакт", link: "/"}
+        {title: "Галерија", link: "/галерија"},
+        {title: "Продукти", link: "/продукти"},
+        {title: "Контакт", link: "/контакт"}
     ];
 
     const [submenuAnimating, setSubmenuAnimating] = useState(false);

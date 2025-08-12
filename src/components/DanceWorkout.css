@@ -73,7 +73,7 @@
         @media (max-width: 991px) {
             bottom: auto;
             top: -70px;
-            left: 55%;
+            left: 50%;
         }
         @media (max-width: 576px) {
             bottom: 0;

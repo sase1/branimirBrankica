@@ -11,6 +11,10 @@
         transition: opacity 0.8s ease;
         color: white;
         z-index: 20;
+
+        @media screen and (max-width: 500px){
+            opacity: 1;
+        }
     }
 
     &::after {

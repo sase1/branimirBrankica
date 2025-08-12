@@ -1,42 +1,75 @@
 import "./HomeCaroselItems.css"
 import {Link} from "react-router-dom";
 
+
+
 const carouselItems = [
     {
         img: "https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg",
-        link: "/фит-универзум/функционален-фитнес?scrollToTitleRound=true",
-        alt: "First slide",
-        text: "Кружен тренинг"
+        // link: "/фит-универзум/функционален-фитнес?scrollToTitleRound=true",
+        link: "/фит-универзум/аеробик",
+        alt: "аеробик",
+        text: "Ааеробик"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s",
-        link: "https://example.com/page2",
-        alt: "Second slide",
-        text: "Аеробик"
+        link: "/фит-универзум/ген-фит",
+        alt: "ген-фит",
+        text: "Gen Fit"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s",
-        link: "/фит-универзум/функционален-фитнес?scrollToTitle=true",
-        alt: "Third slide",
-        text: "CrossFit"
+        link: "/фит-универзум/пилатес",
+        alt: "Пилатес",
+        text: "Пилатес"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s",
-        link: "https://example.com/page3",
-        alt: "Third slide",
-        text: "Lorem"
+        link: "/фит-универзум/зумба",
+        alt: "зумба",
+        text: "Зумба"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s",
-        link: "https://example.com/page3",
-        alt: "Third slide",
-        text: "Ipsum"
+        link: "/фит-универзум/б-јога",
+        alt: "б-јога",
+        text: "Б Јога"
     },
     {
         img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
-        link: "https://example.com/page3",
-        alt: "Third slide",
-        text: "Lorem Ipsum"
+        link: "/фит-универзум/функционален-фитнес",
+        alt: "функционален-фитнес",
+        text: "Функционален Фитнес"
+    },
+    {
+        img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+        link: "/фит-универзум/pain-relief",
+        alt: "pain-relief",
+        text: "Pain Relief"
+    },
+    {
+        img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+        link: "/фит-универзум/персонални-тренинзи",
+        alt: "персонални-тренинзи",
+        text: "Персонални Тренинзи"
+    },
+    {
+        img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+        link: "/фит-универзум/реформер",
+        alt: "Reformer",
+        text: "Reformer"
+    },
+    {
+        img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+        link: "/фит-универзум/превентивно-корективна-гимнастика",
+        alt: "превентивно-корективна-гимнастика",
+        text: "Превентивно Корективна Гимнастика"
+    },
+    {
+        img: "https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg",
+        link: "/фит-универзум/bfit-teen",
+        alt: "bfit-teen",
+        text: "B-Feet Teen"
     }
 ];
 
