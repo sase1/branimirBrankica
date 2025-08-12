@@ -202,7 +202,7 @@ export default function AboutUs() {
 
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80" color="#6F9D80"/>
                 <CarouselReviews/>
             </div>
         </>

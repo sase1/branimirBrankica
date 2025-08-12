@@ -22,7 +22,7 @@ export default function Pilates() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Мат Пилатес / Мат Пилатес /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Мат Пилатес / Мат Пилатес /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -49,7 +49,7 @@ export default function Pilates() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Fitball Пилатес / Fitball Пилатес /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Fitball Пилатес / Fitball Пилатес /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -76,7 +76,7 @@ export default function Pilates() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Cardiobarre Пилатес / Cardiobarre Пилатес /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Cardiobarre Пилатес / Cardiobarre Пилатес /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -105,7 +105,7 @@ export default function Pilates() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Bosu Пилатес / Bosu Пилатес /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Bosu Пилатес / Bosu Пилатес /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -131,7 +131,7 @@ export default function Pilates() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Реформер / Реформер /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Реформер / Реформер /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -156,7 +156,7 @@ export default function Pilates() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
 
             <div className="container">

@@ -51,7 +51,7 @@ export default function PersonalTraining() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Директно решение / Директно решение /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Директно решение / Директно решение /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -76,7 +76,7 @@ export default function PersonalTraining() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#F89520"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#F89520" color="#F89520"/>
             </div>
 
             <div className="container">

@@ -40,6 +40,12 @@ export default function Dance() {
             title: "Street Dance",
             image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
             link: "/танц/уличен-танц"
+        },
+        {
+            id: 7,
+            title: "Стандардни Танци",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/стандардни-танци"
         }
     ];
 

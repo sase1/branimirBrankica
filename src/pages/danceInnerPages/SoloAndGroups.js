@@ -20,7 +20,7 @@ export default function SoloAndGroups() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -49,7 +49,7 @@ export default function SoloAndGroups() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -73,7 +73,7 @@ export default function SoloAndGroups() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
 
             <div className="container">

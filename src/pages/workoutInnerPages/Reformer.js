@@ -24,7 +24,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Реформер / Реформер /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Реформер / Реформер /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -49,7 +49,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Pilates Chair / Pilates Chair /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Pilates Chair / Pilates Chair /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -73,7 +73,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Spine Corrector / Spine Corrector /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Spine Corrector / Spine Corrector /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -99,7 +99,7 @@ export default function Reformer() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Ladder Barrel / Ladder Barrel /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Ladder Barrel / Ladder Barrel /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -123,7 +123,7 @@ export default function Reformer() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Cadillac / Cadillac /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Cadillac / Cadillac /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -152,7 +152,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
 
             <div className="container">

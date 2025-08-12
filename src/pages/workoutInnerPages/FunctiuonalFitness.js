@@ -62,7 +62,7 @@ export default function FunctiuonalFitness() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'CrossFit / CrossFit / CrossFit /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'CrossFit / CrossFit / CrossFit /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -87,7 +87,7 @@ export default function FunctiuonalFitness() {
                 </div>
             </div>
             <div className="container-fluid" ref={titleRoundRef}>
-                <HeaderMovingLines text={'BodySculpt / BodySculpt /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'BodySculpt / BodySculpt /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -111,7 +111,7 @@ export default function FunctiuonalFitness() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Circuit Training / Circuit Training /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Circuit Training / Circuit Training /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -137,7 +137,7 @@ export default function FunctiuonalFitness() {
             </div>
 
             <div className="container-fluid" ref={titleRoundRef}>
-                <HeaderMovingLines text={'Total Body Workout / Total Body Workout /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Total Body Workout / Total Body Workout /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -161,7 +161,7 @@ export default function FunctiuonalFitness() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Ultimate Bag Workout / Ultimate Bag Workout /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Ultimate Bag Workout / Ultimate Bag Workout /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -187,7 +187,7 @@ export default function FunctiuonalFitness() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" color="#6F9D80"/>
             </div>
 
             <div className="container">

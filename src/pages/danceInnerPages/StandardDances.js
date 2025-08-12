@@ -3,14 +3,14 @@ import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 
-export default function LatinoDances() {
+export default function StandardDances() {
     return (
         <>
-            <PageHeader title="Латино-американски танци"/>
+            <PageHeader title="Стандардни танци"/>
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што се Латино Американски танци?</h1>
+                        <h1>Што се Стандардни танци?</h1>
                         <p className="my-5">Латинско-американските танци се срцето на секој спортски и друштвен танцов
                             репертоар. Потекнуваат од Латинска Америка, Шпанија и САД, и се карактеризираат со страст,
                             динамика, ритам и комуникација меѓу партнерите. Танците како самба, ча-ча-ча, румба,

@@ -10,8 +10,8 @@ export default function HeaderMovingLines({text, strokeColor, color }) {
                             style={{
                                 WebkitTextStroke: `1px ${strokeColor}`,
                                 color: "transparent",
-                                // background: color,
-                                // WebkitBackgroundClip: 'text',
+                                background: color,
+                                WebkitBackgroundClip: 'text',
                             }}
                         >
                             {text}
@@ -20,8 +20,8 @@ export default function HeaderMovingLines({text, strokeColor, color }) {
                             style={{
                                 WebkitTextStroke: `1px ${strokeColor}`,
                                 color: "transparent",
-                                // background: color,
-                                // WebkitBackgroundClip: 'text',
+                                background: color,
+                                WebkitBackgroundClip: 'text',
                             }}
                         >
                             {text}

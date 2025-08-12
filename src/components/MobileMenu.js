@@ -73,7 +73,7 @@ export default function MobileMenu() {
                         <span className="clearfix"></span>
                         <ul className="mt-5 p-2">
                             {menuItems.map((item, index) => (
-                                <li key={index} className="menu-item-with-arrow mt-3">
+                                <li key={index} className="menu-item-with-arrow">
                                     {item.children ? (
                                         <>
                                             <Link
@@ -88,13 +88,13 @@ export default function MobileMenu() {
                                             </Link>
 
                                             <button
-                                                className="submenu-arrow fw-bold w-25 text-end"
+                                                className="submenu-arrow text-end"
                                                 onClick={(e) => {
                                                     e.stopPropagation();
                                                     openSubmenu(item.title);
                                                 }}
                                             >
-                                                ›
+                                                ››
                                             </button>
                                         </>
                                     ) : (
@@ -120,13 +120,25 @@ export default function MobileMenu() {
                     </div>
 
                     {submenuTitle && (
-                        <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`} key={submenuTitle}>
-                            <button className="back-btn mb-5" onClick={() => setSubmenuTitle(null)}>← &nbsp; {submenuTitle}</button>
-                            <ul className="py-3">
+                        <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`}
+                             key={submenuTitle}>
+                           <div className="mb-5">
+                               <Link to="/" onClick={() => setMenuOpen(false)}>
+                                   <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
+                                        className="d-block d-sm-none float-start w-50"/>
+                               </Link>
+                               <button className="close-btn float-end mt-3 fw-bold" onClick={() => setMenuOpen(false)}>✕
+                               </button>
+                               <span className="clearfix"></span>
+                           </div>
+
+                            <ul className="py-2">
+                                <button className="back-btn w-100 pb-3 mb-0"
+                                        onClick={() => setSubmenuTitle(null)}>← &nbsp; Назад</button>
                                 {menuItems
                                     .find((item) => item.title === submenuTitle)
                                     ?.children.map((child, i) => (
-                                        <li className="my-3" key={i}>
+                                        <li key={i}>
                                             <Link to={child.link} onClick={() => {
                                                 setMenuOpen(false);
                                                 setSubmenuTitle(null);

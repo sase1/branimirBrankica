@@ -21,7 +21,7 @@ export default function WeddingDance() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Свадбен танц / Свадбен танц /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Свадбен танц / Свадбен танц /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -47,7 +47,7 @@ export default function WeddingDance() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Свадбен танц / Свадбен танц /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Свадбен танц / Свадбен танц /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -76,7 +76,7 @@ export default function WeddingDance() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" color="#FB8B01"/>
             </div>
 
             <div className="container">

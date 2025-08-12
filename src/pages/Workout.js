@@ -31,7 +31,7 @@ export default function Workout() {
         },
         {
             id: 5,
-            title: "BYoga",
+            title: "Б Јога",
             image: "https://www.health.com/thmb/BoBpPmfuSUv3g-R9vpYbzlxtX1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-Stocksy_txp21856698W5h300_Medium_4329119-6861a908fb5346bea17dd46915bfe3c4.jpg",
             link: "/фит-универзум/б-јога"
         },

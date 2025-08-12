@@ -28,6 +28,7 @@ import BFitTeen from "./pages/workoutInnerPages/BFitTeen";
 import SportDoubleDance from "./pages/danceInnerPages/SportDoubleDance";
 import StreetDance from "./pages/danceInnerPages/StreetDance";
 import Products from "./pages/Products";
+import StandardDances from "./pages/danceInnerPages/StandardDances";
 
 function App() {
     return (
@@ -42,6 +43,7 @@ function App() {
                     <Route path="/продукти" element={<Products />} />
                     <Route path="/галерија" element={<Gallery />} />
                     <Route path="/танц/латино-танци" element={<LatinoDances />} />
+                    <Route path="/танц/стандардни-танци" element={<StandardDances />} />
                     <Route path="/танц/соло-и-групи" element={<SoloAndGroups />} />
                     <Route path="/танц/спортски-танцови-двојки" element={<SportDoubleDance />} />
                     <Route path="/танц/уличен-танц" element={<StreetDance />} />

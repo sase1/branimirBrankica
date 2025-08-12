@@ -13,7 +13,7 @@ export default function Home() {
     const danceCards = [
         {
             id: 1,
-            title: "Латино Танци",
+            title: "Латино-американски Танци",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
             link: "/танц/латино-танци"
         },
@@ -25,15 +25,33 @@ export default function Home() {
         },
         {
             id: 3,
-            title: "Хип Хоп",
+            title: "Solo & Групи",
             image: "https://www.danceflavors.com/wp-content/uploads/2022/09/tango-pair-dancers-dance-in-ballroom-2022-09-07-16-01-27-utc-scaled.jpg",
-            link: "/танц/хип-хоп"
+            link: "/танц/соло-и-групи"
         },
         {
             id: 4,
-            title: "Друштвени танци",
+            title: "Social Dances",
             image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
             link: "/танц/друштвени-танци"
+        },
+        {
+            id: 5,
+            title: "Спортски Танцови Двојки",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/спортски-танцови-двојки"
+        },
+        {
+            id: 6,
+            title: "Street Dance",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/уличен-танц"
+        },
+        {
+            id: 7,
+            title: "Стандардни Танци",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+            link: "/танц/стандардни-танци"
         }
     ];
 
@@ -69,7 +87,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето'} strokeColor="#6F9D80" color="#6F9D80"/>
 
                 <div className="row danceStyles">
                     <div className="col-lg-12 col-xl-10 offset-xl-1 text-white">
@@ -84,13 +102,13 @@ export default function Home() {
                     </div>
                 </div>
                 <CarouselCards cards={danceCards}/>
-                <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело'} strokeColor="#FB8B01"/>
+                <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело'} strokeColor="#FB8B01" color="#FB8B01"/>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" className="mb-4"/>
-                        <h2 className="title">Фитнес Програми</h2>
+                        <h2 className="title">ФитВерзум</h2>
                         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
@@ -100,125 +118,126 @@ export default function Home() {
                     <div className="col-lg-12 d-none d-lg-block">
                         <div className="image-grid">
                             <div className="item item1">
-                                <Link to="/фит-универзум/аеробик">
+                                <Link to="/фит-универзум/пилатес">
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Аеробик <img
+                                    <div className="overlay">Пилатес <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item2">
-                                <Link to="/фит-универзум/зумба">
+                                <Link to="/фит-универзум/реформер">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Reformer<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item3">
+                                <Link to="/фит-универзум/функционален-фитнес">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Функционален фитнес<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item4">
+                                <Link to="/фит-универзум/б-јога">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s"
+                                        alt="workouit-image"/>
+                                    <div className="overlay">Б Јога<img
+                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                        className="logo-image"/></div>
+                                </Link>
+                            </div>
+                            <div className="item item5">
+                                <Link to="/фит-универзум/зумба">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">Зумба<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
-                            <div className="item item3">
-                                <Link to="/фит-универзум/б-јога">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s"
-                                        alt="workouit-image"/>
-                                    <div className="overlay">БЈога<img
-                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
-                                        className="logo-image"/></div>
-                                </Link>
-                            </div>
-                            <div className="item item4">
-                                <Link to="/фит-универзум/функционален-фитнес">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s"
-                                        alt="workouit-image"/>
-                                    <div className="overlay">Функционален Фитнес<img
-                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
-                                        className="logo-image"/></div>
-                                </Link>
-                            </div>
-                            <div className="item item5">
-                                <Link to="/фит-универзум/корективна-гимнастика">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s"
-                                        alt="workouit-image"/>
-                                    <div className="overlay">Корективна Гимнастика<img
-                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
-                                        className="logo-image"/></div>
-                                </Link>
-                            </div>
                             <div className="item item6">
-                                <Link to="/фит-универзум/пилатес">
+                                <Link to="/фит-универзум/pain-relief">
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt=""/>
-                                    <div className="overlay">Пилатес<img
+                                    <div className="overlay">Pain Relief<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item7">
-                                <Link to="/фит-универзум/функционален-фитнес?scrollToTitle=true">
+                                <Link to="/фит-универзум/аеробик">
+                                    {/*<Link to="/фит-универзум/функционален-фитнес?scrollToTitle=true">*/}
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">CrossFit<img
+                                    <div className="overlay">Аеробик<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item8">
-                                <Link to="/фит-универзум/функционален-фитнес?scrollToTitleRound=true">
+                                <Link to="/фит-универзум/bfit-teen">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nKyX2g7nTDxN0tk4J_i2xN5ZEFyt00vUlQ&s"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Кружен Тренинг<img
+                                    <div className="overlay">B-Fit Teen<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item9">
-                                <Link to="/вежбање/аеробик">
+                                <Link to="/фит-универзум/превентивно-корективна-гимнастика">
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Аеробик <img
+                                    <div className="overlay">Превентивно Корективна гимнастика <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item10">
-                                <Link to="/вежбање/аеробик">
+                                <Link to="/фит-универзум/ген-фит">
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Аеробик <img
+                                    <div className="overlay">Ген Фит <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
                             <div className="item item11">
-                                <Link to="/вежбање/аеробик">
+                                <Link to="/фит-универзум/функционален-фитнес">
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Аеробик <img
+                                    <div className="overlay">Функционален фитнес <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>
                             </div>
-                            <div className="item item12">
-                                <Link to="/вежбање/аеробик">
-                                    <img
-                                        src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
-                                        alt="workouit-image"/>
-                                    <div className="overlay">Аеробик <img
-                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
-                                        className="logo-image"/></div>
-                                </Link>
-                            </div>
+                            {/*<div className="item item12">*/}
+                            {/*    <Link to="/вежбање/аеробик">*/}
+                            {/*        <img*/}
+                            {/*            src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"*/}
+                            {/*            alt="workouit-image"/>*/}
+                            {/*        <div className="overlay">Аеробик <img*/}
+                            {/*            src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"*/}
+                            {/*            className="logo-image"/></div>*/}
+                            {/*    </Link>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                     <div className="col-12 d-block d-lg-none mb-5">
@@ -227,7 +246,7 @@ export default function Home() {
 
 
                 </div>
-                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80"/>
+                <HeaderMovingLines text={'Мислења на нашите членови'} strokeColor="#6F9D80" color="#6F9D80"/>
                 <CarouselReviews/>
             </div>
         </>

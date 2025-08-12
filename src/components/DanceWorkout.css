@@ -82,11 +82,21 @@
 
     }
 
+
     @media (max-width: 991px) {
         margin-top: 90px;
     }
     @media (max-width: 576px) {
         margin-top: 80px;
+    }
+
+    &:hover {
+        z-index: 2;
+
+        & h1 {
+            left: 58%;
+        }
+
     }
 }
 

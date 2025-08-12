@@ -35,14 +35,16 @@ export default function Navbar() {
                     <ul className="navbar-nav justify-content-center py-2 pe-4 cst">
                         <li className={`nav-item mega-dropdown`}>
                             <Link className="nav-link" to="/танц">Танц
-                                <span className="dropdown-toggle text-white ms-2" role="button">
-                                      </span>
+                                {/*<span className="dropdown-toggle text-white ms-2" role="button">*/}
+                                {/*      </span>*/}
+                                <img className="ms-2" src={`${process.env.PUBLIC_URL}/images/arrow-down.png`} alt="arrow logo"/>
                             </Link>
 
                             <div className="dropdown-menu mega-menu">
                                 <div className="row">
                                     <div className="col">
-                                        <Link to="/танц/латино-танци" className="dropdown-item">Латино-американски Танци</Link>
+                                        <Link to="/танц/латино-танци" className="dropdown-item">Латино-американски
+                                            Танци</Link>
                                         <Link to="/танц/свадбен-танц" className="dropdown-item">Свадбен танц</Link>
                                     </div>
                                     <div className="col">
@@ -51,10 +53,13 @@ export default function Navbar() {
                                         <Link to="/танц/друштвени-танци" className="dropdown-item">Social Dances</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски Танцови Двојки</Link>
+                                        <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски
+                                            Танцови Двојки</Link>
                                         <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>
                                     </div>
-
+                                    <div className="col">
+                                        <Link to="/танц/стандардни-танци" className="dropdown-item">Стандардни Танци</Link>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -62,8 +67,10 @@ export default function Navbar() {
                         <li className={`nav-item mega-dropdown`}>
                             {/*<li className={`nav-item mega-dropdown ${isMegaOpen ? 'open' : ''}`}>*/}
                             <Link className="nav-link" to="/фит-универзум">ФитУниверзум
-                                <span className="dropdown-toggle text-white ms-2" role="button">
-                                      </span>
+                                {/*<span className="dropdown-toggle text-white ms-2" role="button">*/}
+                                {/*      </span>*/}
+                                <img className="ms-2" src={`${process.env.PUBLIC_URL}/images/arrow-down.png`}
+                                     alt="arrow logo"/>
                             </Link>
                             {/*<span className="nav-link dropdown-toggle text-white" role="button"*/}
                             {/*      onClick={() => setIsMegaOpen(prev => !prev)}>ФитУниверзум</span>*/}
@@ -80,8 +87,7 @@ export default function Navbar() {
                                         <Link to="/фит-универзум/б-јога" className="dropdown-item">Б Јога
                                         </Link>
                                         <Link to="/фит-универзум/зумба" className="dropdown-item">Зумба</Link>
-                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
-                                            Relief</Link>
+                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain Relief</Link>
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/аеробик" className="dropdown-item">Аеробик</Link>

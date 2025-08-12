@@ -76,7 +76,7 @@ export default function DanceWorkout() {
                         <div className="image-wrapper">
                             <div className={`workout ${workoutFade ? 'fade-in' : 'fade-out'}`}
                                  style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
-                                <h1 className="text-white">Вежбање</h1>
+                                <h1 className="text-white">ФитВерзум</h1>
                             </div>
                         </div>
                     </Link>
