@@ -2,11 +2,6 @@
     position: relative;
     margin-top: 50px;
     transition: all 0.5s ease;
-
-    @media screen and (max-width: 500px){
-        transform: none;
-    }
-
     & h3{
         font-size: 2.2rem;
         position: absolute;
@@ -16,10 +11,6 @@
         transition: opacity 0.8s ease;
         color: white;
         z-index: 20;
-
-        @media screen and (max-width: 500px){
-            opacity: 1;
-        }
     }
 
     &::after {
@@ -33,9 +24,6 @@
         opacity: 0;
         transition: opacity 0.5s ease;
         z-index: 1;
-        @media screen and (max-width: 500px){
-            opacity: 1;
-        }
     }
 
     &:hover {
@@ -54,5 +42,16 @@
     & img.arrow{
         height: 25px;
     }
+}
 
+@media screen and (max-width: 500px) {
+    .cardsContent {
+        transform: none !important;
+        h3 {
+            opacity: 1 !important;
+        }
+        &::after {
+            opacity: 1 !important;
+        }
+    }
 }
