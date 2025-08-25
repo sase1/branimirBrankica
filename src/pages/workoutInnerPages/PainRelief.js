@@ -41,11 +41,11 @@ export default function PainRelief() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pain-relief.png`}
                              alt="logo"/>
                         <h2 className="my-4">Како делува Pain Relief?</h2>
                         <p>
-                            Вежбите во Pain Relief часовите се прилагодени со соодветно темпо и интензитет за да не
+                        Вежбите во Pain Relief часовите се прилагодени со соодветно темпо и интензитет за да не
                             предизвикуваат дополнителен стрес врз телото. Програмата е дизајнирана така што ги активира,
                             истегнува и зајакнува клучните мускули, помагајќи им на телото и мускулниот систем да се
                             вратат во баланс.
@@ -64,7 +64,7 @@ export default function PainRelief() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pain-relief.png`}
                              alt="logo"/>
                         <h2 className="my-4">Директно решение</h2>
                         <p>Овој пристап работи затоа што го третира коренот на проблемот – наместо само симптомите –

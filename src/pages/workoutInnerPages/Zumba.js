@@ -32,7 +32,7 @@ export default function Zumba() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba.png`}
                              alt="logo"/>
                         <h2 className="my-4">Зумба Fitness</h2>
                         <p>Зумба Fitness е оригиналниот и најпознат формат на зумба – кардио танц тренинг инспириран од
@@ -52,7 +52,7 @@ export default function Zumba() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba-toning.png`}
                              alt="logo"/>
                         <h2 className="my-4">Зумба Toning</h2>
                         <p>Зумба Toning е комбинација од забавните зумба движења и тренинг со лесни тегови (toning
@@ -77,7 +77,7 @@ export default function Zumba() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba.png`}
                              alt="logo"/>
                         <h2 className="my-4">Зумба Step</h2>
                         <p>Зумба Step го комбинира енергичниот стил на зумба со предизвикот на степ-платформа. Се

@@ -33,7 +33,7 @@ export default function Byoga() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/byoga.png`}
                              alt="logo"/>
                         <h2 className="my-4">Hatha Yoga</h2>
                         <p>Hatha Yoga е традиционална форма на јога која се фокусира на балансот помеѓу телото и умот
@@ -52,7 +52,7 @@ export default function Byoga() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/byoga.png`}
                              alt="logo"/>
                         <h2 className="my-4">Ashtanga Yoga</h2>
                         <p>Ashtanga Yoga е динамична и структурирана форма на јога која следи фиксен редослед на пози
@@ -81,7 +81,7 @@ export default function Byoga() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/byoga.png`}
                              alt="logo"/>
                         <h2 className="my-4">Vinyasa Flow Yoga</h2>
                         <p>Vinyasa Flow Yoga е флуидна, креативна форма на јога каде движењата се поврзуваат со дишењето
@@ -100,7 +100,7 @@ export default function Byoga() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/byoga.png`}
                              alt="logo"/>
                         <h2 className="my-4">Power Yoga</h2>
                         <p>Power Yoga е современа, силна и фитнес-ориентирана варијанта на јога инспирирана од Ashtanga.
@@ -130,7 +130,7 @@ export default function Byoga() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/byoga.png`}
                              alt="logo"/>
                         <h2 className="my-4">Restorative Yoga</h2>
                         <p>Restorative Yoga е тивка, терапевтска пракса насочена кон целосно опуштање и регенерација. Се
@@ -150,7 +150,7 @@ export default function Byoga() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/byoga/meuna.png`}
                              alt="logo"/>
                         <h2 className="my-4">Meuna</h2>
                         <p>Power Yoga е современа, силна и фитнес-ориентирана варијанта на јога инспирирана од Ashtanga.

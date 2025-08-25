@@ -80,27 +80,28 @@ export default function Navbar() {
                                     <div className="col">
                                         <Link to="/фит-универзум/пилатес" className="dropdown-item">Пилатес</Link>
                                         <Link to="/фит-универзум/реформер" className="dropdown-item">Reformer</Link>
-                                        <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
-                                            фитнес</Link>
+                                        <Link to="/фит-универзум/персонални-тренинзи" className="dropdown-item">Персонални
+                                            тренинзи</Link>
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/б-јога" className="dropdown-item">Б Јога
                                         </Link>
                                         <Link to="/фит-универзум/зумба" className="dropdown-item">Зумба</Link>
-                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain Relief</Link>
+                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика"
+                                              className="dropdown-item">Превентивно Корективна Гимнастика</Link>
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/аеробик" className="dropdown-item">Аеробик</Link>
                                         <Link to="/фит-универзум/bfit-teen" className="dropdown-item">B-Fit Teen</Link>
-                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика"
-                                              className="dropdown-item">Превентивно Корективна
-                                            гимнастика</Link>
-                                    </div>
-                                    <div className="col">
-                                        <Link to="/фит-универзум/ген-фит" className="dropdown-item">Ген Фит
-                                        </Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
+                                    </div>
+
+                                    <div className="col">
+                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
+                                            Relief</Link>
+                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика"
+                                              className="dropdown-item">Ultimate Bag Workout</Link>
                                     </div>
                                 </div>
                             </div>

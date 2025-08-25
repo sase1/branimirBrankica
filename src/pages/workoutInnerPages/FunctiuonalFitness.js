@@ -122,7 +122,7 @@ export default function FunctiuonalFitness() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/circuit.png`}
                              alt="logo"/>
                         <h2 className="my-4">Circuit Training</h2>
                         <p>Кружниот тренинг е ефикасна фитнес метода што комбинира неколку различни вежби во
@@ -142,7 +142,7 @@ export default function FunctiuonalFitness() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/total.png`}
                              alt="logo"/>
                         <h2 className="my-4">Total Body Workout</h2>
                         <p>Total Body Workout е функционален тренинг што го активира целото тело преку вежби за сила,

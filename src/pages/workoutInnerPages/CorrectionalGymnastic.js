@@ -24,7 +24,7 @@ export default function CorrectionalGymnastic() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pkg.png`}
                              alt="logo"/>
                         <h2 className="my-4">Растеме заедно</h2>
                         <p>Превентивно – Корективната гимнастика е наменета за деца од предучилишна и училишна возраст и
@@ -57,7 +57,7 @@ export default function CorrectionalGymnastic() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pkg.png`}
                              alt="logo"/>
                         <h2 className="my-4">Здрави деца, среќни родители.</h2>
                         <p>

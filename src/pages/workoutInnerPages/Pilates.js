@@ -33,7 +33,7 @@ export default function Pilates() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/mat-pilates.png`}
                              alt="logo"/>
                         <h2 className="my-4">Мат Пилатес</h2>
                         <p>Mat Pilates се изведува на подлога (мат) и е суштината на оригиналниот пилатес метод развиен
@@ -54,7 +54,7 @@ export default function Pilates() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/fitball-pilates.png`}
                              alt="logo"/>
                         <h2 className="my-4">Fitball Пилатес</h2>
                         <p>Fitball Pilates користи голема топка за стабилност (fitball) за да се предизвика балансот и
@@ -87,7 +87,7 @@ export default function Pilates() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/cardiobar.png`}
                              alt="logo"/>
                         <h2 className="my-4">Cardiobarre Пилатес</h2>
                         <p>Cardio Barre Pilates е динамичен тренинг што ја комбинира прецизноста на пилатесот со
@@ -110,7 +110,7 @@ export default function Pilates() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/bosu.png`}
                              alt="logo"/>
                         <h2 className="my-4">Ring, Bosu, Band Пилатес</h2>
                         <p>Нашите пилатес програми вклучуваат три ефективни реквизити за разновиден и функционален

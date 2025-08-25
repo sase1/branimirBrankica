@@ -33,7 +33,7 @@ export default function Aerobic() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/imagescstep-aerobic.png`}
                              alt="logo"/>
                         <h2 className="my-4">Step Aerobic</h2>
                         <p>Step Aerobic е класичен аеробик тренинг со употреба на степ-платформа, каде преку ритмични
@@ -53,7 +53,7 @@ export default function Aerobic() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/aerobic/kick-box.png`}
                              alt="logo"/>
                         <h2 className="my-4">Kick Box Aerobic</h2>
                         <p>Kick Box Aerobic е енергичен кардио тренинг кој ги комбинира техниките од кик-боксот со
