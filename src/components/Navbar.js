@@ -100,7 +100,7 @@ export default function Navbar() {
                                     <div className="col">
                                         <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
                                             Relief</Link>
-                                        <Link to="/фит-универзум/превентивно-корективна-гимнастика"
+                                        <Link to="/фит-универзум/ultimate-bag-workout"
                                               className="dropdown-item">Ultimate Bag Workout</Link>
                                     </div>
                                 </div>

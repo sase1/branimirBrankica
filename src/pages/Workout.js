@@ -13,9 +13,9 @@ export default function Workout() {
         },
         {
             id: 2,
-            title: "Gen Fit",
+            title: "Ultimate Bag Workout",
             image: "https://www.puregym.com/media/sqflb0zc/bodyweight.jpg?quality=80",
-            link: "/фит-универзум/ген-фит"
+            link: "/фит-универзум/ultimate-bag-workout"
         },
         {
             id: 3,

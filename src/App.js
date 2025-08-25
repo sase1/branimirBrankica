@@ -12,7 +12,7 @@ import LatinoDances from "./pages/danceInnerPages/LatinoDances";
 import ScrollToTop from "./hooks/ScrollToTop";
 import Workout from "./pages/Workout";
 import Aerobic from "./pages/workoutInnerPages/Aerobic";
-import GenFit from "./pages/workoutInnerPages/GenFit";
+import UltimateBagWorkout from "./pages/workoutInnerPages/UltimateBagWorkout";
 import Pilates from "./pages/workoutInnerPages/Pilates";
 import Zumba from "./pages/workoutInnerPages/Zumba";
 import Byoga from "./pages/workoutInnerPages/Byoga";
@@ -51,7 +51,7 @@ function App() {
                     <Route path="/танц/друштвени-танци" element={<SocialDances />} />
                     <Route path="/фит-универзум" element={<Workout />} />
                     <Route path="/фит-универзум/аеробик" element={<Aerobic />} />
-                    <Route path="/фит-универзум/ген-фит" element={<GenFit />} />
+                    <Route path="/фит-универзум/ultimate-bag-workout" element={<UltimateBagWorkout />} />
                     <Route path="/фит-универзум/превентивно-корективна-гимнастика" element={<CorrectionalGymnastic />} />
                     <Route path="/фит-универзум/pain-relief" element={<PainRelief />} />
                     <Route path="/фит-универзум/персонални-тренинзи" element={<PersonalTraining />} />

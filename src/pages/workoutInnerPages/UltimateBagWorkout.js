@@ -3,15 +3,15 @@ import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 
-export default function GenFit() {
+export default function UltimateBagWorkout() {
     return (
         <>
-            <PageHeader title="GenFit"/>
+            <PageHeader title="Ultimate Bag Workout"/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е GenFit?</h1>
-                        <p className="my-5">GenFit е специјализирана програма за деца и тинејџери која комбинира фитнес,
+                        <h1>Што е Ultimate Bag Workout?</h1>
+                        <p className="my-5">UltimateBagWorkout е специјализирана програма за деца и тинејџери која комбинира фитнес,
                             игра и корективна гимнастика. Наменета е за здрав телесен развој, подобрување на држењето и
                             градење самодоверба преку активност, движење и забава.</p>
                     </div>
@@ -55,7 +55,7 @@ export default function GenFit() {
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
                         <h2 className="my-4">Растеме силни</h2>
-                        <p>GenFit нуди безбедна, мотивирачка средина каде децата и младите се движат, учат и растат
+                        <p>UltimateBagWorkout нуди безбедна, мотивирачка средина каде децата и младите се движат, учат и растат
                             здраво. Програмата не само што го подобрува телото, туку и го зајакнува духот – преку
                             позитивна енергија, поддршка и развој на самодоверба.
                         </p>

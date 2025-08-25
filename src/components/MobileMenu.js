@@ -29,7 +29,7 @@ export default function MobileMenu() {
                 {title: "Аеробик", link: "/фит-универзум/аеробик"},
                 {title: "B-Fit Teen", link: "/фит-универзум/bfit-teen"},
                 {title: "Превентивно Корективна гимнастика", link: "/фит-универзум/превентивно-корективна-гимнастика"},
-                {title: "Ген Фит", link: "/фит-универзум/ген-фит"},
+                {title: "Ultimate bag workout", link: "/фит-универзум/ultimate-bag-workout"},
                 {title: "Функционален фитнес", link: "/фит-универзум/функционален-фитнес"}
             ],
         },

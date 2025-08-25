@@ -64,9 +64,9 @@ export default function Home() {
         },
         {
             id: 2,
-            title: "Gen Fit",
+            title: "Ultimate Bag Workout",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s",
-            link: "/фит-универзум/ген-фит"
+            link: "/фит-универзум/ultimate-bag-workout"
         },
         {
             id: 3,
@@ -147,41 +147,47 @@ export default function Home() {
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                                     alt="logo" className="mb-0 mb-md-2"/>
-                                <h2 className="title">20 години <br/> танцуваме заедно</h2>
-                                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua,
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                <h2 className="title">Еден клуб, бескраен избор.</h2>
+                                <p className="description">Со над 20 години искуство, нашиот клуб создава средина каде
+                                    движењето е радост, а изборот – ваш. Со една месечна членарина добивате пристап до
+                                    целата програма: денес може да танцувате хип хоп, утре да тренирате кикбокс, потоа
+                                    пилатес или латино танци – сè според вашето расположение. Без ограничувања, само
+                                    разновидност, слобода и поддршка од стручен тим што стои зад секој ваш чекор.</p>
                                 <CustomLink to="/за-нас" text="Повеќе За Нас"/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80"
+                                   color="#6F9D80"/>
 
                 <div className="row danceStyles">
-                    <div className="col-lg-12 col-xl-10 offset-xl-1 text-white">
-                        <div
-                            className="d-flex flex-column flex-lg-row text-center align-items-lg-start  align-items-center justify-content-between">
-                            <h2 className="title">Стилови на танц</h2>
-                            <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <CustomLink to="/танц" text="Дознајте Повеќе" className="mt-md-0"/>
+                    <div className="col-lg-12 text-white">
+                        {/*<div className="col-lg-12 col-xl-10 offset-xl-1 text-white">*/}
+                            <div
+                                className="d-flex flex-column flex-lg-row text-center align-items-lg-start  align-items-center justify-content-between px-0 px-md-5">
+                                <h2 className="title">Стилови на танц</h2>
+                                <p className="description">Во нашиот клуб, танцот е спој на уметност, спорт и забава –
+                                    достапен за сите возрасти и нивоа. Од основи до натпревари, нудиме богата програма:
+                                    латино, стандардни, социјални, улични и сценски танци.</p>
+                                <CustomLink to="/танц" text="Дознајте Повеќе" className="mt-md-0"/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <CarouselCards cards={danceCards}/>
-                <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                    <CarouselCards cards={danceCards}/>
+                    <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01"
+                                   color="#FB8B01"/>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" className="mb-4"/>
                         <h2 className="title">ФитВерзум</h2>
-                        <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <p className="description">Добредојдовте во нашиот ФитВерзум, каде фитнесот е начин на живеење.
+                            Преку разновидни часови како функционален тренинг, пилатес, кикбокс или корективни програми,
+                            секој може да најде активност што му одговара на своето тело и темпо. Тренинзите се
+                            дизајнирани за сите возрасти и нивоа на подготвеност, водени од искусни тренери кои ќе ви
+                            помогнат да ги постигнете вашите цели – со сила, енергија и самодоверба.</p>
                         <CustomLink to="/фит-универзум" text="Дознајте Повеќе"/>
                     </div>
 
@@ -192,9 +198,12 @@ export default function Home() {
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Пилатес <img
-                                        src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
-                                        className="logo-image"/></div>
+                                    <div className="overlay">Пилатес
+                                        <img
+                                            src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
+                                            className="logo-image"/>
+                                    </div>
+                                    <p>Edno, dve, tri, cetiri, pet</p>
                                 </Link>
                             </div>
                             <div className="item item2">
@@ -279,11 +288,11 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="item item10">
-                                <Link to="/фит-универзум/ген-фит">
+                                <Link to="/фит-универзум/ultimate-bag-workout">
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
-                                    <div className="overlay">Ген Фит <img
+                                    <div className="overlay">Ultimate bag workout <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
                                 </Link>

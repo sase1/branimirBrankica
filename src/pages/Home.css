@@ -47,6 +47,16 @@
 .item {
     position: relative;
     overflow: hidden;
+
+    & p {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        color: white;
+        opacity: 0;
+        transition: all 0.4s ease;
+        transform: translateY(20px);
+    }
 }
 
 .item img {
@@ -82,7 +92,8 @@
     pointer-events: none;
 }
 
-.item:hover .overlay {
+.item:hover .overlay,
+.item:hover p{
     opacity: 1;
     transform: translateY(0);
 }

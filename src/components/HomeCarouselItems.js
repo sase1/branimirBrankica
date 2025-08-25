@@ -13,9 +13,9 @@ const carouselItems = [
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s",
-        link: "/фит-универзум/ген-фит",
-        alt: "ген-фит",
-        text: "Gen Fit"
+        link: "/фит-универзум/ultimate-bag-workout",
+        alt: "ultimate-bag-workout",
+        text: "Ultimate bag workout"
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s",
