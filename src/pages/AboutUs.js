@@ -48,15 +48,47 @@ export default function AboutUs() {
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                                     alt="logo" className="mb-0 mb-md-2"/>
-                                <h2 className="title">20 години <br/> нов животен стил</h2>
-                                <p className="description">Го пренасочивме менталниот склоп за практикување физичка активност, ги срушивме
-                                возрасните бариери и заблуди, ја освестивме можноста за менување и поставивме тло за правилен пристап до здрав живот.</p>
+                                <h2 className="title">Две децении љубов и посветеност</h2>
+                                <p className="description">Танцовото и фитнес семејство „Бранимир и Бранкица“ е повеќе
+                                    од клуб – тоа е простор каде љубовта кон движењето, здравјето и изразувањето расте
+                                    со секој чекор. Веќе 20 години ја градиме нашата приказна со посветеност и
+                                    стручност, создавајќи безбедно и инспиративно место за деца, тинејџери и возрасни.
+                                </p>
 
-                                <p className="description">Заклучивме дека физичката и духовната активност се задолжителна одговорност. Докажавме
-                                дека способноста за себереализација постои кај секого, а достапност на вистинскиот избор постои тука.</p>
+                                <p className="description"> Без разлика дали сте тука да се натпреварувате, да вежбате
+                                    за себе или да го откриете својот ритам – ние сме тука да ве водиме.</p>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="row lifeStyle">
+                    <div className="col-lg-6 pt-5 pt-lg-0">
+                        <div
+                            className="d-flex justify-content-center align-items-center pe-1 pe-lg-5 text-white text-center text-lg-start">
+                            <div className="textContent">
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                                    alt="logo" className="mb-0 mb-md-2"/>
+                                <h2 className="title">Пристап по ваш ритам</h2>
+                                <p className="description">Она што нè издвојува е уникатниот пристап – со една месечна
+                                    членарина, добивате пристап до целата програма и слобода сами да си го креирате
+                                    распоредот. Денес сте на хип хоп, утре на кикбокс, потоа на пилатес или латино.
+                                    Секој ден носи нова можност за движење, забава и напредок.
+                                </p>
+
+                                <p className="description"> Под водство на лиценцирани тренери и инструктори, секој член
+                                    е поддржан да го достигне својот максимум, во сопствен ритам и со насмевка.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-6 align-content-center ">
+                        <img
+                            src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
+                            alt="dance" className="img-fluid"/>
+                    </div>
+
                 </div>
 
                 <div className="row">
@@ -65,9 +97,12 @@ export default function AboutUs() {
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" className="mb-0 mb-md-4"/>
                         <h2 className="mb-4">Инструктори</h2>
-                        <p>Банимир Нешиќ и Бранкица Нешиќ, основачи на овос спортски клуб, се први и се уште единствени лиценцирани (сертифицирани)
-                        инструктори од FISAF (Federation of International Sports Aerobic and Fitness). FISAF интернационалните лиценци (сертификати) се
-                        наоѓаат на листата на најценетите лиценци во fitness-welness индустријата и се валидни насекаде низ светот.</p>
+                        <p>Нашиот тим е составен од посветени професионалци со исклучително искуство, ентузијазам и
+                            внимателен пристап кон секој вежбач. Основачите, Бранимир и Бранкица Нешиќ, се првите и
+                            единствени FISAF (Federation of International Sports Aerobic and Fitness) лиценцирани
+                            инструктори во земјава – со меѓународно признати сертификати кои важат ширум светот. Покрај
+                            нив, делуваат и инструктори кои со својата експертиза, искуство и резултати постојано ја
+                            потврдуваат својата вредност во практиката.</p>
                     </div>
                 </div>
 
@@ -78,7 +113,7 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранкица Нешиќ</h3>
                         <p>аеробик, пилатес,BYOGA, програма MEUNA</p>
-                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                        <CustomLink to="#" text="Прочитајте повеќе" onClick={(e) => {
                             e.preventDefault();
                             setOpenModal("brankica");
                         }}/>
@@ -89,7 +124,7 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Бранимир Нешиќ</h3>
                         <p>аеробик, Power Yoga, кружен тренинг, персонален тренер</p>
-                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                        <CustomLink to="#" text="Прочитајте повеќе" onClick={(e) => {
                             e.preventDefault();
                             setOpenModal("branimir");
                         }}/>
@@ -100,7 +135,7 @@ export default function AboutUs() {
                             alt="dance" className="img-fluid"/>
                         <h3 className="mt-4">Слободан Трајковски</h3>
                         <p>MEUNA: медитација, јога-нидра, Суњата, ПЕАТ, унификационен процес, BYOGA</p>
-                        <CustomLink to="#" text="Прочитајте повеќе"  onClick={(e) => {
+                        <CustomLink to="#" text="Прочитајте повеќе" onClick={(e) => {
                             e.preventDefault();
                             setOpenModal("slobodan");
                         }}/>
@@ -140,13 +175,9 @@ export default function AboutUs() {
                         <h2>Награди и сертификати </h2>
                     </div>
                     <div className="col-lg-6 offset-lg-2 mb-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua,
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p>
+                        <p>Нашиот клуб поседува домашни и меѓународни сертификати кои го потврдуваат квалитетот,
+                            безбедноста и стручноста во нашата работа. Со лиценци од тела како WDSF и национални сојузи,
+                            гарантираме дека секоја програма е водена според највисоки стандарди. </p>
                     </div>
 
                     <div className="col-lg-3 col-md-6 text-center mt-4">
