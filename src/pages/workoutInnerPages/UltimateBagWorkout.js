@@ -18,7 +18,7 @@ export default function UltimateBagWorkout() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Растеме заедно / Растеме заедно /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Растеме заедно / Растеме заедно /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -40,7 +40,7 @@ export default function UltimateBagWorkout() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Растеме силни / Растеме силни'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Растеме силни / Растеме силни'} strokeColor="#FB8B01" />
             </div>
 
             <div className="container">
@@ -64,7 +64,7 @@ export default function UltimateBagWorkout() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" />
             </div>
 
             <div className="container">

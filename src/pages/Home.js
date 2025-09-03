@@ -158,8 +158,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80"
-                                   color="#6F9D80"/>
+                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80" />
 
                 <div className="row danceStyles">
                     <div className="col-lg-12 text-white">
@@ -175,8 +174,7 @@ export default function Home() {
                         </div>
                     </div>
                     <CarouselCards cards={danceCards}/>
-                    <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01"
-                                   color="#FB8B01"/>
+                    <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01"/>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 text-center text-white">
                         <img
@@ -325,7 +323,7 @@ export default function Home() {
 
 
                 </div>
-                <HeaderMovingLines text={'Мислења на нашите членови /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Мислења на нашите членови /'} strokeColor="#6F9D80"/>
                 <CarouselReviews/>
             </div>
         </>

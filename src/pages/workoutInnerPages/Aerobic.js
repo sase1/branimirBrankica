@@ -22,7 +22,7 @@ export default function Aerobic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Step Aerobic / Step Aerobic /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Step Aerobic / Step Aerobic /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -48,7 +48,7 @@ export default function Aerobic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Kick Box Aerobic / Kick Box Aerobic /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Kick Box Aerobic / Kick Box Aerobic /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -72,7 +72,7 @@ export default function Aerobic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Low Impact Aerobic / Low Impact Aerobic /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Low Impact Aerobic / Low Impact Aerobic /'} strokeColor="#FB8B01" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -97,7 +97,7 @@ export default function Aerobic() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба / Зумба / Зумба /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Зумба / Зумба / Зумба /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
 
@@ -122,7 +122,7 @@ export default function Aerobic() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" />
             </div>
 
             <div className="container">

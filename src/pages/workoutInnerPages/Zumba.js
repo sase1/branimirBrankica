@@ -21,7 +21,7 @@ export default function Zumba() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Fitness / Зумба Fitness /'} strokeColor="#FB8B01" color="#FB8B01" />
+                <HeaderMovingLines text={'Зумба Fitness / Зумба Fitness /'} strokeColor="#FB8B01" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -47,7 +47,7 @@ export default function Zumba() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Toning / Зумба Toning /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Зумба Toning / Зумба Toning /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -72,7 +72,7 @@ export default function Zumba() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Зумба Step / Зумба Step /'} strokeColor="#FB8B01" color="#FB8B01" />
+                <HeaderMovingLines text={'Зумба Step / Зумба Step /'} strokeColor="#FB8B01" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -98,7 +98,7 @@ export default function Zumba() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" />
             </div>
 
             <div className="container">

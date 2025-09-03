@@ -22,7 +22,7 @@ export default function Byoga() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Hatha Yoga / Hatha Yoga /'} strokeColor="#FB8B01" color="#FB8B01"/>
+                <HeaderMovingLines text={'Hatha Yoga / Hatha Yoga /'} strokeColor="#FB8B01" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -47,7 +47,7 @@ export default function Byoga() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Ashtanga Yoga / Ashtanga Yoga /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Ashtanga Yoga / Ashtanga Yoga /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -70,7 +70,7 @@ export default function Byoga() {
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Vinyasa Flow Yoga / Vinyasa Flow Yoga /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Vinyasa Flow Yoga / Vinyasa Flow Yoga /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -95,7 +95,7 @@ export default function Byoga() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Power Yoga / Power Yoga /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Power Yoga / Power Yoga /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -119,7 +119,7 @@ export default function Byoga() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Restorative Yoga / Restorative Yoga /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Restorative Yoga / Restorative Yoga /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -145,7 +145,7 @@ export default function Byoga() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Meuna / Meuna / Meuna /'} strokeColor="#6F9D80" color="#6F9D80"/>
+                <HeaderMovingLines text={'Meuna / Meuna / Meuna /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">
                 <div className="row content">
@@ -170,7 +170,7 @@ export default function Byoga() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#F89520" color="#F89520"/>
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#F89520" />
             </div>
 
             <div className="container">
