@@ -137,7 +137,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-6 offset-lg-1">
                         <img
-                            src="https://as2.ftcdn.net/v2/jpg/02/93/60/93/1000_F_293609385_Tjs464LNP74T2KCniddDFuu2tj3I2lvL.jpg"
+                            src={`${process.env.PUBLIC_URL}/images/home-dance.png`}
                             alt="dance" className="img-fluid"/>
                     </div>
                     <div className="col-lg-4 align-content-center pt-5 pt-lg-0">
