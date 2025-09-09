@@ -12,7 +12,7 @@
 
 .danceStyles{
     & p{
-        width: 35%;
+        width: 45%;
         @media (max-width: 991px) {
             width: auto;
         }

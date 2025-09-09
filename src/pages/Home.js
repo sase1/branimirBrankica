@@ -148,35 +148,36 @@ export default function Home() {
                                     src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                                     alt="logo" className="mb-0 mb-md-2"/>
                                 <h2 className="title">Еден клуб, бескраен избор.</h2>
-                                <p className="description">Со над 20 години искуство, нашиот клуб создава средина каде
-                                    движењето е радост, а изборот – ваш. Со една месечна членарина добивате пристап до
-                                    целата програма: денес може да танцувате хип хоп, утре да тренирате кикбокс, потоа
-                                    пилатес или латино танци – сè според вашето расположение. Без ограничувања, само
-                                    разновидност, слобода и поддршка од стручен тим што стои зад секој ваш чекор.</p>
+                                <p className="description">Добредојдовте во нашиот клуб Бранимир и Бранкица, каде сите
+                                    стилови и типови на тренинзи се достапни на едно место – и сето тоа со само една
+                                    месечна членарина. Вие одлучувате што ќе вежбате и кога: денес јога, утре кикбокс
+                                    или танц. Комбинирањето на активности не само што е возможно, туку е и препорачано –
+                                    за целосен физички и ментален ефект.
+                                </p>
                                 <CustomLink to="/за-нас" text="Повеќе За Нас"/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Совладајте ја уметноста на танцувањето /'} strokeColor="#6F9D80"/>
 
                 <div className="row danceStyles">
                     <div className="col-lg-12 text-white">
                         {/*<div className="col-lg-12 col-xl-10 offset-xl-1 text-white">*/}
-                            <div
-                                className="d-flex flex-column flex-lg-row text-center align-items-lg-start  align-items-center justify-content-between px-0 px-md-5">
-                                <h2 className="title">Стилови на танц</h2>
-                                <p className="description">Во нашиот клуб, танцот е спој на уметност, спорт и забава –
-                                    достапен за сите возрасти и нивоа. Од основи до натпревари, нудиме богата програма:
-                                    латино, стандардни, социјални, улични и сценски танци.</p>
-                                <CustomLink to="/танц" text="Дознајте Повеќе" className="mt-md-0"/>
-                            </div>
+                        <div
+                            className="d-flex flex-column flex-lg-row text-center align-items-lg-start  align-items-center justify-content-between px-0 px-md-5">
+                            <h2 className="title">Стилови на танц</h2>
+                            <p className="description">Во нашиот клуб, танцот е спој на уметност, спорт и забава –
+                                достапен за сите возрасти и нивоа. Од основи до натпревари, нудиме богата програма:
+                                латино, стандардни, социјални, улични и сценски танци.</p>
+                            <CustomLink to="/танц" text="Дознајте Повеќе" className="mt-md-0"/>
                         </div>
                     </div>
-                    <CarouselCards cards={danceCards}/>
-                    <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01"/>
+                </div>
+                <CarouselCards cards={danceCards}/>
+                <HeaderMovingLines text={'Откриј го потенцијалот на твоето тело /'} strokeColor="#FB8B01"/>
                 <div className="row">
-                    <div className="col-lg-6 offset-lg-3 text-center text-white">
+                    <div className="col-lg-8 offset-lg-2 text-center text-white">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                             alt="logo" className="mb-4"/>
