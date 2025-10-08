@@ -16,9 +16,10 @@ export default function ContactForm({ title, description1, description2 }) {
         const name = form.current.name.value.trim();
         const phone = form.current.phone.value.trim();
         const email = form.current.email.value.trim();
+        const dance = form.current.dance.value.trim();
         const message = form.current.message.value.trim();
 
-        if (!name || !phone || !email || !message) {
+        if (!name || !phone || !email || !dance || !message) {
             setStatusMessage({ type: "error", text: "Сите полиња се задолжителни." });
             setLoading(false);
             hideMessageAfterDelay();
@@ -74,23 +75,39 @@ export default function ContactForm({ title, description1, description2 }) {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 pe-md-4">
                             <input type="text" className="form-control ps-0" placeholder="Име и Презиме* "
-                                   name="name" required/>
+                                   name="name" />
                         </div>
                         <div className="col-lg-6 col-md-6 mt-md-0 mt-5">
                             <input type="number" className="form-control ps-0" placeholder="Телефонски број*"
-                                   name="phone" required/>
+                                   name="phone" />
                         </div>
                     </div>
                     <div className="row my-5">
                         <div className="col">
                             <input type="text" className="form-control ps-0" placeholder="E-mail адреса*"
-                                   name="email" required/>
+                                   name="email" />
+                        </div>
+                        <div className="col">
+                            <select
+                                className="form-select ps-0"
+                                name="dance"
+                                defaultValue=""
+
+                            >
+                                <option value="" disabled hidden>Тип на танц*</option>
+                                <option value="Латино танци">Латино танци</option>
+                                <option value="Стандардни танци">Стандардни танци</option>
+                                <option value="Салса">Салса</option>
+                                <option value="Бачата">Бачата</option>
+                                <option value="Танго">Танго</option>
+                                <option value="Хип-хоп">Хип-хоп</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
                             <label htmlFor="message" className="mb-2">Порака*</label>
-                            <textarea className="form-control" rows="5" id="message" name="message" required></textarea>
+                            <textarea className="form-control" rows="5" id="message" name="message" ></textarea>
                         </div>
                     </div>
                     <div className="row">

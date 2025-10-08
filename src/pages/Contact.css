@@ -3,7 +3,8 @@
     margin-top: 50px !important;
 
     & input,
-    & textarea {
+    & textarea,
+    & select{
         background: transparent;
         border: none;
         border-bottom: 1px solid #fff;
