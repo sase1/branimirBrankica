@@ -35,7 +35,7 @@ export default function BFitTeen() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/b-teen/bfit.png`}
                              alt="logo"/>
                         <h2 className="my-4">Растеме заедно</h2>
                         <p>
@@ -57,7 +57,7 @@ export default function BFitTeen() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/b-teen/bfit.png`}
                              alt="logo"/>
                         <h2 className="my-4">Здрави деца, среќни родители.</h2>
                         <p>B-Fit Teen е дел од нашата програма наменета за деца од 9 до 15 години. Се состои од

@@ -73,7 +73,7 @@ export default function FunctiuonalFitness() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/cross.png`}
                              alt="logo"/>
                         <h2 className="my-4">CrossFit</h2>
                         <p>CrossFit е високоинтензивен функционален тренинг кој комбинира елементи од тежинско кревање,
@@ -92,7 +92,7 @@ export default function FunctiuonalFitness() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/body.png`}
                              alt="logo"/>
                         <h2 className="my-4">BodySculpt</h2>
                         <p>BodySculpt е обликувачки тренинг што се фокусира на дефинирање и тонирање на мускулите преку
@@ -172,7 +172,7 @@ export default function FunctiuonalFitness() {
                     </div>
 
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                        <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/ultimate.png`}
                              alt="logo"/>
                         <h2 className="my-4">Ultimate Bag Workout</h2>
                         <p>Ultimate Bag Workout е високоинтензивен тренинг каде што се користи боксерска вреќа за
