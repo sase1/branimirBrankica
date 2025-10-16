@@ -3,8 +3,30 @@ import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 import CustomLink from "../../components/CustomLink";
+import {useEffect, useRef} from "react";
+import {useLocation, useNavigate} from "react-router-dom";
 
 export default function Byoga() {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const titleRoundRef = useRef(null);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const scrollToRound = params.get("scrollToRound");
+
+        if (scrollToRound && titleRoundRef.current) {
+            titleRoundRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+
+        if (scrollToRound) {
+            const cleanURL = location.pathname;
+            navigate(cleanURL, { replace: true });
+        }
+    }, [location.search, location.pathname, navigate]);
+
     return (
         <>
             <PageHeader title="BYoga"/>
@@ -144,7 +166,7 @@ export default function Byoga() {
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container-fluid" ref={titleRoundRef}>
                 <HeaderMovingLines text={'Meuna / Meuna / Meuna /'} strokeColor="#6F9D80" />
             </div>
             <div className="container">

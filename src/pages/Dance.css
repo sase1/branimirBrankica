@@ -1,0 +1,13 @@
+.dance-content{
+    margin-top: 60px!important;
+    margin-bottom: 100px!important;
+
+    & h2.title {
+        font-size: 3rem;
+    }
+
+    & p.description {
+        font-size: 1.2rem;
+    }
+
+}

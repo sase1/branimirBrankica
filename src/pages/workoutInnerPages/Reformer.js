@@ -12,13 +12,11 @@ export default function Reformer() {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
                         <h1>Што е Reformer?</h1>
-                        <p className="my-5"><b>Cadillac</b> за поддржана и разновидна работа со пружини, <b> Pilates
-                            Chair </b> за
-                            предизвик на core и баланс, <b>Spine Corrector</b> за истегнување и корекција на ‘рбетот,
-                            и <b>Ladder
-                                Barrel </b> за подобрување на флексибилноста и држењето. Комбинацијата на овие уреди
-                            овозможува
-                            целосен, прецизен и персонализиран пилатес тренинг за секое тело.</p>
+                        <p className="my-5"><span style={{fontWeight: 700}}>Reformer</span> е еден од најпознатите и највпечатливи пилатес апарати, дизајниран
+                            од Џозеф Пилатес - заедно со <span style={{fontWeight: 700}}>Cadillac</span> за поддржана и разновидна работа со пружини, <span style={{fontWeight: 700}}>Pilates
+                                Chair </span> за предизвик на core и баланс, <span style={{fontWeight: 700}}>Spine Corrector</span> за истегнување и корекција на ‘рбетот,
+                            и Ladder Barrel за подобрување на флексибилноста и држењето. Комбинацијата на овие уреди
+                            овозможува целосен, прецизен и персонализиран пилатес тренинг за секое тело.</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +47,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Pilates Chair / Pilates Chair /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Pilates Chair / Pilates Chair /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -73,7 +71,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Spine Corrector / Spine Corrector /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Spine Corrector / Spine Corrector /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -99,7 +97,7 @@ export default function Reformer() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Ladder Barrel / Ladder Barrel /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Ladder Barrel / Ladder Barrel /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -123,7 +121,7 @@ export default function Reformer() {
 
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Cadillac / Cadillac /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Cadillac / Cadillac /'} strokeColor="#FB8B01"/>
             </div>
             <div className="container">
                 <div className="row content">
@@ -152,7 +150,7 @@ export default function Reformer() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#6F9D80"/>
             </div>
 
             <div className="container">

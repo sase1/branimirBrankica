@@ -90,7 +90,7 @@ export default function Footer() {
                                 </li>
                             </div>
                             <div className="position-absolute bottom-5 text-white"
-                                 style={{ right: "-75px", cursor: "pointer"}}
+                                 style={{ right: "-3%", cursor: "pointer"}}
                                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             >
                                 <h2>↑</h2>

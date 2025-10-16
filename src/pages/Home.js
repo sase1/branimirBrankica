@@ -322,7 +322,6 @@ export default function Home() {
                         <CarouselCards cards={fitUniverseCards}/>
                     </div>
 
-
                 </div>
                 <HeaderMovingLines text={'Мислења на нашите членови /'} strokeColor="#6F9D80"/>
                 <CarouselReviews/>

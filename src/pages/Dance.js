@@ -1,6 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import PageHeader from "../components/PageHeader";
 import CarouselCards from "../components/CarouselCards";
+import "./Dance.css"
 
 export default function Dance() {
 
@@ -59,6 +60,21 @@ export default function Dance() {
                 </div>
             </div>
             <CarouselCards cards={danceCards}/>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center text-white dance-content">
+                        <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
+                             alt="logo" className="mb-0 mb-md-2"/>
+                        <h2 className="title mt-3">Светски Докажани</h2>
+                        <p className="description mt-4">Клубот е член на ТСФМ - Танцова Спортска Федерација на Македонија, со тоа член и на WDSF -
+                            World
+                            Dance Sport Federation, дел од MOK - македонски олимписки комитет; под покровителство на
+                            министерството за спорт и факултет за физичка култура.</p>
+                    </div>
+                </div>
+            </div>
+
             <div className="container my-5">
                 <ContactForm title="Персонални часови"
                              description1="Заинтересирани сте за часови со персонален инструктор?"

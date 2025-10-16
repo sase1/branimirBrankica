@@ -37,14 +37,14 @@ export default function Navbar() {
                             <Link className="nav-link" to="/танц">Танц
                                 {/*<span className="dropdown-toggle text-white ms-2" role="button">*/}
                                 {/*      </span>*/}
-                                <img className="ms-2" src={`${process.env.PUBLIC_URL}/images/arrow-down.png`} alt="arrow logo"/>
+                                <img className="ms-2" src={`${process.env.PUBLIC_URL}/images/arrow-down.png`}
+                                     alt="arrow logo"/>
                             </Link>
 
                             <div className="dropdown-menu mega-menu">
                                 <div className="row">
                                     <div className="col">
-                                        <Link to="/танц/латино-танци" className="dropdown-item">Латино-американски
-                                            Танци</Link>
+                                        <Link to="/танц/латино-танци" className="dropdown-item">Латино Танци</Link>
                                         <Link to="/танц/свадбен-танц" className="dropdown-item">Свадбен танц</Link>
                                     </div>
                                     <div className="col">
@@ -58,7 +58,8 @@ export default function Navbar() {
                                         <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/танц/стандардни-танци" className="dropdown-item">Стандардни Танци</Link>
+                                        <Link to="/танц/стандардни-танци" className="dropdown-item">Стандардни
+                                            Танци</Link>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +67,7 @@ export default function Navbar() {
 
                         <li className={`nav-item mega-dropdown`}>
                             {/*<li className={`nav-item mega-dropdown ${isMegaOpen ? 'open' : ''}`}>*/}
-                            <Link className="nav-link" to="/фит-универзум">ФитУниверзум
+                            <Link className="nav-link" to="/фит-универзум">ФитВерзум
                                 {/*<span className="dropdown-toggle text-white ms-2" role="button">*/}
                                 {/*      </span>*/}
                                 <img className="ms-2" src={`${process.env.PUBLIC_URL}/images/arrow-down.png`}
@@ -80,28 +81,36 @@ export default function Navbar() {
                                     <div className="col">
                                         <Link to="/фит-универзум/пилатес" className="dropdown-item">Пилатес</Link>
                                         <Link to="/фит-универзум/реформер" className="dropdown-item">Reformer</Link>
-                                        <Link to="/фит-универзум/персонални-тренинзи" className="dropdown-item">Персонални
-                                            тренинзи</Link>
+                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
+                                            Relief</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/б-јога" className="dropdown-item">Б Јога
-                                        </Link>
                                         <Link to="/фит-универзум/зумба" className="dropdown-item">Зумба</Link>
+                                        <Link to="/фит-универзум/аеробик?scrollToTitleRound=true" className="dropdown-item">Step Aerobic</Link>
+                                        <Link to="/фит-универзум/аеробик?scrollToTitle=true" className="dropdown-item">Kick Box Aerobic</Link>
+
+                                    </div>
+                                    <div className="col">
+                                        <Link to="/фит-универзум/bfit-teen" className="dropdown-item">B-Fit Teen</Link>
                                         <Link to="/фит-универзум/превентивно-корективна-гимнастика"
                                               className="dropdown-item">Превентивно Корективна Гимнастика</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/аеробик" className="dropdown-item">Аеробик</Link>
-                                        <Link to="/фит-универзум/bfit-teen" className="dropdown-item">B-Fit Teen</Link>
+                                        <Link to="/фит-универзум/ultimate-bag-workout"
+                                              className="dropdown-item">Ultimate Bag Workout</Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>
                                     </div>
+                                    <div className="col">
+                                        <Link to="/фит-универзум/б-јога" className="dropdown-item">Yoga - BYoga
+                                        </Link>
+                                        <Link to="/фит-универзум/б-јога?scrollToRound=true" className="dropdown-item">Meuna
+                                        </Link>
+                                    </div>
 
                                     <div className="col">
-                                        <Link to="/фит-универзум/pain-relief" className="dropdown-item">Pain
-                                            Relief</Link>
-                                        <Link to="/фит-универзум/ultimate-bag-workout"
-                                              className="dropdown-item">Ultimate Bag Workout</Link>
+                                        <Link style={{color: "rgba(248, 149, 32, 1)"}} to="/фит-универзум/персонални-тренинзи" className="dropdown-item">Персонални
+                                            тренинзи</Link>
                                     </div>
                                 </div>
                             </div>
@@ -111,9 +120,13 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/за-нас">За Нас</Link>
                         </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <Link className="nav-link" target="_blank"*/}
+                        {/*          to="https://online.branimirbrankica.mk/login">Онлајн</Link>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <Link className="nav-link" target="_blank"
-                                  to="https://online.branimirbrankica.mk/login">Онлајн</Link>
+                                  to="">Меуна</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Новости</Link>
@@ -121,9 +134,9 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/галерија">Галерија</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/продукти">Продукти</Link>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*<Link className="nav-link" to="/продукти">Продукти</Link>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <Link className="nav-link" to="/контакт">Контакт</Link>
                         </li>
@@ -131,7 +144,8 @@ export default function Navbar() {
                     </ul>
                     <div className="mobile pe-4">
                         <Link className="nav-link" to="tel:+38971968582">
-                            <img className="icon me-1" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
+                            <img className="icon me-1" alt="logo"
+                                 src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
                             71 968 582</Link>
                     </div>
                 </div>

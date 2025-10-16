@@ -11,17 +11,17 @@ export default function LatinoDances() {
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
                         <h1>Што се Латино Американски танци?</h1>
-                        <p className="my-5">Латинско-американските танци се срцето на секој спортски и друштвен танцов
-                            репертоар. Потекнуваат од Латинска Америка, Шпанија и САД, и се карактеризираат со страст,
-                            динамика, ритам и комуникација меѓу партнерите. Танците како самба, ча-ча-ча, румба,
-                            пасодобле и џајв нудат широка палета на музички стилови и емоционални изрази – од заводлива
-                            сензуалност до експлозивна енергија. Овие танци не само што го обликуваат телото, туку и го
-                            будат духот и самодовербата.</p>
+                        <p className="my-5">Латиноамериканските танци се енергична и технички прецизна дисциплина во
+                            спортското танцување, опфатена во официјалниот натпреварувачки систем на WDSF – Светската
+                            танцова спортска федерација. Самба, ча-ча-ча, румба, пасодобле и џајв се изучуваат и
+                            танцуваат според строго утврдени WDSF стандарди и критериуми. Во ТСК „Бранимир и Бранкица“,
+                            овие танци се предаваат професионално, со методологија што подготвува танчари за настапи на
+                            домашна и меѓународна сцена.</p>
                     </div>
                 </div>
             </div>
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -50,7 +50,7 @@ export default function LatinoDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без правила / Танц без правила /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Танц без правила / Танц без правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -75,7 +75,7 @@ export default function LatinoDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со правила / Танц со правила /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Танц со правила / Танц со правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -103,7 +103,7 @@ export default function LatinoDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -128,7 +128,7 @@ export default function LatinoDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц со правила / Танц со правила /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Танц со правила / Танц со правила /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container rulesDance">
@@ -155,7 +155,7 @@ export default function LatinoDances() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container">

@@ -14,8 +14,15 @@ export default function SoloAndGroups() {
                         <p className="my-5">Соло, дуо и формациското танцување се посебна гранка на спортскиот и сценски
                             танц, каде индивидуалноста, синхронизацијата и сценската уметност се подеднакво важни.
                             Настапите можат да бидат поединечни (момчиња или девојчиња), во пар без допир (дуо), групни
-                            или во сложени формации со повеќе танцови парови. Се изведуваат хореографии во различни
-                            стилови – од стандард и латински, до карипски и шоу танци, според правилата на WDSF.</p>
+                            или во сложени формации со повеќе танцови парови. Се изведуваат кореографии во различни
+                            стилови – од стандард и латински, до карипски и шоу танци. Нашите танчари се натпреваруваат
+                            во домашната А и Б лига како членови на <span
+                                style={{fontWeight: 700, textDecoration: "underline"}}>ТСФМ</span> - танцова спортска
+                            федерација и на меѓународни,
+                            европски и светски првенства како членови на <span
+                                style={{fontWeight: 700, textDecoration: "underline"}}>WDSF</span>, World Dance Sport
+                            Federation,
+                            според чии правила се изведуваат нашите кореографии.</p>
                     </div>
                 </div>
             </div>
@@ -44,12 +51,18 @@ export default function SoloAndGroups() {
                         <p>
                             Во нашиот клуб активно ги подготвуваме младите танчари за соло и дуо натпревари – на домашни
                             и меѓународни подиуми.</p>
+                        <p>
+                            Нашите танчари се натпреваруваат во домашната А и Б лига како членови на <span
+                            style={{fontWeight: 700, textDecoration: "underline"}}>  ТСФМ </span> - танцова
+                            спортска федерација и на меѓународни, европски и светски првенства како членови на <span
+                            style={{fontWeight: 700, textDecoration: "underline"}}> WDSF </span>,
+                            World Dance Sport Federation, според чии правила се изведуваат нашите кореографии.</p>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80" />
+                <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80"/>
             </div>
             <div className="container rulesDance">
                 <div className="row content">
@@ -58,10 +71,16 @@ export default function SoloAndGroups() {
                              alt="logo"/>
                         <h2 className="my-4">Формации и LA шоу</h2>
                         <p>Формациското танцување е динамична и визуелно атрактивна дисциплина каде групи танчари – во
-                            парови или само девојки – изведуваат синхронизирани хореографии од пет танци. Се танцува
-                            како LA (латинска) или ST (стандардна) формација, со усогласени костими и сценски изглед
-                            според WDSF правила.
-                        </p>
+                            парови или само девојки – изведуваат синхронизирани кореографии од пет танци.
+                            Се танцува како LA (латинска) или ST (стандардна) формација, со усогласени костими и сценски
+                            изглед според WDSF правила.</p>
+
+                        <p>
+                            Нашите танчари се натпреваруваат во домашната А и Б лига како членови на <span
+                            style={{fontWeight: 700, textDecoration: "underline"}}>  ТСФМ </span> - танцова
+                            спортска федерација и на меѓународни, европски и светски првенства како членови на <span
+                            style={{fontWeight: 700, textDecoration: "underline"}}> WDSF </span>,
+                            World Dance Sport Federation, според чии правила се изведуваат нашите кореографии.</p>
 
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
@@ -73,7 +92,7 @@ export default function SoloAndGroups() {
             </div>
 
             <div className="container-fluid">
-                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01" />
+                <HeaderMovingLines text={'Персонални тренинзи / Персонални тренинзи /'} strokeColor="#FB8B01"/>
             </div>
 
             <div className="container">
