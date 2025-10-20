@@ -7,37 +7,42 @@ export default function MobileMenu() {
     const [submenuTitle, setSubmenuTitle] = useState(null);
 
     const menuItems = [
-        {title: "Танц", link: "/танц",
+        {
+            title: "Танц", link: "/танц",
             children: [
-                {title: "Латино-американски Танци", link: "/танц/латино-танци"},
+                {title: "Латино Танци", link: "/танц/латино-танци"},
                 {title: "Свадбен танц", link: "/танц/свадбен-танц"},
                 {title: "Solo & Групи", link: "/танц/соло-и-групи"},
                 {title: "Social Dances", link: "/танц/друштвени-танци"},
                 {title: "Спортски Танцови Двојки", link: "/танц/спортски-танцови-двојки"},
                 {title: "Street Dance", link: "/танц/уличен-танц"},
+                {title: "Стандардни Танци", link: "/танц/стандардни-танци"},
             ],
         },
         {
-            title: "ФитУниверзум", link: "/фит-универзум",
+            title: "ФитВерзум", link: "/фит-универзум",
             children: [
                 {title: "Пилатес", link: "/фит-универзум/пилатес"},
                 {title: "Reformer", link: "/фит-универзум/реформер"},
-                {title: "Функционален фитнес", link: "/фит-универзум/функционален-фитнес"},
-                {title: "Б Јога", link: "/фит-универзум/б-јога"},
-                {title: "Зумба", link: "/фит-универзум/зумба"},
                 {title: "Pain Relief", link: "/фит-универзум/pain-relief"},
-                {title: "Аеробик", link: "/фит-универзум/аеробик"},
+                {title: "Зумба", link: "/фит-универзум/зумба"},
+                {title: "Step Aerobik", link: "/фит-универзум/аеробик?scrollToTitleRound=true"},
+                {title: "Kick Box Aerobik", link: "/фит-универзум/аеробик?scrollToTitle=true"},
                 {title: "B-Fit Teen", link: "/фит-универзум/bfit-teen"},
                 {title: "Превентивно Корективна гимнастика", link: "/фит-универзум/превентивно-корективна-гимнастика"},
-                {title: "Ultimate bag workout", link: "/фит-универзум/ultimate-bag-workout"},
-                {title: "Функционален фитнес", link: "/фит-универзум/функционален-фитнес"}
+                {title: "Ultimate bag workout", link: "/фит-универзум/функционален-фитнес?scrollToTitle=true"},
+                {title: "Функционален фитнес", link: "/фит-универзум/функционален-фитнес"},
+                {title: "Yoga - BYoga", link: "/фит-универзум/б-јога"},
+                {title: "Meuna", link: "/фит-универзум/б-јога?scrollToRound=true"},
+                {title: "Персонални Тренинзи", link: "/фит-универзум/персонални-тренинзи"}
             ],
         },
         {title: "За Нас", link: "/за-нас"},
-        {title: "Онлајн", link: "https://online.branimirbrankica.mk/login", "target": "_blank"},
+        // {title: "Онлајн", link: "https://online.branimirbrankica.mk/login", "target": "_blank"},
+        {title: "Меуна", link: "/"},
         {title: "Новости", link: "/"},
         {title: "Галерија", link: "/галерија"},
-        {title: "Продукти", link: "/продукти"},
+        // {title: "Продукти", link: "/продукти"},
         {title: "Контакт", link: "/контакт"}
     ];
 
@@ -65,8 +70,8 @@ export default function MobileMenu() {
                 <div className="menu-overlay">
                     <div className={`menu-panel main-panel ${submenuTitle ? "slide-left" : ""}`}>
                         <Link to="/" onClick={() => setMenuOpen(false)}>
-                        <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
-                             className="d-block d-sm-none float-start w-50"/>
+                            <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
+                                 className="d-block d-sm-none float-start w-50"/>
                         </Link>
                         <button className="close-btn float-end mt-3 fw-bold" onClick={() => setMenuOpen(false)}>✕
                         </button>
@@ -114,7 +119,8 @@ export default function MobileMenu() {
                         </ul>
                         <div className="mobile mt-5">
                             <Link className="nav-link ms-2" to="tel:+38971968582">
-                                <img className="icon-phone me-3" alt="logo" src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/>
+                                <img className="icon-phone me-3" alt="logo"
+                                     src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/>
                                 +389 71 968 582</Link>
                         </div>
                     </div>
@@ -122,19 +128,21 @@ export default function MobileMenu() {
                     {submenuTitle && (
                         <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`}
                              key={submenuTitle}>
-                           <div className="mb-5">
-                               <Link to="/" onClick={() => setMenuOpen(false)}>
-                                   <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
-                                        className="d-block d-sm-none float-start w-50"/>
-                               </Link>
-                               <button className="close-btn float-end mt-3 fw-bold" onClick={() => setMenuOpen(false)}>✕
-                               </button>
-                               <span className="clearfix"></span>
-                           </div>
+                            <div className="mb-5">
+                                <Link to="/" onClick={() => setMenuOpen(false)}>
+                                    <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
+                                         className="d-block d-sm-none float-start w-50"/>
+                                </Link>
+                                <button className="close-btn float-end mt-3 fw-bold"
+                                        onClick={() => setMenuOpen(false)}>✕
+                                </button>
+                                <span className="clearfix"></span>
+                            </div>
 
                             <ul className="py-2">
                                 <button className="back-btn w-100 pb-3 mb-0"
-                                        onClick={() => setSubmenuTitle(null)}>← &nbsp; Назад</button>
+                                        onClick={() => setSubmenuTitle(null)}>← &nbsp; Назад
+                                </button>
                                 {menuItems
                                     .find((item) => item.title === submenuTitle)
                                     ?.children.map((child, i) => (

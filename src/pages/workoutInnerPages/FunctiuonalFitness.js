@@ -13,36 +13,19 @@ export default function FunctiuonalFitness() {
     const titleRoundRef = useRef(null);
 
 
-    // useEffect(() => {
-    //     const params = new URLSearchParams(location.search);
-    //     const shouldScroll = params.get("scrollToTitle");
-    //
-    //     if (shouldScroll && titleRef.current) {
-    //         titleRef.current.scrollIntoView({ behavior: "smooth" });
-    //
-    //         const cleanURL = location.pathname;
-    //         navigate(cleanURL, { replace: true });
-    //     }
-    // }, [location.search, location.pathname, navigate]);
-
     useEffect(() => {
         const params = new URLSearchParams(location.search);
-        const scrollToTitle = params.get("scrollToTitle");
-        const scrollToTitleRound = params.get("scrollToTitleRound");
+        const shouldScroll = params.get("scrollToTitle");
 
-        if (scrollToTitle && titleRef.current) {
-            titleRef.current.scrollIntoView({behavior: "smooth"});
-        }
+        if (shouldScroll && titleRef.current) {
+            titleRef.current.scrollIntoView({ behavior: "smooth" });
 
-        if (scrollToTitleRound && titleRoundRef.current) {
-            titleRoundRef.current.scrollIntoView({behavior: "smooth"});
-        }
-
-        if (scrollToTitle || scrollToTitleRound) {
             const cleanURL = location.pathname;
-            navigate(cleanURL, {replace: true});
+            navigate(cleanURL, { replace: true });
         }
     }, [location.search, location.pathname, navigate]);
+
+
 
     return (
         <>
@@ -160,7 +143,7 @@ export default function FunctiuonalFitness() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid" ref={titleRef}>
                 <HeaderMovingLines text={'Ultimate Bag Workout / Ultimate Bag Workout /'} strokeColor="#FB8B01" />
             </div>
             <div className="container">

@@ -12,7 +12,7 @@ export default function MainLayout() {
             <MobileMenu />
             <Outlet />
             <div className="container-fluid">
-                <LogosRow />
+                {/*<LogosRow />*/}
                 <FollowUs />
                 <Footer />
             </div>

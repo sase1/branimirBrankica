@@ -96,7 +96,7 @@ export default function Navbar() {
                                               className="dropdown-item">Превентивно Корективна Гимнастика</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/фит-универзум/ultimate-bag-workout"
+                                        <Link to="/фит-универзум/функционален-фитнес?scrollToTitle=true"
                                               className="dropdown-item">Ultimate Bag Workout</Link>
                                         <Link to="/фит-универзум/функционален-фитнес" className="dropdown-item">Функционален
                                             фитнес</Link>

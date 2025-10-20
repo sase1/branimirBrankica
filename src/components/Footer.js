@@ -43,14 +43,17 @@ export default function Footer() {
                                     <Link className="nav-link text-white" to="/танц">Танц</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/фит-универзум">ФитУниверзум</Link>
+                                    <Link className="nav-link text-white" to="/фит-универзум">ФитВерзум</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/за-нас">За Нас</Link>
                                 </li>
+                                {/*<li className="nav-item">*/}
+                                {/*    <Link className="nav-link text-white" target="_blank"*/}
+                                {/*          to="https://online.branimirbrankica.mk/login">Онлајн</Link>*/}
+                                {/*</li>*/}
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" target="_blank"
-                                          to="https://online.branimirbrankica.mk/login">Онлајн</Link>
+                                    <Link className="nav-link text-white" to="/">Меуна</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/">Новости</Link>
@@ -58,9 +61,9 @@ export default function Footer() {
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/галерија">Галерија</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/продукти">Продукти</Link>
-                                </li>
+                                {/*<li className="nav-item">*/}
+                                {/*    <Link className="nav-link text-white" to="/продукти">Продукти</Link>*/}
+                                {/*</li>*/}
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/контакт">Контакт</Link>
                                 </li>

@@ -2,6 +2,7 @@ import ContactForm from "../components/ContactForm";
 import PageHeader from "../components/PageHeader";
 import CarouselCards from "../components/CarouselCards";
 import "./Dance.css"
+import LogosRow from "../components/LogosRow";
 
 export default function Dance() {
 
@@ -74,6 +75,8 @@ export default function Dance() {
                     </div>
                 </div>
             </div>
+
+            <LogosRow />
 
             <div className="container my-5">
                 <ContactForm title="Персонални часови"
