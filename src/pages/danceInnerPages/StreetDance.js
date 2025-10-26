@@ -2,8 +2,36 @@ import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useLocation, useNavigate} from "react-router-dom";
+import {useEffect, useRef} from "react";
 
 export default function StreetDance() {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const titleRef = useRef(null);
+    const titleRoundRef = useRef(null);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const scrollToTitle = params.get("scrollToTitle");
+        const scrollToTitleRound = params.get("scrollToTitleRound");
+
+        if (scrollToTitle && titleRef.current) {
+            titleRef.current.scrollIntoView({behavior: "smooth"});
+        }
+
+        if (scrollToTitleRound && titleRoundRef.current) {
+            titleRoundRef.current.scrollIntoView({behavior: "smooth"});
+        }
+
+        if (scrollToTitle || scrollToTitleRound) {
+            const cleanURL = location.pathname;
+            navigate(cleanURL, {replace: true});
+        }
+    }, [location.search, location.pathname, navigate]);
+
+
     return (
         <>
             <PageHeader title="Street Dance"/>
@@ -20,7 +48,7 @@ export default function StreetDance() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid" ref={titleRoundRef}>
                 <HeaderMovingLines text={'Танц со Правила / Танц со Правила /'} strokeColor="#FB8B01" />
             </div>
 
@@ -55,7 +83,7 @@ export default function StreetDance() {
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container-fluid" ref={titleRef}>
                 <HeaderMovingLines text={'Танц без Правила / Танц без Правила /'} strokeColor="#6F9D80" />
             </div>
             <div className="container rulesDance">

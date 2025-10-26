@@ -45,21 +45,21 @@ export default function Navbar() {
                                 <div className="row">
                                     <div className="col">
                                         <Link to="/танц/латино-танци" className="dropdown-item">Латино Танци</Link>
-                                        <Link to="/танц/свадбен-танц" className="dropdown-item">Свадбен танц</Link>
-                                    </div>
-                                    <div className="col">
-                                        <Link to="/танц/соло-и-групи" className="dropdown-item">Solo & Групи
-                                        </Link>
                                         <Link to="/танц/друштвени-танци" className="dropdown-item">Social Dances</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски
-                                            Танцови Двојки</Link>
-                                        <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>
+                                        <Link to="/танц/уличен-танц?scrollToTitleRound=true" className="dropdown-item">Хип Хоп</Link>
+                                        <Link to="/танц/уличен-танц?scrollToTitle=true" className="dropdown-item">Ragga Jam</Link>
                                     </div>
+                                    {/*<div className="col">*/}
+                                    {/*    <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски*/}
+                                    {/*        Танцови Двојки</Link>*/}
+                                    {/*    <Link to="/танц/уличен-танц" className="dropdown-item">Street Dance</Link>*/}
+                                    {/*</div>*/}
                                     <div className="col">
-                                        <Link to="/танц/стандардни-танци" className="dropdown-item">Стандардни
-                                            Танци</Link>
+                                        <Link to="/танц/свадбен-танц" className="dropdown-item">Свадбен танц</Link>
+
+                                        <Link to="/" className="dropdown-item last-link">Приватни Часови</Link>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +86,10 @@ export default function Navbar() {
                                     </div>
                                     <div className="col">
                                         <Link to="/фит-универзум/зумба" className="dropdown-item">Зумба</Link>
-                                        <Link to="/фит-универзум/аеробик?scrollToTitleRound=true" className="dropdown-item">Step Aerobic</Link>
-                                        <Link to="/фит-универзум/аеробик?scrollToTitle=true" className="dropdown-item">Kick Box Aerobic</Link>
+                                        <Link to="/фит-универзум/аеробик?scrollToTitleRound=true"
+                                              className="dropdown-item">Step Aerobic</Link>
+                                        <Link to="/фит-универзум/аеробик?scrollToTitle=true" className="dropdown-item">Kick
+                                            Box Aerobic</Link>
 
                                     </div>
                                     <div className="col">
@@ -109,7 +111,7 @@ export default function Navbar() {
                                     </div>
 
                                     <div className="col">
-                                        <Link style={{color: "rgba(248, 149, 32, 1)"}} to="/фит-универзум/персонални-тренинзи" className="dropdown-item">Персонални
+                                        <Link to="/фит-универзум/персонални-тренинзи" className="dropdown-item last-link">Персонални
                                             тренинзи</Link>
                                     </div>
                                 </div>
@@ -127,6 +129,10 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" target="_blank"
                                   to="">Меуна</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link"
+                                  to="/партнери">Партнери</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Новости</Link>

@@ -56,6 +56,9 @@ export default function Footer() {
                                     <Link className="nav-link text-white" to="/">Меуна</Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link className="nav-link text-white" to="/партнери">Партнери</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link text-white" to="/">Новости</Link>
                                 </li>
                                 <li className="nav-item">

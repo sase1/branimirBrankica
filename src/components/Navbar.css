@@ -124,6 +124,7 @@ ul li {
         & .navbar-nav .nav-link {
             font-size: 1.5rem;
             padding: 0.5rem 1rem;
+
         }
 
         & .mobile {
@@ -250,3 +251,16 @@ ul li {
 }
 
 
+
+.last-link{
+    color: #FB8B01!important;
+
+    &:hover{
+        color: #2DA549!important;
+    }
+}
+
+
+.nav-link:focus{
+    color: #2DA549!important;
+}
