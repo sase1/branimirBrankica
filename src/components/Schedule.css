@@ -1,0 +1,44 @@
+.schedule {
+    & h2{
+        font-size: 3rem;
+    }
+    & table {
+        & tr th {
+            padding: 30px;
+            font-size: 1.6rem;
+        }
+
+        & tr td {
+            padding: 30px 30px 80px 30px;
+            font-size: 1.3rem;
+            font-weight: 700;
+
+            &:not(:first-child):nth-child(even) {
+                color: rgba(45, 165, 73, 1);
+            }
+
+            &:not(:first-child):nth-child(odd) {
+                color: rgba(248, 149, 32, 1);
+            }
+
+            & span {
+                display: block;
+                color: white;
+                margin-top: 5px;
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+
+        }
+
+        & tr:last-of-type td {
+            padding-bottom: 50px;
+        }
+        & tr:last-of-type{
+            border: none #4d5154;
+        }
+
+
+    }
+
+}

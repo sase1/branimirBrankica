@@ -1,0 +1,30 @@
+.page-header {
+    margin-top: 90px;
+    margin-bottom: 60px;
+
+    & h1{
+        font-size: 3.5rem;
+    }
+}
+
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">"!important;
+    color: #2DA549!important;
+    font-weight: 700;
+}
+
+.customBorder::after {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(135deg, #F89520, #2DA549);
+}

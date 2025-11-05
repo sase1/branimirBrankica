@@ -1,0 +1,16 @@
+.form {
+    & p{
+        font-weight: 300;
+    }
+
+    & select{
+        background-image: url("../../public/images/arrow-down.png");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 15px;
+
+        & option{
+            color: black;
+        }
+    }
+}

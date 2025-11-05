@@ -1,0 +1,40 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 70px 0;
+
+    @media (max-width: 991px) {
+        margin: 30px 0;
+    }
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 22s linear infinite;
+    width: max-content;
+}
+
+.marquee-content h2 {
+    white-space: nowrap;
+    font-size: 9rem;
+    font-weight: 900;
+    margin-right: 5rem;
+
+    @media (max-width: 991px) {
+        font-size: 6rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 4.5rem;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

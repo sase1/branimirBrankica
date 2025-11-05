@@ -1,0 +1,58 @@
+.counter {
+    margin-top: 50px!important;
+    margin-bottom: 70px!important;
+    & h2{
+        font-size: 6rem;
+        color: transparent;
+        font-weight: 900;
+        @media (max-width: 576px) {
+            font-size: 4rem;
+        }
+    }
+
+    & p{
+        font-size: 1.5rem;
+        @media (max-width: 576px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 20px!important;
+    }
+}
+
+h2.first{
+    -webkit-text-stroke: 1px #FB8B01;
+}
+
+
+h2.second{
+    -webkit-text-stroke: 1px #FFB355;
+}
+
+h2.third{
+    -webkit-text-stroke: 1px #2DA549;
+}
+
+h2.forth{
+    -webkit-text-stroke: 1px #76FFA9;
+}
+
+
+/*h2.first{*/
+/*    color: #FB8B01;*/
+/*}*/
+
+
+/*h2.second{*/
+/*    color: #FFB355;*/
+/*}*/
+
+/*h2.third{*/
+/*    color: #2DA549;*/
+/*}*/
+
+/*h2.forth{*/
+/*    color: #76FFA9;*/
+/*}*/

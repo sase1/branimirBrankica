@@ -1,0 +1,112 @@
+.danceWorkout {
+    margin-top: 130px !important;
+
+    & .image-wrapper {
+        transition: transform 0.8s ease;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            transform: scale(1.08);
+            z-index: 3;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-top: 70px !important;
+    }
+}
+
+
+.dance,
+.workout {
+    background-image: url("https://i.pinimg.com/736x/6b/52/6a/6b526abd77989e56df3623c01c6ada09.jpg");
+    height: 630px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    transition: transform 1s ease;
+
+    & h1 {
+        font-size: 8rem;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: left 1.2s ease;
+        @media (max-width: 991px) {
+            font-size: 6rem;
+            top: -65px;
+            left: 30%;;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 4rem;
+            top: -50px;
+        }
+    }
+
+    &:hover {
+        z-index: 2;
+
+        & h1 {
+            left: 43%;
+        }
+
+    }
+
+    @media (max-width: 991px) {
+        background-size: cover;
+        height: 510px;
+    }
+}
+
+.workout {
+    background-image: url("https://media.istockphoto.com/id/2027278927/photo/young-athletic-woman-exercising-with-barbell-during-sports-training-in-a-gym.jpg?s=612x612&w=0&k=20&c=ifFL7Mqc8NwTj25PAx4ONy1OOQZvc1S_kVOofsbLgFw=");
+    margin-top: -80px;
+
+    & h1 {
+        bottom: -70px;
+        top: auto;
+        @media (max-width: 991px) {
+            bottom: auto;
+            top: -70px;
+            left: 50%;
+        }
+        @media (max-width: 576px) {
+            bottom: 0;
+            top: -50px;
+        }
+
+    }
+
+
+    @media (max-width: 991px) {
+        margin-top: 90px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 80px;
+    }
+
+    &:hover {
+        z-index: 2;
+
+        & h1 {
+            left: 58%;
+        }
+
+    }
+}
+
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}

@@ -1,0 +1,46 @@
+.aerobicContent {
+    & h1{
+        font-size: 4rem;
+    }
+
+    & p{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+.content{
+    margin-bottom: 50px!important;
+}
+
+.imageContent{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.imageContent1{
+    background-image: url("https://smb.ibsrv.net/imageresizer/image/blog_images/1200x1200/3379/180404/0283075001584115178.jpg");
+}
+.imageContent2{
+    background-image: url("https://www.shutterstock.com/image-photo/group-women-standing-front-mirror-600nw-2273936447.jpg");
+}
+.imageContent3{
+    background-image: url("https://media.istockphoto.com/id/531702574/photo/sporty-people-on-training.jpg?s=612x612&w=0&k=20&c=xlXg18SibP276zzJL9YDSlpc6be19T-LZGYFVctHAiA=");
+}
+.imageContent4{
+    background-image: url("https://i.ytimg.com/vi/w19JfBg-M4g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCs6qVdXMHz-0EDa_LN-mWWSrEj-A");
+}
+.imageContent5{
+    background-image: url("https://images.myacare.com/uploads/AdminBlogs/1361b112aa644ecfa0cb6993ac2be1b9.webp");
+}
+.imageContent6{
+    background-image: url("https://pledgetofitness.com/wp-content/uploads/2023/10/Pledge-to-Fitness-Img-Maximizing-Aerobic-vs-Anaerobic.jpg");
+}
+.imageContent7{
+    background-image: url("https://media.istockphoto.com/id/841069776/photo/happy-people-in-an-aerobics-class-at-the-gym.jpg?s=612x612&w=0&k=20&c=Msbb_TNBDZWWZfnuaZubcgE7Qa-qimYrl4D3aFQv9PY=");
+}
+.imageContent8{
+    background-image: url("https://t4.ftcdn.net/jpg/01/53/48/31/360_F_153483113_68ndPuXM4ubwPZSYxoA8HQFEgVM63HIz.jpg");
+}

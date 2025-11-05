@@ -1,0 +1,34 @@
+.logos-row-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 70px 0 180px 0;
+}
+
+.logos-row {
+    display: flex;
+    width: max-content; /* important to prevent wrapping */
+    animation: scroll 25s linear infinite;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* scroll half, one set of logos */
+    }
+}
+
+.logo-item img {
+    max-height: 150px;
+    object-fit: contain;
+
+    @media screen and (max-width: 500px){
+        max-height: 80px;
+    }
+}
