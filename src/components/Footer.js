@@ -62,6 +62,9 @@ export default function Footer() {
                                     <Link className="nav-link text-white" to="/">Новости</Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link className="nav-link text-white" to="/продавница">Продавница</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link text-white" to="/галерија">Галерија</Link>
                                 </li>
                                 {/*<li className="nav-item">*/}
@@ -74,7 +77,7 @@ export default function Footer() {
 
                             <div className="d-flex ms-auto">
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" target="_blank" to="https://www.facebook.com/sportbranimirbrankica/">
+                                <Link className="nav-link text-white" target="_blank" to="https://www.facebook.com/sportbranimirbrankica/">
                                         <img
                                             src={`${process.env.PUBLIC_URL}/images/fb-logo.png`}
                                             alt="fb-logo"/>

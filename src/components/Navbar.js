@@ -21,7 +21,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className="navbar navbar-expand-xl navbar-dark navbarLinks navbarLinksNavbar position-relative d-none d-sm-block">
+            className="navbar navbar-expand-xxl navbar-dark navbarLinks navbarLinksNavbar position-relative d-none d-sm-block">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4" to="/">
                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"/>
@@ -48,8 +48,10 @@ export default function Navbar() {
                                         <Link to="/танц/друштвени-танци" className="dropdown-item">Social Dances</Link>
                                     </div>
                                     <div className="col">
-                                        <Link to="/танц/уличен-танц?scrollToTitleRound=true" className="dropdown-item">Хип Хоп</Link>
-                                        <Link to="/танц/уличен-танц?scrollToTitle=true" className="dropdown-item">Ragga Jam</Link>
+                                        <Link to="/танц/уличен-танц?scrollToTitleRound=true" className="dropdown-item">Хип
+                                            Хоп</Link>
+                                        <Link to="/танц/уличен-танц?scrollToTitle=true" className="dropdown-item">Ragga
+                                            Jam</Link>
                                     </div>
                                     {/*<div className="col">*/}
                                     {/*    <Link to="/танц/спортски-танцови-двојки" className="dropdown-item">Спортски*/}
@@ -111,7 +113,8 @@ export default function Navbar() {
                                     </div>
 
                                     <div className="col">
-                                        <Link to="/фит-универзум/персонални-тренинзи" className="dropdown-item last-link">Персонални
+                                        <Link to="/фит-универзум/персонални-тренинзи"
+                                              className="dropdown-item last-link">Персонални
                                             тренинзи</Link>
                                     </div>
                                 </div>
@@ -128,7 +131,7 @@ export default function Navbar() {
                         {/*</li>*/}
                         <li className="nav-item">
                             <Link className="nav-link" to="/меуна"
-                                  >Меуна</Link>
+                            >Меуна</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link"
@@ -136,6 +139,9 @@ export default function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Новости</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/продавница">Продавница</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/галерија">Галерија</Link>
@@ -150,7 +156,7 @@ export default function Navbar() {
                     </ul>
                     <div className="mobile pe-4">
                         <Link className="nav-link" to="tel:+38971968582">
-                            <img className="icon me-1" alt="logo"
+                        <img className="icon me-1" alt="logo"
                                  src={`${process.env.PUBLIC_URL}/images/phone-icon.svg`}/> +389
                             71 968 582</Link>
                     </div>

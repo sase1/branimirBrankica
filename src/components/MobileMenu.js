@@ -41,6 +41,7 @@ export default function MobileMenu() {
         {title: "Меуна", link: "/меуна"},
         {title: "Партнери", link: "/партнери"},
         {title: "Новости", link: "/"},
+        {title: "Продавница", link: "/продавница"},
         {title: "Галерија", link: "/галерија"},
         // {title: "Продукти", link: "/продукти"},
         {title: "Контакт", link: "/контакт"}

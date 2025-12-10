@@ -27,10 +27,12 @@ import PersonalTraining from "./pages/workoutInnerPages/PersonalTraining";
 import BFitTeen from "./pages/workoutInnerPages/BFitTeen";
 import SportDoubleDance from "./pages/danceInnerPages/SportDoubleDance";
 import StreetDance from "./pages/danceInnerPages/StreetDance";
-import Products from "./pages/Products";
+import Store from "./pages/Store";
 import StandardDances from "./pages/danceInnerPages/StandardDances";
 import Partners from "./pages/Partners";
 import Meuna from "./pages/Meuna";
+import Lifestyle from "./pages/storeInnerPages/Lifestyle";
+import OrganicHoney from "./pages/storeInnerPages/lifestyleInnerPages/OrganicHoney";
 
 function App() {
     return (
@@ -43,7 +45,9 @@ function App() {
                     <Route path="/за-нас" element={<AboutUs />} />
                     <Route path="/меуна" element={<Meuna />} />
                     <Route path="/контакт" element={<Contact />} />
-                    <Route path="/продукти" element={<Products />} />
+                    <Route path="/продавница" element={<Store />} />
+                    <Route path="/продавница/lifestyle" element={<Lifestyle />} />
+                    <Route path="/продавница/lifestyle/органски-мед" element={<OrganicHoney />} />
                     <Route path="/партнери" element={<Partners />} />
                     <Route path="/галерија" element={<Gallery />} />
                     <Route path="/танц/латино-танци" element={<LatinoDances />} />
