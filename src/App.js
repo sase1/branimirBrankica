@@ -33,6 +33,7 @@ import Partners from "./pages/Partners";
 import Meuna from "./pages/Meuna";
 import Lifestyle from "./pages/storeInnerPages/Lifestyle";
 import OrganicHoney from "./pages/storeInnerPages/lifestyleInnerPages/OrganicHoney";
+import BeesProducts from "./pages/storeInnerPages/lifestyleInnerPages/BeesProducts";
 
 function App() {
     return (
@@ -48,6 +49,7 @@ function App() {
                     <Route path="/продавница" element={<Store />} />
                     <Route path="/продавница/lifestyle" element={<Lifestyle />} />
                     <Route path="/продавница/lifestyle/органски-мед" element={<OrganicHoney />} />
+                    <Route path="/продавница/lifestyle/пчелни-производи" element={<BeesProducts />} />
                     <Route path="/партнери" element={<Partners />} />
                     <Route path="/галерија" element={<Gallery />} />
                     <Route path="/танц/латино-танци" element={<LatinoDances />} />
