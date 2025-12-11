@@ -70,7 +70,7 @@ export default function Lifestyle() {
                         <p> Производи направени со најчисти пчелни состојки – креми, мелеми и маски, создадени за оние
                             кои сакаат да негуваат кожа и коса со природни, нежни и ефикасни формули без хемикалии. </p>
 
-                        <CustomLink to="/" text="Дознајте Повеќе" />
+                        <CustomLink to="#" text="Дознајте Повеќе" />
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -102,7 +102,7 @@ export default function Lifestyle() {
                         </p>
                         <p>Секој производ е избран да ви помогне да напредувате безбедно и ефикасно – прилагоден и за
                             почетници и за напредни спортисти.</p>
-                        <CustomLink to="/" text="Пријавете се" />
+                        <CustomLink to="#" text="Пријавете се" />
 
                     </div>
                 </div>
@@ -127,7 +127,7 @@ export default function Lifestyle() {
                         </p>
                         <p> Достапна е за сите возрасти и стилови, без компромис помеѓу естетика и функционалност. </p>
 
-                        <CustomLink to="/" text="Кон производите" />
+                        <CustomLink to="#" text="Кон производите" />
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img

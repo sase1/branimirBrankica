@@ -18,7 +18,7 @@ export default function OrganicHoney() {
                         <p>Овој мед е благ, ароматичен и лесно се вклопува и во исхраната и во секојдневните ритуали на
                             нега и енергија. Богат со антиоксиданси, витамини и ензими, ливадскиот мед е идеален избор
                             за сите возрасти – од деца до спортисти.</p>
-                        <CustomLink to="/" text="Дознајте Повеќе"/>
+                        <CustomLink to="#" text="Дознајте Повеќе"/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -49,7 +49,7 @@ export default function OrganicHoney() {
                         </p>
                         <p>Поради ова потекло, тој има длабок, комплексен вкус со благ карамелен тон и потемна, амбер
                             боја што сведочи за неговата богата минерална структура.</p>
-                        <CustomLink to="/" text="Дознајте Повеќе"/>
+                        <CustomLink to="#" text="Дознајте Повеќе"/>
 
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default function OrganicHoney() {
                         <p> Совршен е за поддршка на имунитетот, циркулацијата и општата виталност – природен избор за
                             оние што сакаат нешто поразлично и силно. </p>
 
-                        <CustomLink to="/" text="Дознајте Повеќе"/>
+                        <CustomLink to="#" text="Дознајте Повеќе"/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -105,7 +105,7 @@ export default function OrganicHoney() {
                         <p>Произведен е во чисти багремови шуми далеку од урбана загаденост, директно од македонски
                             пчелари кои го чуваат неговиот природен квалитет – без пастеризација, без адитиви, без
                             компромис.</p>
-                        <CustomLink to="/" text="Дознајте Повеќе"/>
+                        <CustomLink to="#" text="Дознајте Повеќе"/>
 
                     </div>
                 </div>
@@ -129,7 +129,7 @@ export default function OrganicHoney() {
                             комбинација која носи силен имуностимулативен ефект, како и подобрување на дигестивниот
                             систем. </p>
 
-                        <CustomLink to="/" text="Дознајте Повеќе"/>
+                        <CustomLink to="#" text="Дознајте Повеќе"/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img

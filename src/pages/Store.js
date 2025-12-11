@@ -18,7 +18,7 @@ export default function Store() {
                         </p>
                         <p> Претходно снимените видеа се внимателно структурирани според ниво, тип на тренинг и траење –
                             за да можете да вежбате каде и да сте, кога и вам да ви одговара.</p>
-                        <CustomLink to="https://online.branimirbrankica.mk/login" text="Дознајте Повеќе" />
+                        <CustomLink to="https://online.branimirbrankica.mk/login" text="Дознајте Повеќе" blank/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -49,7 +49,7 @@ export default function Store() {
                         </p>
                         <p>Секој час се одвива во реално време со инструктори кои ве мотивираат, насочуваат и се грижат
                             за вашата правилна форма – каде и да сте.</p>
-                        <CustomLink to="/" text="Пријавете се"/>
+                        <CustomLink to="#" text="Пријавете се"/>
 
                     </div>
                 </div>
