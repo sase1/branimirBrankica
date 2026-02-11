@@ -79,7 +79,6 @@ export default function Store() {
                     </div>
                 </div>
             </div>
-
             {/*<div className="container">*/}
             {/*    <ContactForm title="Персонални тренинзи"*/}
             {/*                 description1="Заинтересирани сте за часови со персонален инструктор?"*/}
