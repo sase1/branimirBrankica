@@ -17,7 +17,7 @@ export default function Store() {
                             нуди слобода и континуитет.
                         </p>
                         <p> Претходно снимените видеа се внимателно структурирани според ниво, тип на тренинг и траење –
-                            за да можете да вежбате каде и да сте, кога и вам да ви одговара.</p>
+                            за да можете да вежбате каде и да сте, кога и вас да ви одговара. </p>
                         <CustomLink to="https://online.branimirbrankica.mk/login" text="Дознајте Повеќе" blank/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
