@@ -1,6 +1,8 @@
 import {useState} from "react";
 import "./MobileMenu.css";
 import {Link} from "react-router-dom";
+import LanguageLink from "./LanguageLink";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MobileMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -58,10 +60,10 @@ export default function MobileMenu() {
 
     return (
         <>
-            <Link to="/">
+            <LanguageLink to="/">
                 <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                      className="d-block d-sm-none float-start p-3"/>
-            </Link>
+            </LanguageLink>
             <button className="hamburger float-end mt-4 pe-3" onClick={() => setMenuOpen(true)}>
                 ☰
             </button>
@@ -70,19 +72,21 @@ export default function MobileMenu() {
             {menuOpen && (
                 <div className="menu-overlay">
                     <div className={`menu-panel main-panel ${submenuTitle ? "slide-left" : ""}`}>
-                        <Link to="/" onClick={() => setMenuOpen(false)}>
+                        <LanguageLink to="/" onClick={() => setMenuOpen(false)}>
                             <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                                  className="d-block d-sm-none float-start w-50"/>
-                        </Link>
+                        </LanguageLink>
                         <button className="close-btn float-end mt-3 fw-bold" onClick={() => setMenuOpen(false)}>✕
                         </button>
                         <span className="clearfix"></span>
+                        <LanguageSwitcher/>
+
                         <ul className="mt-5 p-2">
                             {menuItems.map((item, index) => (
                                 <li key={index} className="menu-item-with-arrow">
                                     {item.children ? (
                                         <>
-                                            <Link
+                                            <LanguageLink
                                                 to={item.link}
                                                 className="menu-title"
                                                 onClick={() => {
@@ -91,7 +95,7 @@ export default function MobileMenu() {
                                                 }}
                                             >
                                                 {item.title}
-                                            </Link>
+                                            </LanguageLink>
 
                                             <button
                                                 className="submenu-arrow text-end"
@@ -104,7 +108,7 @@ export default function MobileMenu() {
                                             </button>
                                         </>
                                     ) : (
-                                        <Link
+                                        <LanguageLink
                                             to={item.link}
                                             onClick={() => {
                                                 setMenuOpen(false);
@@ -112,12 +116,13 @@ export default function MobileMenu() {
                                             }}
                                         >
                                             {item.title}
-                                        </Link>
+                                        </LanguageLink>
                                     )}
                                 </li>
                             ))}
 
                         </ul>
+
                         <div className="mobile mt-5">
                             <Link className="nav-link ms-2" to="tel:+38971968582">
                                 <img className="icon-phone me-3" alt="logo"
@@ -130,10 +135,10 @@ export default function MobileMenu() {
                         <div className={`menu-panel sub-panel ${submenuAnimating ? "slide-in" : ""}`}
                              key={submenuTitle}>
                             <div className="mb-5">
-                                <Link to="/" onClick={() => setMenuOpen(false)}>
+                                <LanguageLink to="/" onClick={() => setMenuOpen(false)}>
                                     <img src={`${process.env.PUBLIC_URL}/images/navbar-logo.png`} alt="Site Logo"
                                          className="d-block d-sm-none float-start w-50"/>
-                                </Link>
+                                </LanguageLink>
                                 <button className="close-btn float-end mt-3 fw-bold"
                                         onClick={() => setMenuOpen(false)}>✕
                                 </button>
@@ -148,12 +153,12 @@ export default function MobileMenu() {
                                     .find((item) => item.title === submenuTitle)
                                     ?.children.map((child, i) => (
                                         <li key={i}>
-                                            <Link to={child.link} onClick={() => {
+                                            <LanguageLink to={child.link} onClick={() => {
                                                 setMenuOpen(false);
                                                 setSubmenuTitle(null);
                                             }}>
                                                 {child.title}
-                                            </Link>
+                                            </LanguageLink>
                                         </li>
                                     ))}
                             </ul>

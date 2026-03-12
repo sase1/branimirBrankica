@@ -2,20 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function WeddingDance() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Свадбен танц"/>
+            <PageHeader title={t("weddingDanceTitle")}/>
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Вашиот совршен прв танц</h1>
-                        <p className="my-5">Свадбениот танц е еден од најемотивните и фотографирани моменти на вашата
-                            венчавка. Преку часови по свадбен танц, ќе ви помогнеме да креирате кореографија што
-                            совршено одговара на вашата музика, стил и приказна како пар. Без разлика дали сакате
-                            класичен валцер, модерен романтичен танц или нешто забавно и изненадувачко – тука сме да ве
-                            водиме чекор по чекор.</p>
+                        <h1>{t("weddingDanceHeading")}</h1>
+                        <p className="my-5">{t("weddingDanceInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -52,14 +51,10 @@ export default function WeddingDance() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Создадено за вас</h2>
-                        <p>Нашите часови се прилагодени според вашето темпо, искуство и желби. Работиме во пријатна и
-                            опуштена атмосфера, со фокус на комуникацијата помеѓу партнерите и градење самодоверба на
-                            подиумот.
+                        <h2 className="my-4">{t("createdForYouHeading")}</h2>
+                        <p>{t("createdForYouSubtitle")}
                         </p>
-                        <p>Доколку сакате да вклучите и гости, кумови или изненадувачка групна кореографија – нудиме и
-                            дополнителни пакети.
-                            Вашиот прв танц нека биде магичен момент што ќе го паметите засекогаш.</p>
+                        <p>{t("createdForYouSubSubtitle")}</p>
                     </div>
                 </div>
             </div>

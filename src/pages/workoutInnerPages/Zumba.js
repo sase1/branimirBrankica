@@ -2,20 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function Zumba() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Зумба"/>
+            <PageHeader title={t("zumbaTitle")}/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Зумба?</h1>
-                        <p className="my-5">Зумба е забавен танц-фитнес тренинг инспириран од латино и светски ритми.
-                            Комбинира кардио движења, лесни кореографии и енергична музика за да создаде ефективен и
-                            заразен тренинг. Погоден е за сите возрасти и нивоа, зумба го согорува стресот, калориите и
-                            носи насмевка. Без чувство дека вежбате, ќе ги почувствувате бенефитите – за срцето, телото
-                            и духот.</p>
+                        <h1>{t("zumbaHeading")}</h1>
+                        <p className="my-5">{t("zumbaInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -34,14 +33,10 @@ export default function Zumba() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Зумба Fitness</h2>
-                        <p>Зумба Fitness е оригиналниот и најпознат формат на зумба – кардио танц тренинг инспириран од
-                            латино и светски ритми. Комбинира едноставни кореографии со движења од салса, меренге,
-                            регетон и самба, при што телото е во постојано движење.
+                        <h2 className="my-4">{t("zumbaFitnessHeading")}</h2>
+                        <p>{t("zumbaFitnessSubtitle")}
                         </p>
-                        <p>Овој тренинг согорува калории, ја подобрува кондицијата и ви дава чувство на енергија и
-                            радост. Zumba Fitness е повеќе од вежбање – тоа е фитнес забава која го подобрува и телото и
-                            расположението.</p>
+                        <p>{t("zumbaFitnessSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -54,14 +49,10 @@ export default function Zumba() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba-toning.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Зумба Toning</h2>
-                        <p>Зумба Toning е комбинација од забавните зумба движења и тренинг со лесни тегови (toning
-                            sticks), со цел оформување и зајакнување на мускулите. Додека го следите ритамот на латино
-                            музиката, истовремено работите на мускулен тонус, стабилност и координација.
+                        <h2 className="my-4">{t("zumbaToningHeading")}</h2>
+                        <p>{t("zumbaToningSubtitle")}
                         </p>
-                        <p> Тренингот е насочен кон јадрото, рацете и долниот дел од телото.
-                            Погоден е за оние што сакаат да танцуваат, а во исто време да изградат посилно и пооформено
-                            тело.</p>
+                        <p> {t("zumbaToningSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -79,15 +70,10 @@ export default function Zumba() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/zumba/zumba.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Зумба Step</h2>
-                        <p>Зумба Step го комбинира енергичниот стил на зумба со предизвикот на степ-платформа. Се
-                            фокусира на обликување на нозете и задникот, додека пулсот е во константна зона на
-                            согорување калории.
+                        <h2 className="my-4">{t("zumbaStepHeading")}</h2>
+                        <p>{t("zumbaStepSubtitle")}
                         </p>
-                        <p>Чекорите се ритмички и музички усогласени, што создава динамичен, но контролирано интензивен
-                            тренинг.
-                            Идеален е за оние што сакаат дополнителен фокус на долниот дел од телото без да се изгуби
-                            забавниот дух на класичната зумба.</p>
+                        <p>{t("zumbaStepSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img

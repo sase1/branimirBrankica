@@ -4,6 +4,7 @@ import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 import {useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useRef} from "react";
+import {useTranslation} from "react-i18next";
 
 export default function StreetDance() {
 
@@ -31,6 +32,8 @@ export default function StreetDance() {
         }
     }, [location.search, location.pathname, navigate]);
 
+    const { t } = useTranslation();
+
 
     return (
         <>
@@ -38,13 +41,8 @@ export default function StreetDance() {
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Street Dance?</h1>
-                        <p className="my-5">Street dance е урбана форма на танц која се развила од уличната култура и се
-                            танцува со слобода, став и силна поврзаност со музиката. Комбинира различни стилови како hip
-                            hop – со ритмички чекори и индивидуален израз, ragga jam – инспириран од јамајканските
-                            денсхол движења со женствена енергија и attitude, и break dance – акробатски и атлетски танц
-                            со power moves и footwork. Овие стилови се повеќе од танц – тие се движење, заедница и
-                            слободна уметност во движење.</p>
+                        <h1>{t("streetDanceHeading")}</h1>
+                        <p className="my-5">{t("streetDanceInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -64,19 +62,11 @@ export default function StreetDance() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Хип Хоп</h2>
-                        <p>Hip Hop танцот е енергичен, модерен и постојано еволуирачки стил што ги следи најновите
-                            музички и
-                            улични трендови. Се карактеризира со ритмички движења, силен groove, контраст меѓу брзи и
-                            бавни
-                            сегменти и акцент на личен стил и израз.
-                        </p>
-                        <p className="mb-0">
-                            Се танцува соло, во група или во форма на battle.
+                        <h2 className="my-4">{t("hipHopHeading")}</h2>
+                        <p>{t("hipHopSubtitle")}
                         </p>
                         <p>
-                            Овој стил е идеален за младите и сите што сакаат да се движат слободно и да го изразат
-                            својот став.
+                            {t("hipHopSubSubtitle")}
                         </p>
 
                     </div>
@@ -92,12 +82,9 @@ export default function StreetDance() {
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
                         <h2 className="my-4">Ragga Jam</h2>
-                        <p>Ragga Jam е експлозивна фузија на реге-дансхол танц со хип-хоп елементи. Потекнува од
-                            уличната култура на Јамајка и Франција и се карактеризира со енергични и ритмички движења на
-                            колковите, градите и целото тело.
+                        <p>{t("raggaJamSubtitle")}
                         </p>
-                        <p> Се танцува на реге и денсхол музика, со висока доза на attitude и сцена. Ragga Jam е моќна и
-                            забавна форма на танц која ја слави енергијата,телесната слобода и позитивниот дух.</p>
+                        <p> {t("raggaJamSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -124,14 +111,10 @@ export default function StreetDance() {
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
                         <h2 className="my-4">Break Dance</h2>
-                        <p>Break Dance е акробатски и атлетски уличен танц што вклучува елементи како toprock, footwork,
-                            power moves и freezes. Потекнува од 1970-тите во Бронкс, Њујорк, и претставува еден од
-                            четирите главни елементи на хип-хоп културата.
+                        <p>{t("breakDanceSubtitle")}
                         </p>
                         <p>
-                            Овој стил бара сила, координација, ритам и креативност, а најчесто се изведува на battle или
-                            перформанси. Break Dance нуди уникатен начин на самоизразување преку движења кои ја
-                            надминуваат гравитацијата.
+                            {t("breakDanceSubSubtitle")}
                         </p>
                     </div>
                 </div>

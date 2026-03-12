@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import "./PageHeader.css"
+import LanguageLink from "./LanguageLink";
 
 export default function PageHeader({ title }) {
     const location = useLocation();
-    const pathParts = location.pathname.split("/").filter(Boolean);
+    const pathParts = location.pathname.split("/").filter(Boolean).filter(part => part !== "mk" && part !== "en");
     return (
         <div className="page-header text-white text-center customBorder position-relative">
             <h1 className="mb-4">{title}</h1>
@@ -25,9 +26,9 @@ export default function PageHeader({ title }) {
                                 {isLast ? (
                                     decodeURIComponent(part.replace(/-/g, " "))
                                 ) : (
-                                    <Link to={path} className="text-white text-decoration-none text-capitalize">
+                                    <LanguageLink to={path} className="text-white text-decoration-none text-capitalize">
                                         {decodeURIComponent(part.replace(/-/g, " "))}
-                                    </Link>
+                                    </LanguageLink>
                                 )}
                             </li>
                         );

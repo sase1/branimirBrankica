@@ -2,21 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function CorrectionalGymnastic() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Превентивно корективна гимнастика"/>
+            <PageHeader title={t("prevCoreGymTitle")}/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Превентивно корективна гимнастика?</h1>
-                        <p className="my-5">Превентивно-корективната гимнастика е специјализиран тип физичка активност
-                            наменета за деца со неправилно држење или ризик од развој на постурални деформитети. Се
-                            изведува низ внимателно избрани и дозирани вежби по интензитет, вид и траење, со цел да се
-                            обезбеди здрав развој на мускулно-скелетниот систем. Во нашиот клуб, оваа програма е дел од
-                            широкоспектарната понуда и се спроведува од професионален тим со искуство во работа со
-                            најмладите.</p>
+                        <h1>{t("prevCoreGymHeading")}</h1>
+                        <p className="my-5">{t("prevCoreGymInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -28,11 +26,8 @@ export default function CorrectionalGymnastic() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pkg.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Превентивна функција</h2>
-                        <p>Овој пристап е насочен кон деца од предучилишна и училишна возраст кои покажуваат
-                            предиспозиции за искривувања на рбетот, нозете или стапалата. Преку прецизно контролирани
-                            вежби, децата ја подобруваат својата телесна поставеност, се стекнуваат со правилни движења
-                            и развиваат здраво тело уште од најрана возраст.</p>
+                        <h2 className="my-4">{t("preventiveFunctionHeading")}</h2>
+                        <p>{t("preventiveFunctionSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -57,17 +52,13 @@ export default function CorrectionalGymnastic() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pkg.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Корективна функција и бенефити</h2>
+                        <h2 className="my-4">{t("corectiveFunctionAndBenefitsHeading")}</h2>
                         <p>
-                            Доколку постои веќе настанат деформитет, корективната гимнастика делува тераписки – ги
-                            намалува болките, ја подобрува мускулната рамнотежа, го зголемува обемот на подвижност во
-                            зглобовите и го стабилизира држењето.
+                            {t("corectiveFunctionAndBenefitsSubtitle")}
                         </p>
 
                         <p>
-                            Дополнително, се развива кардиоваскуларната функција, се зголемува еластичноста и
-                            издржливоста, а децата преку игра и социјализација стекнуваат чувство на радост и сигурност
-                            во движењето.
+                            {t("corectiveFunctionAndBenefitsSubSubtitle")}
                         </p>
                     </div>
                 </div>

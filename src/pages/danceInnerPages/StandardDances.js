@@ -2,22 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function StandardDances() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Стандардни танци"/>
+            <PageHeader title={t("standardDancesTitle")}/>
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што се Стандардни танци?</h1>
-                        <p className="my-5">Стандардните танци се елегантна и технички барана дисциплина во спортското
-                            танцување, дел од официјалниот натпреварувачки систем на WDSF – Светската танцова спортска
-                            федерација, која уште од 1957 година поставува врвни стандарди во светот на танцот. Англиски
-                            валцер, виенски валцер, слоуфокс, квикстеп и танго се изучуваат со прецизна методологија и
-                            оценуваат според строги WDSF критериуми. Во ТСК „Бранимир и Бранкица“, овие танци се
-                            предаваат од професионален тим со меѓународно искуство, со цел секој танчар да го достигне
-                            својот полн потенцијал – било рекреативно, било натпреварувачки.</p>
+                        <h1>{t("whatAreStandardDancesHeading")}</h1>
+                        <p className="my-5">{t("whatAreStandardDancesInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -37,13 +34,11 @@ export default function StandardDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Aнглиски валцер</h2>
-                        <p>Англискиот валцер е познат по своите мазни, кружни движења и „паѓање и кревање“ (rise and
-                            fall) техника. Танцот се изведува во споро темпо и создава чувство на лебдење по подиумот.
+                        <h2 className="my-4">{t("englishWaltzHeading")}</h2>
+                        <p>{t("englishWaltzSubtitle")}
                         </p>
                         <p>
-                            Тој е основа на сите стандардни танци и идеален за развивање на стабилна танцова рамка,
-                            музикалност и грациозност.
+                            {t("englishWaltzSubSubtitle")}
                         </p>
                     </div>
                 </div>
@@ -57,12 +52,9 @@ export default function StandardDances() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Aргентинско танго</h2>
-                        <p>Аргентинското танго е страстен и драматичен танц со остри, контролирани движења и силна
-                            визуелна експресија. За разлика од останатите стандардни танци, танго не вклучува „rise and
-                            fall“, туку се танцува ниско, со прецизна нога техника и постојана тензија меѓу партнерите.
-                            Танц што бара прецизност, емоција и сценска присутност.
-                        </p>
+                        <h2 className="my-4">{t("tangoHeading")}</h2>
+                        <p>{t("tangoSubtitle")}</p>
+                        <p>{t("tangoSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -88,13 +80,9 @@ export default function StandardDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Виенски валцер</h2>
-                        <p>Виенскиот валцер е најбрзиот валцер и се изведува со константни вртења и кружни движења во
-                            ритам од 3/4. Танцот создава спектакуларен визуелен ефект и бара одлична контрола,
-                            ориентација и физичка издржливост.
-                        </p>
-                        <p>
-                            Неговата традиционална форма и динамика го прават омилен и на сцената и на балот.</p>
+                        <h2 className="my-4">{t("vienneseWaltzHeading")}</h2>
+                        <p>{t("vienneseWaltzSubtitle")} </p>
+                        <p>{t("vienneseWaltzSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -107,13 +95,10 @@ export default function StandardDances() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Слоуфокс</h2>
-                        <p>Слоуфокс е еден од најтехнички прецизните и најтешките танци во стандардната категорија. Се
-                            карактеризира со мазни, лизгачки движења и големи чекори со постојан flow.
-                        </p>
+                        <h2 className="my-4">{t("slowfoxHeading")}</h2>
+                        <p>{t("slowfoxSubtitle")}</p>
                         <p>
-                            Темпото е бавно, но контролата и синхронизираноста меѓу партнерите мора да бидат совршени.
-                            Танцот бара зрелост, стабилност и беспрекорна техника.
+                            {t("slowfoxSubSubtitle")}
                         </p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
@@ -140,13 +125,9 @@ export default function StandardDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Квикстеп</h2>
-                        <p>Квикстепот е брз, весел и скоклив танц со комплексна игра на ритам, брзи чекори и енергични
-                            движења. Иако е дел од стандардните танци, има динамика што често потсетува на шоу танц, со
-                            живост и елеганција во исто време.
-                        </p>
-                        <p>
-                            Идеален за демонстрирање на леснотија, брзина и играчки карактер на парот.</p>
+                        <h2 className="my-4">{t("quickstepHeading")}</h2>
+                        <p>{t("quickstepSubtitle")}</p>
+                        <p> {t("quickstepSubSubtitle")} </p>
                     </div>
                 </div>
             </div>

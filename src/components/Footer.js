@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import "./Footer.css"
+import LanguageLink from "./LanguageLink";
 
 export default function Footer() {
     return (
@@ -40,38 +41,38 @@ export default function Footer() {
                         <ul className="navbar-nav py-2 w-100 align-items-center">
                             <div className="d-flex flex-column flex-lg-row footerNavbarLinks">
                                 <li className="nav-item ms-lg-0">
-                                    <Link className="nav-link text-white" to="/танц">Танц</Link>
+                                    <LanguageLink className="nav-link text-white" to="/танц">Танц</LanguageLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/фит-универзум">ФитВерзум</Link>
+                                    <LanguageLink className="nav-link text-white" to="/фит-универзум">ФитВерзум</LanguageLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/за-нас">За Нас</Link>
+                                    <LanguageLink className="nav-link text-white" to="/за-нас">За Нас</LanguageLink>
                                 </li>
                                 {/*<li className="nav-item">*/}
                                 {/*    <Link className="nav-link text-white" target="_blank"*/}
                                 {/*          to="https://online.branimirbrankica.mk/login">Онлајн</Link>*/}
                                 {/*</li>*/}
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/меуна">Меуна</Link>
+                                    <LanguageLink className="nav-link text-white" to="/меуна">Меуна</LanguageLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/партнери">Партнери</Link>
+                                    <LanguageLink className="nav-link text-white" to="/партнери">Партнери</LanguageLink>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link text-white" to="/">Новости</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/продавница">Продавница</Link>
+                                    <LanguageLink className="nav-link text-white" to="/продавница">Продавница</LanguageLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/галерија">Галерија</Link>
+                                    <LanguageLink className="nav-link text-white" to="/галерија">Галерија</LanguageLink>
                                 </li>
                                 {/*<li className="nav-item">*/}
                                 {/*    <Link className="nav-link text-white" to="/продукти">Продукти</Link>*/}
                                 {/*</li>*/}
                                 <li className="nav-item">
-                                    <Link className="nav-link text-white" to="/контакт">Контакт</Link>
+                                    <LanguageLink className="nav-link text-white" to="/контакт">Контакт</LanguageLink>
                                 </li>
                             </div>
 

@@ -2,6 +2,7 @@ import './DanceWorkout.css';
 import {Link} from "react-router-dom";
 
 import { useEffect, useState } from "react";
+import LanguageLink from "./LanguageLink";
 
 const danceImages = [
     "https://i.pinimg.com/736x/6b/52/6a/6b526abd77989e56df3623c01c6ada09.jpg",
@@ -62,24 +63,24 @@ export default function DanceWorkout() {
         <div className="col-lg-12 p-3 p-md-5  danceWorkout">
             <div className="row">
                 <div className="col-lg-6">
-                    <Link to="/танц">
+                    <LanguageLink to="/танц">
                         <div className="image-wrapper">
                             <div className={`dance ${danceFade ? 'fade-in' : 'fade-out'}`}
                                  style={{ backgroundImage: `url(${danceImages[danceIndex]})` }}>
                                 <h1 className="text-white">Танц</h1>
                             </div>
                         </div>
-                    </Link>
+                    </LanguageLink>
                 </div>
                 <div className="col-lg-6">
-                    <Link to="/фит-универзум">
+                    <LanguageLink to="/фит-универзум">
                         <div className="image-wrapper">
                             <div className={`workout ${workoutFade ? 'fade-in' : 'fade-out'}`}
                                  style={{ backgroundImage: `url(${workoutImages[workoutIndex]})` }}>
                                 <h1 className="text-white">ФитВерзум</h1>
                             </div>
                         </div>
-                    </Link>
+                    </LanguageLink>
                 </div>
             </div>
         </div>

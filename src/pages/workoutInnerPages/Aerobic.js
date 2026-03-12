@@ -6,6 +6,8 @@ import ContactForm from "../../components/ContactForm";
 import {useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useRef} from "react";
 
+import { useTranslation } from "react-i18next";
+
 export default function Aerobic() {
 
     const location = useLocation();
@@ -32,20 +34,15 @@ export default function Aerobic() {
         }
     }, [location.search, location.pathname, navigate]);
 
-
+    const { t } = useTranslation();
     return (
         <>
-            <PageHeader title="Аеробик"/>
+            <PageHeader title={t("aerobicHeading")} />
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Аеробик?</h1>
-                        <p className="my-5">Аеробик е форма на физичка активност која вклучува ритмички и континуирани
-                            движења што го зголемуваат пулсот и го подобруваат кардиоваскуларното здравје. Се изведува
-                            со или без реквизити, најчесто на музика, и го активира целото тело.
-                            Аеробикот ја подобрува издржливоста, согорува калории и ја зголемува енергијата. Погоден е
-                            за сите возрасти и нивоа, а редовната пракса носи видливи здравствени и фитнес
-                            придобивки.</p>
+                        <h1>{t("whatIsAerobic")}</h1>
+                        <p className="my-5">{t("aerobicInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -63,15 +60,10 @@ export default function Aerobic() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4" >
                         <img src={`${process.env.PUBLIC_URL}/images/workout/aerobic/step-aerobic.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Step Aerobic</h2>
-                        <p>Step Aerobic е класичен аеробик тренинг со употреба на степ-платформа, каде преку ритмични
-                            чекори и кореографија се зголемува срцевата фреквенција и се
-                            подобрува кардио капацитетот. Движењата се координирани со музика, што го прави тренингот
-                            динамичен и забавен.
+                        <h2 className="my-4">{t("stepAerobicTitle")}</h2>
+                        <p>{t("stepAerobicSubtitle")}
                         </p>
-                        <p> Се работи на долниот дел од телото, како и на рамнотежата и издржливоста. Одличен е за
-                            согорување калории, подобрување на моториката
-                            и градење кондиција без да биде прегруб за зглобовите.</p>
+                        <p> {t("stepAerobicSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -83,14 +75,10 @@ export default function Aerobic() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/aerobic/kick-box.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Kick Box Aerobic</h2>
-                        <p>Kick Box Aerobic е енергичен кардио тренинг кој ги комбинира техниките од кик-боксот со
-                            ритмични аеробик движења. Преку удари со раце, клоци и скокови, телото работи интензивно,
-                            при што се согоруваат калории и се подобруваат силата, брзината и координацијата.
+                        <h2 className="my-4">{t("kickboxAerobicTitle")}</h2>
+                        <p>{t("kickboxAerobicSubtitle")}
                         </p>
-                        <p> Овој тренинг го зајакнува целиот телесен систем, го намалува стресот и овозможува
-                            ослободување на вишок енергија. Погоден е за сите што сакаат динамика, акција и кардио
-                            предизвик со фитнес резултати.</p>
+                        <p> {t("kickboxAerobicSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -113,14 +101,10 @@ export default function Aerobic() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Low Impact Aerobic</h2>
-                        <p>Low Impact Aerobic е лесна, но ефикасна форма на аеробен тренинг која не вклучува скокање или
-                            нагли движења, што ја прави идеална за почетници, постари лица или оние што имаат потреба од
-                            тренинг со помал стрес за зглобовите.
+                        <h2 className="my-4">{t("lowImpactAerobicTitle")}</h2>
+                        <p>{t("lowImpactAerobicSubtitle")}
                         </p>
-                        <p> Се изведуваат движења со умерено темпо, насочени кон подобрување на кардио капацитетот,
-                            координацијата и благото тонирање на телото. Иако е „low impact“, тренингот е структуриран
-                            така што и понатаму обезбедува видливи резултати.</p>
+                        <p> {t("lowImpactAerobicSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -133,12 +117,10 @@ export default function Aerobic() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Зумба</h2>
-                        <p>Зумба е забавен танц-фитнес тренинг инспириран од латино и светски ритми. Комбинира кардио
-                            движења, лесни кореографии и енергична музика за да создаде ефективен и заразен тренинг.
-                            Погоден е за сите возрасти и нивоа, зумба го согорува стресот, калориите и носи насмевка.
+                        <h2 className="my-4">{t("zumbaTitle")}</h2>
+                        <p>{t("zumbaSubtitle")}
                         </p>
-                        <p> Без чувство дека вежбате, ќе ги почувствувате бенефитите – за срцето, телото и духот.</p>
+                        <p>{t("zumbaSubSubtitle")} </p>
                         <CustomLink to="/фит-универзум/зумба" text="Дознајте Повеќе"/>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">

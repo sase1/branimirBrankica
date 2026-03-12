@@ -2,21 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function LatinoDances() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Латино-американски танци"/>
+            <PageHeader title={t("latinoAmericanHeading")} />
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што се Латино Американски танци?</h1>
-                        <p className="my-5">Латиноамериканските танци се енергична и технички прецизна дисциплина во
-                            спортското танцување, опфатена во официјалниот натпреварувачки систем на WDSF – Светската
-                            танцова спортска федерација. Самба, ча-ча-ча, румба, пасодобле и џајв се изучуваат и
-                            танцуваат според строго утврдени WDSF стандарди и критериуми. Во ТСК „Бранимир и Бранкица“,
-                            овие танци се предаваат професионално, со методологија што подготвува танчари за настапи на
-                            домашна и меѓународна сцена.</p>
+                        <h1>{t("whatAreLatinAmericanDances")}</h1>
+                        <p className="my-5">{t("latinAMericanDancesInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -36,14 +34,11 @@ export default function LatinoDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Самба</h2>
-                        <p>Самба е енергичен и ритмичен танц со бразилско потекло, познат по својата карактеристична
-                            пулсирачка основа и живописни движења. Се танцува во пар и вклучува пружени колена, брзи
-                            чекори и флуидни ротации.
+                        <h2 className="my-4">{t("sambaHeading")}</h2>
+                        <p>{t("sambaSubtitle")}
                         </p>
                         <p>
-                            Самбата зрачи со радост, страст и карневалска енергија, правејќи ја една од највпечатливите
-                            танцови дисциплини во латинскиот стил.
+                            {t("sambaSubSubtitle")}
                         </p>
                     </div>
                 </div>
@@ -57,13 +52,11 @@ export default function LatinoDances() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Ча-ча-ча</h2>
-                        <p>Ча-ча-ча е весел и игрив танц што потекнува од Куба. Карактеристичен е по ритамот „два – три
-                            – ча-ча“, што создава разиграно и темпо движење.
+                        <h2 className="my-4">{t("chaChaHeading")}</h2>
+                        <p>{t("chaChaSubtitle")}
                         </p>
                         <p>
-                            Со остри чекори, хип-акценти и секвенци со изразен флерт, ча-ча-ча нуди одлична можност за
-                            музикално изразување и забава на паркетот.
+                            {t("chaChaSubSubtitle")}
                         </p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
@@ -90,14 +83,11 @@ export default function LatinoDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Румба</h2>
-                        <p>Румбата е најромантичниот од латинските танци, препознатлива по своето бавно темпо, сензуални
-                            движења и изразена емоционалност. Потекнува од Куба и се базира на раскажување љубовна
-                            приказна преку танц.
+                        <h2 className="my-4">{t("rumbaHeading")}</h2>
+                        <p>{t("rumbaSubtitle")}
                         </p>
                         <p>
-                            Со нагласено движење на колковите и внимателна комуникација меѓу партнерите, румбата е
-                            елегантна и длабоко изразувачка.</p>
+                            {t("rumbaSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -110,13 +100,11 @@ export default function LatinoDances() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Пасодобле</h2>
-                        <p>Пасодобле е драматичен и театарски танц инспириран од шпанската корида, каде машкиот танчер
-                            го претставува тореадорот, а партнерката неговата пелерина.
+                        <h2 className="my-4">{t("pasoDobleHeading")}</h2>
+                        <p>{t("pasoDobleSubtitle")}
                         </p>
                         <p>
-                            Со марширачки ритам, остри линии и силна презентација, овој танц носи гордост, контрола и
-                            сценска моќ. Пасодобле бара држење со став и присуство, правејќи го вистински спектакл.
+                            {t("pasoDobleSubSubtitle")}
                         </p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
@@ -143,13 +131,11 @@ export default function LatinoDances() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Џаив</h2>
-                        <p>Џаив е најбрзиот и најзабавниот од латинските танци, со американско потекло. Се танцува во
-                            брзо темпо со разиграни чекори, скокови и енергични движења.
+                        <h2 className="my-4"> {t("jiveHeading")}</h2>
+                        <p> {t("pasoDobleSubtitle")}
                         </p>
                         <p>
-                            Иако технички бара прецизност и кондиција, џајвот нуди заразна енергија и постојано чувство
-                            на радост. Тој е совршен спој на спорт и забава на паркетот.</p>
+                            {t("pasoDobleSubSubtitle")}</p>
                     </div>
                 </div>
             </div>

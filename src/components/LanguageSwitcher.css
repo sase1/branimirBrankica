@@ -1,0 +1,40 @@
+.language-switcher{
+    display:flex;
+    align-items:center;
+    font-weight:600;
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    justify-content: center;
+
+    @media screen and (max-width: 500px){
+        top: 40px;
+        bottom: auto;
+        right: 65px;
+    }
+}
+
+.language-switcher button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:#aaa;
+    padding:4px 6px;
+    transition:0.2s;
+    font-size: 1em;
+}
+
+.language-switcher button.active{
+    color:#1bbc9b;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.language-switcher button:hover{
+    color:#fff;
+}
+
+.divider{
+    margin:0 6px;
+    color:#888;
+}

@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./CarouselCards.css"
 import {Link} from "react-router-dom";
+import LanguageLink from "./LanguageLink";
 
 const responsive = {
     desktop: {breakpoint: {max: 3000, min: 1024}, items: 3},
@@ -14,14 +15,14 @@ export default function CarouselCards ({cards = []}) {
         <Carousel responsive={responsive} infinite autoPlay>
             {cards.map(({id, title, image, link = "/"}) => (
                 <div key={id} className="cardsContent mb-5">
-                    <Link to={link} className={"text-decoration-none text-white"}>
+                    <LanguageLink to={link} className={"text-decoration-none text-white"}>
                         <img
                             src={image}
                             className="card-img-top" alt={`Card ${id}`}/>
                         <h3 className="card-title d-flex align-items-center">{title}
                             <img src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`} className="ms-3 arrow d-none d-md-block" alt="card-image"/>
                         </h3>
-                    </Link>
+                    </LanguageLink>
                 </div>
             ))}
         </Carousel>

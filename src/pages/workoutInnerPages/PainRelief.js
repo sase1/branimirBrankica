@@ -2,26 +2,22 @@ import PageHeader from "../../components/PageHeader";
 import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function PainRelief() {
+    const { t } = useTranslation();
+
     return (
         <>
             <PageHeader title="Pain Relief"/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Pain Relief?</h1>
-                        <p className="my-5">Pain Relief е специјализиран вид часови за вежбање осмислени да им помогнат
-                            на лица кои секојдневно се соочуваат со болки во телото, предизвикани од неправилно држење,
-                            седење, физичка неактивност, прекумерна тежина, несоодветна исхрана или повреди. Овие часови
-                            се внимателно структурирани според потребите на групи вежбачи со постоечки телесни проблеми
-                            како што се болки во грбот, вратот, колената, стапалата и рамениците, како и состојби како
-                            сколиоза, кифоза, спондилоза, дискус хернија и ишијалгија.
+                        <h1>{t("whatIsPainReleif")} </h1>
+                        <p className="my-5">{t("painReleifInfo")}
                         </p>
                         <p><b>
-                            Овој час е доста посетуван и од професионални спортисти и тренери,кои вежбаат за да го
-                            смират урамнотежат
-                            и рехабилитираат напнатото тело.
+                            {t("painReleifSubInfo")}
                         </b></p>
                     </div>
                 </div>
@@ -43,16 +39,12 @@ export default function PainRelief() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pain-relief.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Како делува Pain Relief?</h2>
+                        <h2 className="my-4">{t("howDoesPainReleifWorksHeading")}</h2>
                         <p>
-                        Вежбите во Pain Relief часовите се прилагодени со соодветно темпо и интензитет за да не
-                            предизвикуваат дополнителен стрес врз телото. Програмата е дизајнирана така што ги активира,
-                            истегнува и зајакнува клучните мускули, помагајќи им на телото и мускулниот систем да се
-                            вратат во баланс.
+                            {t("howDoesPainReleifWorksSubtitle")}
                         </p>
                         <p>
-                            Сесиите ги водат стручни инструктори кои се фокусираат на правилна техника, респираторна
-                            поддршка и телесна свесност, што овозможува безбедна и ефикасна рехабилитација.
+                            {t("howDoesPainReleifWorksSubSubtitle")}
                         </p>
                     </div>
                 </div>
@@ -66,15 +58,10 @@ export default function PainRelief() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pain-relief.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Директно решение</h2>
-                        <p>Овој пристап работи затоа што го третира коренот на проблемот – наместо само симптомите –
-                            преку насочени, терапевтски вежби кои ја враќаат телесната функција и подвижност. Вежбите се
-                            базираат на принципи на превенција, стабилизација и обновување, што ги прави идеални и за
-                            луѓе со хронични болки и за професионални спортисти кои сакаат да го смирaт и урамнотежат
-                            телото.
+                        <h2 className="my-4">{t("directSolutionHeading")}</h2>
+                        <p>{t("directSolutionSubtitle")}
                         </p>
-                        <p> Pain Relief е универзална алтернатива без несакани ефекти, достапна за сите возрасти и
-                            пол.</p>
+                        <p> {t("directSolutionSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img

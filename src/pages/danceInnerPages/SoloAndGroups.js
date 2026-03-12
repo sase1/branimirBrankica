@@ -2,27 +2,19 @@ import PageHeader from "../../components/PageHeader";
 import "./LationDances.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function SoloAndGroups() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Solo & Групи"/>
+            <PageHeader title={t("soloGroupsTitle")}/>
             <div className="container">
                 <div className="row content">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Сцена за личен израз</h1>
-                        <p className="my-5">Соло, дуо и формациското танцување се посебна гранка на спортскиот и сценски
-                            танц, каде индивидуалноста, синхронизацијата и сценската уметност се подеднакво важни.
-                            Настапите можат да бидат поединечни (момчиња или девојчиња), во пар без допир (дуо), групни
-                            или во сложени формации со повеќе танцови парови. Се изведуваат кореографии во различни
-                            стилови – од стандард и латински, до карипски и шоу танци. Нашите танчари се натпреваруваат
-                            во домашната А и Б лига како членови на <span
-                                style={{fontWeight: 700, textDecoration: "underline"}}>ТСФМ</span> - танцова спортска
-                            федерација и на меѓународни,
-                            европски и светски првенства како членови на <span
-                                style={{fontWeight: 700, textDecoration: "underline"}}>WDSF</span>, World Dance Sport
-                            Federation,
-                            според чии правила се изведуваат нашите кореографии.</p>
+                        <h1>{t("soloGroupsHeading")}</h1>
+                        <p className="my-5">{t("soloGroupsInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -42,21 +34,13 @@ export default function SoloAndGroups() {
                     <div className="col-lg-6 offset-lg-1 text-white  text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Соло и дуо настапи</h2>
-                        <p>Соло и дуо танцувањето овозможува на секој танчар индивидуално да ја изрази својата техника,
-                            енергија и емоција. Преку внимателно осмислени хореографии, натпреварувачите танцуваат без
-                            партнерски контакт, на стилови како салса, бачата, ча-ча-ча, румба и други. Овие настапи се
-                            одлична можност за градење сценска сигурност, контрола и личен сценски идентитет.
+                        <h2 className="my-4">{t("soloDuoHeading")}</h2>
+                        <p>{t("soloDuoSubtitle")}
                         </p>
                         <p>
-                            Во нашиот клуб активно ги подготвуваме младите танчари за соло и дуо натпревари – на домашни
-                            и меѓународни подиуми.</p>
+                            {t("soloDuoSubSubtitle")}</p>
                         <p>
-                            Нашите танчари се натпреваруваат во домашната А и Б лига како членови на <span
-                            style={{fontWeight: 700, textDecoration: "underline"}}>  ТСФМ </span> - танцова
-                            спортска федерација и на меѓународни, европски и светски првенства како членови на <span
-                            style={{fontWeight: 700, textDecoration: "underline"}}> WDSF </span>,
-                            World Dance Sport Federation, според чии правила се изведуваат нашите кореографии.</p>
+                            {t("soloDuoSubSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -69,18 +53,11 @@ export default function SoloAndGroups() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Формации и LA шоу</h2>
-                        <p>Формациското танцување е динамична и визуелно атрактивна дисциплина каде групи танчари – во
-                            парови или само девојки – изведуваат синхронизирани кореографии од пет танци.
-                            Се танцува како LA (латинска) или ST (стандардна) формација, со усогласени костими и сценски
-                            изглед според WDSF правила.</p>
+                        <h2 className="my-4">{t("formAndLaHeading")}</h2>
+                        <p>{t("formAndLaSubtitle")}</p>
 
                         <p>
-                            Нашите танчари се натпреваруваат во домашната А и Б лига како членови на <span
-                            style={{fontWeight: 700, textDecoration: "underline"}}>  ТСФМ </span> - танцова
-                            спортска федерација и на меѓународни, европски и светски првенства како членови на <span
-                            style={{fontWeight: 700, textDecoration: "underline"}}> WDSF </span>,
-                            World Dance Sport Federation, според чии правила се изведуваат нашите кореографии.</p>
+                            {t("formAndLaSubSubtitle")}</p>
 
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">

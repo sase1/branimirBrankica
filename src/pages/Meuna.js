@@ -3,6 +3,7 @@ import ContactForm from "../components/ContactForm";
 import HeaderMovingLines from "../components/HeaderMovingLines";
 import CarouselCards from "../components/CarouselCards";
 import "./Meuna.css"
+import {useTranslation} from "react-i18next";
 
 export default function Meuna() {
 
@@ -33,18 +34,17 @@ export default function Meuna() {
         }
     ];
 
+    const { t } = useTranslation();
+
+
     return (
         <>
-            <PageHeader title="Меуна"/>
+            <PageHeader title={t("meunaTitle")}/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Меуна ( Јас сум едно со сѐ )</h1>
-                        <p className="my-5">МЕУНА ја отвора визијата на реалноста вон секојдневното ЈАС и го открива
-                            безграничниот простор на вашето вистинско битие. На сеансите и медитациите на МЕУНА сте
-                            водени низ спиритуални вежби, чекор по чекор, од секојдневната до високите нивоа на свест,
-                            каде во еден момент влегувате во состојба на АПСОЛУТНА ПРАЗНИНА и со полна свесност директно
-                            ја искусувате ВИСТИНАТА или вашата природна состојба.
+                        <h1>{t("meunaHeading")}</h1>
+                        <p className="my-5">{t("meunaInfo")}
                         </p>
                     </div>
                 </div>
@@ -65,16 +65,12 @@ export default function Meuna() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Откријте ја безграничноста</h2>
+                        <h2 className="my-4">{t("discoverHeading")}</h2>
                         <p>
-                            МЕУНА ја отвора визијата на реалноста вон секојдневното ЈАС и го открива безграничниот
-                            простор на вашето вистинско битие.
+                            {t("discoverSubtitle")}
                         </p>
                         <p>
-                            На сеансите и медитациите на МЕУНА сте водени низ спиритуални вежби, чекор по чекор, од
-                            секојдневната до високите нивоа на свест, каде во еден момент влегувате во состојба на
-                            АПСОЛУТНА ПРАЗНИНА и со полна свесност директно ја искусувате ВИСТИНАТА или вашата природна
-                            состојба.
+                            {t("discoverSubSubtitle")}
                         </p>
                     </div>
                 </div>
@@ -88,13 +84,10 @@ export default function Meuna() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Согледајте ја реалната природа</h2>
-                        <p>Сите човечки искуства се претопуваат во ЕДНО, кое е наша реална природа. Низ ЕДНОТО полека ја
-                            ослободуваме свеста од перцепција за дуалноста за себе и светот. Низ ЕДНОТО се подобрува
-                            квалитетот на секојдневниот живот и се забрзува спиритуалната еволуција на практикантот.
+                        <h2 className="my-4">{t("realizeNatureHeading")}</h2>
+                        <p>{t("realizeNatureSubtitle")}
                         </p>
-                        <p><b> Методите на овие вежби се едноставни, брзи и достапни за секого. Функционираат на
-                            контролиран и предвидлив начин.</b></p>
+                        <p><b> {t("realizeNatureSubSubtitle")}</b></p>
 
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
@@ -121,7 +114,7 @@ export default function Meuna() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Спознајте го вистниското јас</h2>
+                        <h2 className="my-4">Спознајте го вистинското јас</h2>
                         <p>
                             Целта е да се препознае ПРАЗНИНАТА, за да може директно и свесно
                             од неа да делуваме и преземаме сакани идентитети.

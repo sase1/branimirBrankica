@@ -3,20 +3,19 @@ import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 import CustomLink from "../../components/CustomLink";
+import {useTranslation} from "react-i18next";
 
 export default function Reformer() {
+    const { t } = useTranslation();
+
     return (
         <>
             <PageHeader title="Reformer"/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Reformer?</h1>
-                        <p className="my-5"><span style={{fontWeight: 700}}>Reformer</span> е еден од најпознатите и највпечатливи пилатес апарати, дизајниран
-                            од Џозеф Пилатес - заедно со <span style={{fontWeight: 700}}>Cadillac</span> за поддржана и разновидна работа со пружини, <span style={{fontWeight: 700}}>Pilates
-                                Chair </span> за предизвик на core и баланс, <span style={{fontWeight: 700}}>Spine Corrector</span> за истегнување и корекција на ‘рбетот,
-                            и Ladder Barrel за подобрување на флексибилноста и држењето. Комбинацијата на овие уреди
-                            овозможува целосен, прецизен и персонализиран пилатес тренинг за секое тело.</p>
+                        <h1>{t("reformerTitle")}</h1>
+                        <p className="my-5">{t("reformerInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -35,12 +34,10 @@ export default function Reformer() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Реформер</h2>
-                        <p>Reformer е еден од најпознатите и највпечатливи пилатес апарати, дизајниран од Џозеф Пилатес.
-                            Се состои од подвижна платформа со пружини, лизгачки кревет и ремени, кои овозможуваат отпор
-                            и поддршка при секое движење. Reformer овозможува прецизна работа на целото тело – од
-                            зајакнување и тонирање на мускулите, до подобрување на флексибилноста, држењето и телесната
-                            свесност. Тој е идеален за сите нивоа – од рехабилитација до напреден функционален тренинг.
+                        <h2 className="my-4">{t("reformerheading")}</h2>
+                        <p>{t("reformerSubtitle")}
+                        </p>
+                        <p>{t("reformerSubSubtitle")}
                         </p>
                     </div>
                 </div>
@@ -54,13 +51,10 @@ export default function Reformer() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Pilates Chair(Wunda)</h2>
-                        <p>Пилатес столот е компактен, но предизвикувачки апарат, дизајниран за јакнење на core
-                            мускулите, баланс и целосна телесна контрола.
-                            Се користи и за стоечки и за седечки вежби, со пружини што овозможуваат отпор.
+                        <h2 className="my-4">{t("pilatesChairHeading")}</h2>
+                        <p>{t("pilatesChairSubtitle")}
                         </p>
-                        <p>Идеален е за подобрување на стабилноста, издржливоста и градење сила со минимално
-                            оптоварување на зглобовите.</p>
+                        <p>{t("pilatesChairSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -84,13 +78,10 @@ export default function Reformer() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Spine Corrector</h2>
-                        <p>Spine Corrector е закривена структура која се користи за истегнување, мобилизација и
-                            зајакнување на мускулите околу 'рбетот. Одличен е за подобрување на држењето, флексибилноста
-                            и корекција на телесната поставеност.
+                        <h2 className="my-4">{t("spineCorrectorHeading")}</h2>
+                        <p>{t("spineCorrectorSubtitle")}
                         </p>
-                        <p>Особено корисен за оние што имаат болки во грбот или ограничена подвижност во градниот
-                            дел.</p>
+                        <p>{t("spineCorrectorSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -104,12 +95,10 @@ export default function Reformer() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Ladder Barrel</h2>
-                        <p>Ladder Barrel комбинира заоблена површина и скалила, овозможувајќи низа вежби за истегнување,
-                            стабилизација и работа на ротација на торзото.
+                        <h2 className="my-4">{t("ladderBarrelHeading")}</h2>
+                        <p>{t("ladderBarrelSubtitle")}
                         </p>
-                        <p>Често се користи за подобрување на држењето, зајакнување на задниот ланец на телото и
-                            подобрување на подвижноста на 'рбетот. Нуди уникатен пристап за напредна пилатес пракса.</p>
+                        <p>{t("ladderBarrelSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -134,15 +123,11 @@ export default function Reformer() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Cadillac</h2>
-                        <p> Cadillac Reformer или едноставно „Cadillac“, е дизајнирана да понуди широк спектар на вежби
-                            за целото тело – од длабоко јадројно зајакнување до истегнување, мобилност и рехабилитација.
+                        <h2 className="my-4">{t("cadillacHeading")}</h2>
+                        <p> {t("cadillacSubtitle")}
                         </p>
                         <p>
-                            Со својата стабилна платформа, подвижна шина и разноврсни додатоци како пружини, ленти,
-                            трапез, ролки и ремени, Кадилак машината овозможува вежби во различни позиции – легнати,
-                            седнати, стоечки или дури и висечки. Совршена е и за почетници и за напредни вежбачи,
-                            нудејќи поддршка, контрола и прецизност во движењата.
+                            {t("cadillacSubSubtitle")}
                         </p>
                         <CustomLink to="" text="Дознајте Повеќе"/>
                     </div>

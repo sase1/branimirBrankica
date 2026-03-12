@@ -4,6 +4,7 @@ import HeaderMovingLines from "../../components/HeaderMovingLines";
 import {useEffect, useRef} from "react";
 import {useLocation, useNavigate} from "react-router-dom";
 import ContactForm from "../../components/ContactForm";
+import {useTranslation} from "react-i18next";
 
 export default function FunctiuonalFitness() {
 
@@ -25,21 +26,15 @@ export default function FunctiuonalFitness() {
         }
     }, [location.search, location.pathname, navigate]);
 
-
-
+    const { t } = useTranslation();
     return (
         <>
-            <PageHeader title="Функционален Фитнес"/>
+            <PageHeader title={t("functionalFitnessHeading")}/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Функционален Фитнес?</h1>
-                        <p className="my-5">Функционалниот фитнес е тренинг што го подготвува телото за реални,
-                            секојдневни движења – седење, подигање, вртење, туркање. Се базира на вежби кои активираат
-                            повеќе мускулни групи истовремено и ја подобруваат мобилноста, балансот, јачината и
-                            координацијата. Наместо изолирани движења, тука секој тренинг има практична цел. Подеднакво
-                            е корисен за спортисти и почетници – бидејќи го прави телото функционално, здраво и
-                            подготвено за живот.</p>
+                        <h1>{t("whatIsFunctionalFitness")}</h1>
+                        <p className="my-5">{t("functionalFitnessInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -58,14 +53,10 @@ export default function FunctiuonalFitness() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/cross.png`}
                              alt="logo"/>
-                        <h2 className="my-4">CrossFit</h2>
-                        <p>CrossFit е високоинтензивен функционален тренинг кој комбинира елементи од тежинско кревање,
-                            кардио, гимнастика и вежби со телесна тежина. Секој тренинг е различен и се изведува во
-                            кратки, интензивни интервали (WOD – Workout of the Day).
+                        <h2 className="my-4">{t("crossFitHeading")}</h2>
+                        <p>{t("crossFitSubtitle")}
                         </p>
-                        <p>Целта е развој на сила, издржливост, експлозивност и ментална дисциплина. CrossFit е идеален
-                            за оние што сакаат предизвик, енергија и напредок, без монотонија – секој ден носи ново
-                            искуство.</p>
+                        <p>{t("crossFitSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -77,13 +68,10 @@ export default function FunctiuonalFitness() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/body.png`}
                              alt="logo"/>
-                        <h2 className="my-4">BodySculpt</h2>
-                        <p>BodySculpt е обликувачки тренинг што се фокусира на дефинирање и тонирање на мускулите преку
-                            контролирани вежби со мали тегови, ластици, топки и сопствена тежина. Тренингот го активира
-                            целото тело, особено стомачните мускули, задникот, бутовите и рацете.
+                        <h2 className="my-4">{t("bodySculptHeading")}</h2>
+                        <p>{t("bodySculptSubtitle")}
                         </p>
-                        <p> BodySculpt не е насочен кон маса, туку кон елегантен и цврст изглед. Идеален е за оние што
-                            сакаат видливи резултати, но со контролирано темпо и акцент на прецизност.</p>
+                        <p>{t("bodySculptSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -107,14 +95,10 @@ export default function FunctiuonalFitness() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/circuit.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Circuit Training</h2>
-                        <p>Кружниот тренинг е ефикасна фитнес метода што комбинира неколку различни вежби во
-                            последователни станици, изведени со кратки паузи. Се работи на кардио, сила, рамнотежа и
-                            издржливост во само една сесија.
+                        <h2 className="my-4">{t("circuitTrainingHeading")}</h2>
+                        <p>{t("circuitTrainingSubtitle")}
                         </p>
-                        <p>Темпото е умерено до високо, а форматот лесно се адаптира според ниво на кондиција. Кружниот
-                            тренинг е идеален за брзи резултати, согорување калории и подобрување на целокупната форма,
-                            без рутина или досада.</p>
+                        <p>{t("circuitTrainingSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -127,14 +111,10 @@ export default function FunctiuonalFitness() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/func-fit/total.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Total Body Workout</h2>
-                        <p>Total Body Workout е функционален тренинг што го активира целото тело преку вежби за сила,
-                            кардио и мобилност. Се користат различни реквизити (тегови, ластици, топки) и сопствена
-                            телесна тежина, со цел да се работи на мускулна издржливост, тонирање и телесна
-                            трансформација.
+                        <h2 className="my-4">{t("totalBodyWorkoutHeading")}</h2>
+                        <p>{t("totalBodyWorkoutSubtitle")}
                         </p>
-                        <p> Вежбите се внимателно комбинирани за да се опфати секоја мускулна група и да се постигне
-                            целосен фитнес ефект. Погоден е и за почетници и за поискусни вежбачи.</p>
+                        <p> {t("totalBodyWorkoutSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img

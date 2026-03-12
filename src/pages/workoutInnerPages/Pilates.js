@@ -3,20 +3,19 @@ import "./Aerobic.css"
 import HeaderMovingLines from "../../components/HeaderMovingLines";
 import ContactForm from "../../components/ContactForm";
 import CustomLink from "../../components/CustomLink";
+import {useTranslation} from "react-i18next";
 
 export default function Pilates() {
+    const { t } = useTranslation();
+
     return (
         <>
-            <PageHeader title="Пилатес"/>
+            <PageHeader title={t("pilatesTitle")}/>
             <div className="container aerobicContent">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1 text-center text-white">
-                        <h1>Што е Пилатес?</h1>
-                        <p className="my-5">Пилатес е метод на вежбање што ја зајакнува мускулатурата, особено јадрото
-                            (core), и го подобрува држењето, флексибилноста и телесната свесност. Се изведува со
-                            контролирани, прецизни движења и правилно дишење. Погоден е за сите нивоа, вклучувајќи
-                            рехабилитација и спортска поддршка. Со редовна пракса, пилатес создава силно, стабилно и
-                            урамнотежено тело со подобрена координација и издржливост.</p>
+                        <h1>{t("pilatesHeading")}</h1>
+                        <p className="my-5">{t("pilatesInfo")}</p>
                     </div>
                 </div>
             </div>
@@ -35,15 +34,10 @@ export default function Pilates() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/mat-pilates.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Мат Пилатес</h2>
-                        <p>Mat Pilates се изведува на подлога (мат) и е суштината на оригиналниот пилатес метод развиен
-                            од Џозеф Пилатес. Се фокусира на зајакнување на јадрото (core), подобрување на
-                            флексибилноста и координацијата, како и на стабилизација на 'рбетот.
+                        <h2 className="my-4">{t("matPilatesHeading")}</h2>
+                        <p>{t("matPilatesSubtitle")}
                         </p>
-                        <p> Вежбите се изведуваат со контрола на движењата, свесност за телото и правилно дишење. Без
-                            потреба од реквизити, Mat Pilates е совршен за почетници, но истовремено нуди и напредни
-                            варијации за поискусните вежбачи. Овој стил е одличен за намалување на болки во грбот,
-                            подобрување на држењето и враќање на балансот во телото.</p>
+                        <p> {t("matPilatesSubSubtitle")}</p>
                     </div>
                 </div>
             </div>
@@ -56,16 +50,10 @@ export default function Pilates() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/fitball-pilates.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Fitball Пилатес</h2>
-                        <p>Fitball Pilates користи голема топка за стабилност (fitball) за да се предизвика балансот и
-                            да се активираат длабоките стабилизатори на телото. Преку специфични вежби кои се изведуваат
-                            на или со поддршка од топката, се зајакнуваат мускулите на јадрото, подобрува држењето и се
-                            подобрува подвижноста на зглобовите.
+                        <h2 className="my-4">{t("fitballPilatesHeading")}</h2>
+                        <p>{t("fitBallPilatesSubtitle")}
                         </p>
-                        <p>Fitball вежбите нудат ефикасна рехабилитација, но и предизвик за поискусните, благодарение на
-                            нестабилната површина што бара фокус, концентрација и контрола. Овој тип пилатес е идеален
-                            за оние што сакаат да ја подобрат координацијата, да ја активираат мускулатурата на целото
-                            тело и да се забавуваат во процесот.</p>
+                        <p>{t("fitBallPilatesSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -112,14 +100,10 @@ export default function Pilates() {
                     <div className="col-lg-6 text-white text-center text-lg-start mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/workout/pilates/bosu.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Ring, Bosu, Band Пилатес</h2>
-                        <p>Нашите пилатес програми вклучуваат три ефективни реквизити за разновиден и функционален
-                            тренинг. Ring Pilates користи прстен за отпор и активација на внатрешната мускулатура. Bosu
-                            Pilates работи на нестабилна платформа, што го зајакнува балансот и стабилноста.
+                        <h2 className="my-4">{t("ringBosuPilatesHeading")}</h2>
+                        <p>{t("ringBosuPilatesSubtitle")}
                         </p>
-                        <p>Pilates Band користи еластични ленти за зголемување на силата, флексибилноста и контролата.
-                            Секој метод нуди уникатен пристап – за подобрување на држењето, мускулен тонус и телесна
-                            свесност.</p>
+                        <p>{t("ringBosuPilatesSubSubtitle")}</p>
                     </div>
                     <div className="col-lg-5 offset-md-1 offset-0 align-content-center">
                         <img
@@ -144,11 +128,10 @@ export default function Pilates() {
                     <div className="col-lg-6 offset-lg-1 text-white text-center text-lg-end mb-4">
                         <img src={`${process.env.PUBLIC_URL}/images/content-logo.png`}
                              alt="logo"/>
-                        <h2 className="my-4">Реформер</h2>
-                        <p> Cadillac за поддржана и разновидна работа со пружини, Pilates Chair за предизвик на core и
-                            баланс, Spine Corrector за истегнување и корекција на ‘рбетот, и Ladder Barrel за
-                            подобрување на флексибилноста и држењето. Комбинацијата на овие уреди овозможува целосен,
-                            прецизен и персонализиран пилатес тренинг за секое тело.
+                        <h2 className="my-4">{t("reformerHeading")}</h2>
+                        <p> {t("reformerSubtitle")}
+                        </p>
+                        <p> {t("reformerSubSubtitle")}
                         </p>
                         <CustomLink to="/фит-универзум/реформер" text="Дознајте Повеќе"/>
                     </div>

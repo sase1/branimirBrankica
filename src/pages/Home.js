@@ -6,6 +6,7 @@ import DanceWorkout from "../components/DanceWorkout";
 import Counter from "../components/Counter";
 import "./Home.css"
 import CustomLink from "../components/CustomLink";
+import LanguageLink from "../components/LanguageLink";
 
 export default function Home() {
 
@@ -193,7 +194,7 @@ export default function Home() {
                     <div className="col-lg-12 d-none d-lg-block">
                         <div className="image-grid">
                             <div className="item item1">
-                                <Link to="/фит-универзум/пилатес">
+                                <LanguageLink to="/фит-универзум/пилатес">
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
@@ -203,60 +204,60 @@ export default function Home() {
                                             className="logo-image"/>
                                     </div>
                                     <p>Edno, dve, tri, cetiri, pet</p>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item2">
-                                <Link to="/фит-универзум/реформер">
+                                <LanguageLink to="/фит-универзум/реформер">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X2SLL-qBuWbjKjixzIQITqfBtHjhqpkxmw&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">Reformer<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item3">
-                                <Link to="/фит-универзум/функционален-фитнес">
+                                <LanguageLink to="/фит-универзум/функционален-фитнес">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFnW53mzRMAQO8rOKsr5d-RsLVGExI7sJug&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">Функционален фитнес<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item4">
-                                <Link to="/фит-универзум/б-јога">
+                                <LanguageLink to="/фит-универзум/б-јога">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdHIinb4Q0mjm_817HCEeEB1INOqzgX4lfQ&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">Б Јога<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item5">
-                                <Link to="/фит-универзум/зумба">
+                                <LanguageLink to="/фит-универзум/зумба">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQoB8wzGzkVUT6MNuUDVWNgcW0M-voxat0Q&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">Зумба<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item6">
-                                <Link to="/фит-универзум/pain-relief">
+                                <LanguageLink to="/фит-универзум/pain-relief">
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt=""/>
                                     <div className="overlay">Pain Relief<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item7">
-                                <Link to="/фит-универзум/аеробик">
+                                <LanguageLink to="/фит-универзум/аеробик">
                                     {/*<Link to="/фит-универзум/функционален-фитнес?scrollToTitle=true">*/}
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
@@ -264,47 +265,47 @@ export default function Home() {
                                     <div className="overlay">Аеробик<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item8">
-                                <Link to="/фит-универзум/bfit-teen">
+                                <LanguageLink to="/фит-универзум/bfit-teen">
                                     <img
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nKyX2g7nTDxN0tk4J_i2xN5ZEFyt00vUlQ&s"
                                         alt="workouit-image"/>
                                     <div className="overlay">B-Fit Teen<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item9">
-                                <Link to="/фит-универзум/превентивно-корективна-гимнастика">
+                                <LanguageLink to="/фит-универзум/превентивно-корективна-гимнастика">
                                     <img
                                         src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg"
                                         alt="workouit-image"/>
                                     <div className="overlay">Превентивно Корективна гимнастика <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item10">
-                                <Link to="/фит-универзум/ultimate-bag-workout">
+                                <LanguageLink to="/фит-универзум/ultimate-bag-workout">
                                     <img
                                         src="https://www.toronto.ca/wp-content/uploads/2024/10/9631-fitness-programs-banner.jpg"
                                         alt="workouit-image"/>
                                     <div className="overlay">Ultimate bag workout <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             <div className="item item11">
-                                <Link to="/фит-универзум/функционален-фитнес">
+                                <LanguageLink to="/фит-универзум/функционален-фитнес">
                                     <img
                                         src="https://ymcafw.org/wp-content/uploads/2023/12/HealthFitness2_overview.jpg"
                                         alt="workouit-image"/>
                                     <div className="overlay">Функционален фитнес <img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
-                                </Link>
+                                </LanguageLink>
                             </div>
                             {/*<div className="item item12">*/}
                             {/*    <Link to="/вежбање/аеробик">*/}
