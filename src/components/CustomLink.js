@@ -29,7 +29,7 @@ export default function CustomLink({ to, text, className = "", onClick, blank = 
             onClick={onClick}
             className={`text-decoration-none text-white about d-inline-flex align-items-center customLink ${className}`}
         >
-            {text}
+             {text}
             <img
                 src={`${process.env.PUBLIC_URL}/images/btn-arrow.png`}
                 alt="instagram-logo"
