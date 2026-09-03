@@ -210,7 +210,7 @@ export default function Home() {
                                 <LanguageLink to="/фит-универзум/реформер">
                                     <img
                                         src="https://media.gettyimages.com/id/1364931588/photo/man-doing-pilates-in-studio.jpg?s=612x612&w=gi&k=20&c=oxqNImQ58lhV1nuNkCOLQbsnUYBogfDPmfSBFDV5ZRs="
-                                        alt="workouit-image"/>
+                                        alt="workout-image"/>
                                     <div className="overlay">Reformer<img
                                         src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`} alt="logo"
                                         className="logo-image"/></div>
